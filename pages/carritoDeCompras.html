@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Carrito de compras | ZeroLag</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="header_navbar_contenedor">
+                <div class="header_contenedor">
+                    <div class="boton_navbar_y_logo_navbar_contenedor">
+                        <button class="boton_navbar navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="logo_navbar navbar-brand" href="../index.html"><span>Z</span>ero<span>L</span>ag</a>
+                    </div>
+                    <form class="barra_de_busqueda container-fluid d-flex align-items-center" role="search">
+                        <input class="input_buscar form-control" type="search"
+                            placeholder="Busca el producto de tus sueños" aria-label="Search">
+                        <button class="boton_buscar" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div class="navbar_contenedor collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-lg-0 container-fluid d-flex justify-content-around">
+                        <li class="li_inicio">
+                            <a class="a_inicio" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="li_nosotros">
+                            <a class="a_nosotros" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="li_productos">
+                            <a class="a_productos" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="li_servicios">
+                            <a class="a_servicios" href="./servicios.html">Servicios</a>
+                        </li>
+                        <li class="li_contacto">
+                            <a class="a_contacto" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="li_experiencia">
+                            <a class="a_experiencia" href="./experiencia.html">Experiencia</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="carritoDeCompra" class="seccion_carrito_de_compra">
+            <h2 class="titulo_carrito_de_compra">Carrito de compra</h2>
+            <div class="contenedor_de_formulario_y_tabla">
+                <form id="agregarProductos">
+                    <div>
+                        <label for="productos">Elija un producto</label>
+                    </div>
+                    <select id="productos" class="lista_de_productos">
+                    </select>
+
+                    <button id="agregarProductos" class="btn_agregar_productos">Agregar</button>
+                </form>
+
+                <table>
+                    <thead>
+                        <tr id="trId">
+                            <th>#item</th>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unitario</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="items">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th id="total">Total</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="contenedor_de_boton_comprar_y_vaciar">
+                <button id="vaciar" class="btn_vaciar_carrito">Vaciar</button>
+                <button class="btn_comprar_productos">Comprar</button>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer_contenedor">
+            <div class="footer_zerolag">
+                <h2>ZeroLag</h2>
+                <p>Redifiniendo la velocidad y la eficiencia</p>
+            </div>
+            <div class="medios_de_pago">
+                <h3>Medios de pago</h3>
+                <div class="imagenes_medios_de_pago">
+                    <img class="logo_webpay" src="../img/webpaylogo.png" alt="webpay logo">
+                    <img class="logo_mercado_libre" src="../img/mercadopagologo.png" alt="mercado pago logo">
+                    <img class="logo_santander" src="../img/santanderlogo.png" alt="santander logo">
+                    <img class="logo_bancoestado" src="../img/bancoestadologo.png" alt="bancoestado logo">
+                    <img class="logo_fpay" src="../img/fpaylogo.png" alt="fpay logo">
+                    <img class="logo_transferencia_bancaria" src="../img/trasferencia_bancaria.png"
+                        alt="trasferencia bancaria logo">
+                </div>
+            </div>
+            <div class="redes_sociales">
+                <h3>Siguenos en:</h3>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png"
+                        alt="logo de facebook"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="../img/xlogo.png" alt="logo de x"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png"
+                        alt="logo de instagram"></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><img src="../img/whatsapp.png"
+                        alt="logo de whatsapp"></a>
+            </div>
+        </div>
+        <div class="derechos_de_autor">
+            <p>© 2023 | ZeroLag Todos los derechos reservados | Desarrollado con 💖 y mucho esfuerzo por YoniiDev
+            </p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

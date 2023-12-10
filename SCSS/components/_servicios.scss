@@ -1,0 +1,74 @@
+.servicios {
+    h2 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 55px;
+        font-weight: 900;
+        margin: 5px 20px 5px 20px;
+        text-shadow: -2px -2px 3px red;
+        color: black;
+
+    }
+
+    .servicios_contenedor {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        div {
+            width: 500px;
+            height: 770px;
+            border: 2px solid red;
+            box-shadow: 0px 0px 5px 3px black;
+            text-align: center;
+            margin: 20px;
+            background-color: #0f0f0f;
+
+            img {
+                width: 496px;
+                height: 350px;
+                object-fit: cover;
+            }
+
+            h3 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: left;
+                font-size: 20px;
+                font-weight: 900;
+                margin: 10px 10px 10px 10px;
+                color: white;
+            }
+
+            p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                text-align: justify;
+                margin: 10px 10px 10px 10px;
+                color: white;
+                line-height: normal;
+                font-weight: 100;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                background-color: black;
+                padding: 5px;
+                border: solid 2px red;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                border-radius: 10px;
+                transition-duration: 0.5s;
+
+                &:hover {
+                    background-color: rgb(0, 194, 0);
+                    border: 2px solid rgb(7, 80, 0);
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: black;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2? family= Black+Ops+One & family= Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600; 0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & familia = Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0 ,700;0,800;0,900; 1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap');
+
+//-----RESET-----
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//-----BODY-----
+body {
+    font-family: 'Black Ops One', cursiva;
+    font-family: 'Exo 2', sans-serif;
+}
+
+//-----HEADER BOOTSTRAP-----
+header {
+    background-color: #0f0f0f;
+
+    .navbar {
+        padding: 0px 0px 10px 0px;
+        line-height: normal;
+
+        .header_navbar_contenedor {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            .header_contenedor {
+                display: flex;
+
+                .boton_navbar_y_logo_navbar_contenedor {
+                    .boton_navbar {
+                        background-color: red;
+                        margin: 0px 10px 0px 0px;
+                        
+                        span {}
+                    }
+
+                    .logo_navbar {
+                        margin: 0;
+                        padding: 0;
+                        font-family: 'Courier New', Courier, monospace;
+                        font-size: 60px;
+                        font-weight: 900;
+                        color: red;
+                        transition-duration: 0.5s;
+
+                        &:hover {
+                            color: red;
+                            text-shadow: -2px -2px 3px red;
+                        }
+
+                        span {
+                            color: white;
+                        }
+                    }
+                }
+
+                .barra_de_busqueda {
+                    margin: 0;
+                    padding: 0;
+                    margin-left: 15px;
+
+                    .input_buscar {
+                        border: solid 2px red;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        margin: 0;
+                        padding: 5px;
+                        transition-duration: 0.5s;
+
+                        &:hover {
+                            border: 3px solid rgb(0, 194, 0)
+                        }
+                    }
+
+                    .boton_buscar {
+                        padding: 6px;
+                        border-radius: 10px;
+                        border: solid 2px red;
+                        background-color: black;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 600;
+                        transition-duration: 0.5s;
+
+                        &:hover {
+                            border: 2px solid rgb(7, 80, 0);
+                            background-color: rgb(0, 194, 0);
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            color: black;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .navbar_contenedor {
+                ul {
+                    padding: 0;
+
+                    .li_inicio {
+                        .a_inicio {
+                            text-decoration: none;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            color: white;
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 0px 60px 0px 60px;
+                            background-color: black;
+                            border: solid 2px red;
+                            border-radius: 10px;
+                            text-align: center;
+                            transition-duration: 0.5s;
+
+                            &:hover {
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                color: black;
+                                font-size: 16px;
+                                font-weight: 600;
+                                background-color: rgb(0, 194, 0);
+                                border: 2px solid rgb(7, 80, 0);
+                            }
+                        }
+                    }
+
+                    .li_nosotros {
+                        .a_nosotros {
+                            text-decoration: none;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            color: white;
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 0px 60px 0px 60px;
+                            background-color: black;
+                            border: solid 2px red;
+                            border-radius: 10px;
+                            text-align: center;
+                            transition-duration: 0.5s;
+
+                            &:hover {
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                color: black;
+                                font-size: 16px;
+                                font-weight: 600;
+                                background-color: rgb(0, 194, 0);
+                                border: 2px solid rgb(7, 80, 0);
+                            }
+                        }
+                    }
+
+                    .li_productos {
+                        .a_productos {
+                            text-decoration: none;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            color: white;
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 0px 60px 0px 60px;
+                            background-color: black;
+                            border: solid 2px red;
+                            border-radius: 10px;
+                            text-align: center;
+                            transition-duration: 0.5s;
+
+                            &:hover {
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                color: black;
+                                font-size: 16px;
+                                font-weight: 600;
+                                background-color: rgb(0, 194, 0);
+                                border: 2px solid rgb(7, 80, 0);
+                            }
+                        }
+                    }
+
+                    .li_servicios {
+                        .a_servicios {
+                            text-decoration: none;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            color: white;
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 0px 60px 0px 60px;
+                            background-color: black;
+                            border: solid 2px red;
+                            border-radius: 10px;
+                            text-align: center;
+                            transition-duration: 0.5s;
+
+                            &:hover {
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                color: black;
+                                font-size: 16px;
+                                font-weight: 600;
+                                background-color: rgb(0, 194, 0);
+                                border: 2px solid rgb(7, 80, 0);
+                            }
+                        }
+                    }
+
+                    .li_contacto {
+                        .a_contacto {
+                            text-decoration: none;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            color: white;
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 0px 60px 0px 60px;
+                            background-color: black;
+                            border: solid 2px red;
+                            border-radius: 10px;
+                            text-align: center;
+                            transition-duration: 0.5s;
+
+                            &:hover {
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                color: black;
+                                font-size: 16px;
+                                font-weight: 600;
+                                background-color: rgb(0, 194, 0);
+                                border: 2px solid rgb(7, 80, 0);
+                            }
+                        }
+                    }
+
+                    .li_experiencia {
+                        .a_experiencia {
+                            text-decoration: none;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            color: white;
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 0px 60px 0px 60px;
+                            background-color: black;
+                            border: solid 2px red;
+                            border-radius: 10px;
+                            text-align: center;
+                            transition-duration: 0.5s;
+
+                            &:hover {
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                color: black;
+                                font-size: 16px;
+                                font-weight: 600;
+                                background-color: rgb(0, 194, 0);
+                                border: 2px solid rgb(7, 80, 0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//NOTA PARA EL EVALUADOR: tube que agregar clases a cada etiqueta <a>, por el hover, ya que al aplicar el hover a la etiqueta <a> unicamente, es decir, sin ninguna clase, al momento de que el usuario se posicionaba en cualquier enlace de la barra de navegación, se pintabán todas las etiquetas <a> al mismo tiempo, entonces tuve que aumentar la especificidad en este caso.

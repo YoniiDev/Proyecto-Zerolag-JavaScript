@@ -1,0 +1,184 @@
+.quienes_somos {
+    h2 {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        font-size: 55px;
+        font-weight: 900;
+        margin: 5px 20px 5px 20px;
+        text-shadow: -2px -2px 3px red;
+
+    }
+
+    .quienes_somos_contenedor {
+        @extend %flex-between;
+        align-items: start;
+        flex-wrap: nowrap;
+
+        div {
+            p {
+                text-align: justify;
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-bottom: 0;
+                width: 90%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+        }
+
+        img {
+            width: 400px;
+            height: 200px;
+            margin-right: 20px;
+            box-shadow: 0px 0px 5px 3px black;
+            color: black;
+            object-fit: cover;
+
+        }
+    }
+}
+
+.nuestra_mision {
+    h2 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 55px;
+        font-weight: 900;
+        margin: 5px 20px 5px 20px;
+        text-shadow: -2px -2px 3px red;
+        color: black;
+
+    }
+
+    .nuestra_mision_contenedor {
+        @extend %flex-between;
+
+        div {
+            p {
+                text-align: justify;
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-bottom: 0;
+                width: 90%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                color: black;
+            }
+        }
+
+        img {
+            width: 468px;
+            height: 268px;
+            margin-right: 20px;
+            box-shadow: 0px 0px 5px 3px black;
+            object-fit: cover;
+        }
+    }
+}
+
+.lo_que_nos_diferencia {
+    h2 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 55px;
+        font-weight: 900;
+        color: black;
+        margin: 5px 20px 5px 20px;
+        text-shadow: -2px -2px 3px red;
+
+    }
+
+    .lo_que_nos_diferencia_contenedor {
+        @extend %flex-between;
+
+        div {
+            p {
+                text-align: justify;
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-bottom: 0;
+                width: 90%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: black;
+                font-size: 20px;
+            }
+        }
+
+        img {
+            width: 468px;
+            height: 268px;
+            margin-right: 20px;
+            box-shadow: 0px 0px 5px 3px black;
+        }
+    }
+}
+
+.nuestros_valores {
+    h2 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 55px;
+        font-weight: 900;
+        color: black;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-shadow: -2px -2px 3px red;
+
+    }
+
+    .nuestros_valores_contenedor {
+        display: flex;
+        justify-content: space-evenly;
+
+        div {
+            border: 2px solid red;
+            box-shadow: 0px 0px 5px 3px black;
+            border-radius: 10px;
+            width: 355px;
+            height: 640px;
+            text-align: center;
+            margin: 10px;
+            background-color: #0f0f0f;
+
+            img {
+                width: 350px;
+                height: 250px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                object-fit: cover;
+            }
+
+            h3 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                text-align: left;
+                margin: 10px 10px 10px 10px;
+                color: white;
+                font-weight: 100;
+                line-height: normal;
+            }
+
+            p {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+                font-weight: 100;
+                text-align: justify;
+                font-size: 20px;
+                margin: 10px 10px 10px 10px;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.revolución_digital {
+    h2 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 40px;
+        font-weight: 900;
+        text-align: center;
+        margin: 5px 20px 5px 20px;
+        text-shadow: -2px -2px 3px red;
+        line-height: normal;
+        color: black;
+    }
+}

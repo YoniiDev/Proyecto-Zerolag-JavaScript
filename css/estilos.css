@@ -1,0 +1,1584 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family= Black+Ops+One & family= Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600; 0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & familia = Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0 ,700;0,800;0,900; 1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap");
+.quienes_somos .quienes_somos_contenedor, .nuestra_mision .nuestra_mision_contenedor, .lo_que_nos_diferencia .lo_que_nos_diferencia_contenedor {
+  display: flex;
+  justify-content: space-between; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Black Ops One', cursiva;
+  font-family: 'Exo 2', sans-serif; }
+
+header {
+  background-color: #0f0f0f; }
+  header .navbar {
+    padding: 0px 0px 10px 0px;
+    line-height: normal; }
+    header .navbar .header_navbar_contenedor {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-left: 20px;
+      margin-right: 20px; }
+      header .navbar .header_navbar_contenedor .header_contenedor {
+        display: flex; }
+        header .navbar .header_navbar_contenedor .header_contenedor .boton_navbar_y_logo_navbar_contenedor .boton_navbar {
+          background-color: red;
+          margin: 0px 10px 0px 0px; }
+        header .navbar .header_navbar_contenedor .header_contenedor .boton_navbar_y_logo_navbar_contenedor .logo_navbar {
+          margin: 0;
+          padding: 0;
+          font-family: 'Courier New', Courier, monospace;
+          font-size: 60px;
+          font-weight: 900;
+          color: red;
+          transition-duration: 0.5s; }
+          header .navbar .header_navbar_contenedor .header_contenedor .boton_navbar_y_logo_navbar_contenedor .logo_navbar:hover {
+            color: red;
+            text-shadow: -2px -2px 3px red; }
+          header .navbar .header_navbar_contenedor .header_contenedor .boton_navbar_y_logo_navbar_contenedor .logo_navbar span {
+            color: white; }
+        header .navbar .header_navbar_contenedor .header_contenedor .barra_de_busqueda {
+          margin: 0;
+          padding: 0;
+          margin-left: 15px; }
+          header .navbar .header_navbar_contenedor .header_contenedor .barra_de_busqueda .input_buscar {
+            border: solid 2px red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 5px;
+            transition-duration: 0.5s; }
+            header .navbar .header_navbar_contenedor .header_contenedor .barra_de_busqueda .input_buscar:hover {
+              border: 3px solid #00c200; }
+          header .navbar .header_navbar_contenedor .header_contenedor .barra_de_busqueda .boton_buscar {
+            padding: 6px;
+            border-radius: 10px;
+            border: solid 2px red;
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            transition-duration: 0.5s; }
+            header .navbar .header_navbar_contenedor .header_contenedor .barra_de_busqueda .boton_buscar:hover {
+              border: 2px solid #075000;
+              background-color: #00c200;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: black;
+              font-size: 16px;
+              font-weight: 600; }
+      header .navbar .header_navbar_contenedor .navbar_contenedor ul {
+        padding: 0; }
+        header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_inicio .a_inicio {
+          text-decoration: none;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: white;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 0px 60px 0px 60px;
+          background-color: black;
+          border: solid 2px red;
+          border-radius: 10px;
+          text-align: center;
+          transition-duration: 0.5s; }
+          header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_inicio .a_inicio:hover {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #00c200;
+            border: 2px solid #075000; }
+        header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_nosotros .a_nosotros {
+          text-decoration: none;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: white;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 0px 60px 0px 60px;
+          background-color: black;
+          border: solid 2px red;
+          border-radius: 10px;
+          text-align: center;
+          transition-duration: 0.5s; }
+          header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_nosotros .a_nosotros:hover {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #00c200;
+            border: 2px solid #075000; }
+        header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_productos .a_productos {
+          text-decoration: none;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: white;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 0px 60px 0px 60px;
+          background-color: black;
+          border: solid 2px red;
+          border-radius: 10px;
+          text-align: center;
+          transition-duration: 0.5s; }
+          header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_productos .a_productos:hover {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #00c200;
+            border: 2px solid #075000; }
+        header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_servicios .a_servicios {
+          text-decoration: none;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: white;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 0px 60px 0px 60px;
+          background-color: black;
+          border: solid 2px red;
+          border-radius: 10px;
+          text-align: center;
+          transition-duration: 0.5s; }
+          header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_servicios .a_servicios:hover {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #00c200;
+            border: 2px solid #075000; }
+        header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_contacto .a_contacto {
+          text-decoration: none;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: white;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 0px 60px 0px 60px;
+          background-color: black;
+          border: solid 2px red;
+          border-radius: 10px;
+          text-align: center;
+          transition-duration: 0.5s; }
+          header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_contacto .a_contacto:hover {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #00c200;
+            border: 2px solid #075000; }
+        header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_experiencia .a_experiencia {
+          text-decoration: none;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: white;
+          font-size: 16px;
+          font-weight: 600;
+          padding: 0px 60px 0px 60px;
+          background-color: black;
+          border: solid 2px red;
+          border-radius: 10px;
+          text-align: center;
+          transition-duration: 0.5s; }
+          header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_experiencia .a_experiencia:hover {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #00c200;
+            border: 2px solid #075000; }
+
+.ofertas_imperdibles h2 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-weight: 600;
+  border: solid 2px red;
+  margin: 0; }
+
+.ofertas_imperdibles .productos_ofertas_imperdibles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles {
+    width: 254px;
+    height: 100%;
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px 3px black;
+    margin: 20px;
+    text-align: center;
+    background-color: #0f0f0f;
+    padding-bottom: 15px;
+    line-height: 1.2;
+    transition: 2s; }
+    .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.75); }
+    .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover; }
+    .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      margin: 5px 0px 0px 0px; }
+    .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles .ofertas_imperdibles_descripcion_producto {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      font-weight: 100;
+      color: white;
+      margin: 5px 0px 0px 0px;
+      text-align: left;
+      padding-right: 5px;
+      padding-left: 5px; }
+    .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles .ofertas_imperdibles_precio_normal_y_porcentaje_de_descuento_contenedor {
+      display: flex;
+      justify-content: space-around;
+      margin: 5px 0px 0px 0px; }
+      .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles .ofertas_imperdibles_precio_normal_y_porcentaje_de_descuento_contenedor .ofertas_imperdibles_porcentaje_de_descuento {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        padding: 2px;
+        margin: 0; }
+      .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles .ofertas_imperdibles_precio_normal_y_porcentaje_de_descuento_contenedor .ofertas_imperdibles_precio_normal {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        font-weight: 100;
+        color: white;
+        margin: 0; }
+    .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles .ofertas_imperdibles_precio_producto_con_transferencia {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #00c200;
+      margin: 5px 0px 10px 0px;
+      text-align: left;
+      margin: 5px 0px 0px 0px;
+      padding-right: 5px;
+      padding-left: 5px; }
+    .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles .ofertas_imperdibles_precio_producto_otros_medios_de_pago {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 12px;
+      font-weight: 100;
+      color: white;
+      margin: 5px 0px 15px 0px;
+      text-align: left;
+      padding-right: 5px;
+      padding-left: 5px; }
+    .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles a {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 5px;
+      border: solid 2px red;
+      border-radius: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      transition-duration: 0.5s; }
+      .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles a:hover {
+        background-color: #00c200;
+        border: 2px solid #075000;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        font-size: 16px;
+        font-weight: 600; }
+
+.te_puede_interesar h2 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-weight: 600;
+  border: solid 2px red;
+  margin: 0; }
+
+.te_puede_interesar .productos_te_puede_interesar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar {
+    width: 254px;
+    height: 100%;
+    padding-bottom: 15px;
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px 3px black;
+    margin: 20px;
+    text-align: center;
+    background-color: #0f0f0f;
+    line-height: 1.2;
+    transition: 2s; }
+    .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.75); }
+    .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover; }
+    .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      margin: 10px; }
+    .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar .te_puede_interesar_descripcion_producto {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      font-weight: 100;
+      color: white;
+      margin: 5px 0px 0px 0px;
+      text-align: left;
+      padding-right: 5px;
+      padding-left: 5px; }
+    .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar .te_puede_interesar_precio_normal_y_porcentaje_de_descuento_contenedor {
+      display: flex;
+      justify-content: space-around;
+      margin: 5px 0px 0px 0px; }
+      .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar .te_puede_interesar_precio_normal_y_porcentaje_de_descuento_contenedor .te_puede_interesar_porcentaje_de_descuento {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        padding: 2px;
+        margin: 0; }
+      .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar .te_puede_interesar_precio_normal_y_porcentaje_de_descuento_contenedor .te_puede_interesar_precio_normal {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        font-weight: 100;
+        color: white;
+        margin: 0; }
+    .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar .te_puede_interesar_precio_producto_con_transferencia {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #00c200;
+      margin: 5px 0px 10px 0px;
+      text-align: left;
+      margin: 5px 0px 0px 0px;
+      padding-right: 5px;
+      padding-left: 5px; }
+    .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar .te_puede_interesar_precio_producto_otros_medios_de_pago {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 12px;
+      font-weight: 100;
+      color: white;
+      margin: 5px 0px 15px 0px;
+      text-align: left;
+      padding-right: 5px;
+      padding-left: 5px; }
+    .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar a {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 5px;
+      border: solid 2px red;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 10px;
+      transition-duration: 0.5s; }
+      .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar a:hover {
+        background-color: #00c200;
+        border: 2px solid #075000;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        font-size: 16px;
+        font-weight: 600; }
+
+.conoce_nuestros_servicios h2 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-weight: 600;
+  border: solid 2px red;
+  margin: 0; }
+
+.conoce_nuestros_servicios .conoce_nuestros_servicios_contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  .conoce_nuestros_servicios .conoce_nuestros_servicios_contenedor div {
+    width: 334px;
+    height: 430px;
+    border: 2px solid red;
+    margin: 20px;
+    box-shadow: 0px 0px 5px 3px black;
+    text-align: center;
+    background-color: #0f0f0f;
+    transition: 2s; }
+    .conoce_nuestros_servicios .conoce_nuestros_servicios_contenedor div:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.75); }
+    .conoce_nuestros_servicios .conoce_nuestros_servicios_contenedor div img {
+      width: 330px;
+      height: 350px;
+      object-fit: cover; }
+    .conoce_nuestros_servicios .conoce_nuestros_servicios_contenedor div h3 {
+      margin: 10px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white;
+      font-size: 16px;
+      font-weight: 600; }
+    .conoce_nuestros_servicios .conoce_nuestros_servicios_contenedor div a {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 5px;
+      border: solid 2px red;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 10px;
+      transition-duration: 0.5s; }
+      .conoce_nuestros_servicios .conoce_nuestros_servicios_contenedor div a:hover {
+        background-color: #00c200;
+        border: 2px solid #075000;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        font-size: 16px;
+        font-weight: 600; }
+
+.quienes_somos h2 {
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  font-size: 55px;
+  font-weight: 900;
+  margin: 5px 20px 5px 20px;
+  text-shadow: -2px -2px 3px red; }
+
+.quienes_somos .quienes_somos_contenedor {
+  align-items: start;
+  flex-wrap: nowrap; }
+  .quienes_somos .quienes_somos_contenedor div p {
+    text-align: justify;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: black; }
+  .quienes_somos .quienes_somos_contenedor img {
+    width: 400px;
+    height: 200px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 5px 3px black;
+    color: black;
+    object-fit: cover; }
+
+.nuestra_mision h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 55px;
+  font-weight: 900;
+  margin: 5px 20px 5px 20px;
+  text-shadow: -2px -2px 3px red;
+  color: black; }
+
+.nuestra_mision .nuestra_mision_contenedor div p {
+  text-align: justify;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  width: 90%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: black; }
+
+.nuestra_mision .nuestra_mision_contenedor img {
+  width: 468px;
+  height: 268px;
+  margin-right: 20px;
+  box-shadow: 0px 0px 5px 3px black;
+  object-fit: cover; }
+
+.lo_que_nos_diferencia h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 55px;
+  font-weight: 900;
+  color: black;
+  margin: 5px 20px 5px 20px;
+  text-shadow: -2px -2px 3px red; }
+
+.lo_que_nos_diferencia .lo_que_nos_diferencia_contenedor div p {
+  text-align: justify;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  width: 90%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 20px; }
+
+.lo_que_nos_diferencia .lo_que_nos_diferencia_contenedor img {
+  width: 468px;
+  height: 268px;
+  margin-right: 20px;
+  box-shadow: 0px 0px 5px 3px black; }
+
+.nuestros_valores h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 55px;
+  font-weight: 900;
+  color: black;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-shadow: -2px -2px 3px red; }
+
+.nuestros_valores .nuestros_valores_contenedor {
+  display: flex;
+  justify-content: space-evenly; }
+  .nuestros_valores .nuestros_valores_contenedor div {
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px 3px black;
+    border-radius: 10px;
+    width: 355px;
+    height: 640px;
+    text-align: center;
+    margin: 10px;
+    background-color: #0f0f0f; }
+    .nuestros_valores .nuestros_valores_contenedor div img {
+      width: 350px;
+      height: 250px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      object-fit: cover; }
+    .nuestros_valores .nuestros_valores_contenedor div h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+      text-align: left;
+      margin: 10px 10px 10px 10px;
+      color: white;
+      font-weight: 100;
+      line-height: normal; }
+    .nuestros_valores .nuestros_valores_contenedor div p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white;
+      font-weight: 100;
+      text-align: justify;
+      font-size: 20px;
+      margin: 10px 10px 10px 10px;
+      line-height: normal; }
+
+.revolución_digital h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  margin: 5px 20px 5px 20px;
+  text-shadow: -2px -2px 3px red;
+  line-height: normal;
+  color: black; }
+
+.productos h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 55px;
+  font-weight: 900;
+  margin: 5px 20px 5px 20px;
+  text-shadow: -2px -2px 3px red;
+  color: black; }
+
+.productos .productos_contenedor {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 30px; }
+  .productos .productos_contenedor .tarjetas_de_productos_productos {
+    width: 254px;
+    height: 100%;
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px 3px black;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+    background-color: #0f0f0f;
+    padding-bottom: 15px;
+    line-height: 1.2;
+    transition: 2s; }
+    .productos .productos_contenedor .tarjetas_de_productos_productos:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.75); }
+    .productos .productos_contenedor .tarjetas_de_productos_productos img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover; }
+    .productos .productos_contenedor .tarjetas_de_productos_productos h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+      margin: 10px; }
+    .productos .productos_contenedor .tarjetas_de_productos_productos .productos_descripcion_producto {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      font-weight: 100;
+      color: white;
+      margin: 5px 0px 0px 0px;
+      text-align: left;
+      padding-right: 5px;
+      padding-left: 5px; }
+    .productos .productos_contenedor .tarjetas_de_productos_productos .productos_precio_normal_y_porcentaje_de_descuento_contenedor {
+      display: flex;
+      justify-content: space-around;
+      margin: 5px 0px 0px 0px; }
+      .productos .productos_contenedor .tarjetas_de_productos_productos .productos_precio_normal_y_porcentaje_de_descuento_contenedor .productos_porcentaje_de_descuento {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        padding: 2px;
+        margin: 0; }
+      .productos .productos_contenedor .tarjetas_de_productos_productos .productos_precio_normal_y_porcentaje_de_descuento_contenedor .productos_precio_normal {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        font-weight: 100;
+        color: white;
+        margin: 0; }
+    .productos .productos_contenedor .tarjetas_de_productos_productos .producto_precio_producto_con_transferencia {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: #00c200;
+      margin: 5px 0px 10px 0px;
+      text-align: left;
+      margin: 5px 0px 0px 0px;
+      padding-right: 5px;
+      padding-left: 5px; }
+    .productos .productos_contenedor .tarjetas_de_productos_productos .producto_precio_producto_otros_medios_de_pago {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 12px;
+      font-weight: 100;
+      color: white;
+      margin: 5px 0px 15px 0px;
+      text-align: left;
+      padding-right: 5px;
+      padding-left: 5px; }
+    .productos .productos_contenedor .tarjetas_de_productos_productos a {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 5px;
+      border: solid 2px red;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 10px;
+      transition-duration: 0.5s; }
+      .productos .productos_contenedor .tarjetas_de_productos_productos a:hover {
+        background-color: #00c200;
+        border: 2px solid #075000;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        font-size: 16px;
+        font-weight: 600; }
+
+.servicios h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 55px;
+  font-weight: 900;
+  margin: 5px 20px 5px 20px;
+  text-shadow: -2px -2px 3px red;
+  color: black; }
+
+.servicios .servicios_contenedor {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .servicios .servicios_contenedor div {
+    width: 500px;
+    height: 770px;
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px 3px black;
+    text-align: center;
+    margin: 20px;
+    background-color: #0f0f0f; }
+    .servicios .servicios_contenedor div img {
+      width: 496px;
+      height: 350px;
+      object-fit: cover; }
+    .servicios .servicios_contenedor div h3 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: left;
+      font-size: 20px;
+      font-weight: 900;
+      margin: 10px 10px 10px 10px;
+      color: white; }
+    .servicios .servicios_contenedor div p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+      text-align: justify;
+      margin: 10px 10px 10px 10px;
+      color: white;
+      line-height: normal;
+      font-weight: 100; }
+    .servicios .servicios_contenedor div a {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 5px;
+      border: solid 2px red;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 10px;
+      transition-duration: 0.5s; }
+      .servicios .servicios_contenedor div a:hover {
+        background-color: #00c200;
+        border: 2px solid #075000;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        font-size: 16px;
+        font-weight: 600; }
+
+.formulario h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 55px;
+  font-weight: 900;
+  margin: 5px 20px 5px 20px;
+  text-shadow: -2px -2px 3px red;
+  color: black; }
+
+.formulario .formulario_contenedor {
+  display: flex;
+  justify-content: center; }
+  .formulario .formulario_contenedor form {
+    box-shadow: 0px 0px 5px 3px black;
+    border: 2px solid red;
+    width: 70%;
+    background-color: #0f0f0f;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px; }
+    .formulario .formulario_contenedor form .nombre {
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario_contenedor form .nombre label {
+        margin: 5px 20px 5px 20px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      .formulario .formulario_contenedor form .nombre input {
+        border: 2px solid red;
+        margin: 5px 20px 5px 20px;
+        width: 40%; }
+    .formulario .formulario_contenedor form .apellido {
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario_contenedor form .apellido label {
+        margin: 5px 20px 5px 20px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      .formulario .formulario_contenedor form .apellido input {
+        border: 2px solid red;
+        margin: 5px 20px 5px 20px;
+        width: 40%; }
+    .formulario .formulario_contenedor form .correo {
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario_contenedor form .correo label {
+        margin: 5px 20px 5px 20px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      .formulario .formulario_contenedor form .correo input {
+        border: 2px solid red;
+        margin: 5px 20px 5px 20px;
+        width: 40%; }
+    .formulario .formulario_contenedor form .contraseña {
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario_contenedor form .contraseña label {
+        margin: 5px 20px 5px 20px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      .formulario .formulario_contenedor form .contraseña input {
+        border: 2px solid red;
+        margin: 5px 20px 5px 20px;
+        width: 40%; }
+    .formulario .formulario_contenedor form .genero label {
+      margin: 5px 20px 5px 20px;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    .formulario .formulario_contenedor form .genero div input {
+      margin: 5px 0px 5px 0px; }
+    .formulario .formulario_contenedor form .pais {
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario_contenedor form .pais label {
+        margin: 5px 20px 5px 20px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      .formulario .formulario_contenedor form .pais select {
+        border: 2px solid red;
+        margin: 5px 20px 5px 20px;
+        width: 40%; }
+    .formulario .formulario_contenedor form .motivo {
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario_contenedor form .motivo label {
+        margin: 5px 20px 5px 20px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      .formulario .formulario_contenedor form .motivo select {
+        border: 2px solid red;
+        margin: 5px 20px 5px 20px;
+        width: 40%; }
+    .formulario .formulario_contenedor form .mensaje {
+      display: flex;
+      flex-direction: column; }
+      .formulario .formulario_contenedor form .mensaje label {
+        margin: 5px 20px 5px 20px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif; }
+      .formulario .formulario_contenedor form .mensaje textarea {
+        margin: 5px 20px 5px 20px;
+        border: 2px solid red; }
+    .formulario .formulario_contenedor form .enviar_restablecer {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 10px;
+      align-items: end; }
+      .formulario .formulario_contenedor form .enviar_restablecer input {
+        border: 2px solid red;
+        border-radius: 10px;
+        padding: 5px 5px 5px 5px;
+        background-color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+        color: white;
+        transition-duration: 0.5s; }
+        .formulario .formulario_contenedor form .enviar_restablecer input:hover {
+          background-color: #00c200;
+          border: 2px solid #075000;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: black;
+          font-size: 16px;
+          font-weight: 600; }
+
+.informacion_contacto {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .informacion_contacto iframe {
+    box-shadow: 0px 0px 5px 2px black;
+    border-radius: 10px; }
+  .informacion_contacto .contacto_contenedor h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black; }
+  .informacion_contacto .contacto_contenedor p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: black; }
+  .informacion_contacto .contacto_contenedor h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black; }
+  .informacion_contacto .contacto_contenedor p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: black; }
+
+.experiencia_zerolag {
+  padding: 10px 20px 0px 20px; }
+  .experiencia_zerolag h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 55px;
+    font-weight: 900;
+    color: black;
+    text-shadow: -2px -2px 3px red; }
+  .experiencia_zerolag p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: justify; }
+  .experiencia_zerolag h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 55px;
+    font-weight: 900;
+    color: black;
+    text-shadow: -2px -2px 3px red; }
+
+.grid-galeria-experiencia {
+  width: 100%;
+  padding: 10px 20px 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 250px;
+  gap: 30px; }
+  .grid-galeria-experiencia .grid-item-experiencia {
+    position: relative;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: -2px -2px 20px 5px rgba(0, 0, 0, 0.93);
+    -webkit-box-shadow: -2px -2px 20px 5px rgba(0, 0, 0, 0.93);
+    -moz-box-shadow: -2px -2px 20px 5px rgba(0, 0, 0, 0.93); }
+    .grid-galeria-experiencia .grid-item-experiencia img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px; }
+    .grid-galeria-experiencia .grid-item-experiencia p {
+      position: absolute;
+      bottom: 0;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.658);
+      width: 100%;
+      padding: 5px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 13px;
+      font-weight: 100;
+      font-style: italic;
+      text-align: justify;
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+      margin: 0;
+      line-height: normal; }
+
+.seccion_carrito_de_compra .titulo_carrito_de_compra {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 55px;
+  font-weight: 900;
+  margin: 5px 20px 5px 20px;
+  text-shadow: -2px -2px 3px red;
+  color: black;
+  text-align: center; }
+
+.seccion_carrito_de_compra .contenedor_de_formulario_y_tabla {
+  border: 2px solid red;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto; }
+  .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla form {
+    background-color: #0f0f0f;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; }
+    .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla form div label {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: normal; }
+    .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla form select {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: black;
+      font-weight: 100;
+      font-size: 20px;
+      line-height: normal;
+      width: 85%; }
+    .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla form .btn_agregar_productos {
+      color: white;
+      background-color: black;
+      padding: 5px;
+      border: solid 2px red;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 10px;
+      margin-left: 10px;
+      transition-duration: 0.5s; }
+      .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla form .btn_agregar_productos:hover {
+        background-color: #00c200;
+        border: 2px solid #075000;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        font-size: 16px;
+        font-weight: 600; }
+  .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla table {
+    background-color: #0f0f0f;
+    width: 100%;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+    .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla table thead {
+      text-align: center; }
+    .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla table tfoot {
+      text-align: center; }
+
+.seccion_carrito_de_compra .contenedor_de_boton_comprar_y_vaciar {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .seccion_carrito_de_compra .contenedor_de_boton_comprar_y_vaciar .btn_vaciar_carrito {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border: solid 2px red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    width: 92px; }
+    .seccion_carrito_de_compra .contenedor_de_boton_comprar_y_vaciar .btn_vaciar_carrito:hover {
+      background-color: #00c200;
+      border: 2px solid #075000;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: black;
+      font-size: 16px;
+      font-weight: 600; }
+  .seccion_carrito_de_compra .contenedor_de_boton_comprar_y_vaciar .btn_comprar_productos {
+    color: white;
+    background-color: black;
+    padding: 5px;
+    border: solid 2px red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    width: 92px; }
+    .seccion_carrito_de_compra .contenedor_de_boton_comprar_y_vaciar .btn_comprar_productos:hover {
+      background-color: #00c200;
+      border: 2px solid #075000;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: black;
+      font-size: 16px;
+      font-weight: 600; }
+
+footer {
+  background-color: #0f0f0f;
+  padding-top: 10px; }
+  footer .footer_contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    footer .footer_contenedor .footer_zerolag {
+      margin-left: 15px; }
+      footer .footer_contenedor .footer_zerolag h2 {
+        color: red;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;
+        margin-bottom: 0; }
+      footer .footer_contenedor .footer_zerolag p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        font-size: 12px;
+        margin-bottom: 0; }
+    footer .footer_contenedor .medios_de_pago h3 {
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 15px;
+      font-weight: 100;
+      margin-left: 2px;
+      margin-bottom: 0; }
+    footer .footer_contenedor .medios_de_pago .imagenes_medios_de_pago {
+      display: flex;
+      flex-wrap: wrap; }
+      footer .footer_contenedor .medios_de_pago .imagenes_medios_de_pago img {
+        margin: 2px 4px 2px 4px; }
+    footer .footer_contenedor .redes_sociales {
+      margin-right: 15px;
+      margin-top: 15px; }
+      footer .footer_contenedor .redes_sociales h3 {
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        margin-bottom: 0;
+        font-weight: 100; }
+      footer .footer_contenedor .redes_sociales a img {
+        height: 30px;
+        width: 30px;
+        margin: 2px 2px 2px 2px;
+        border-radius: 10px; }
+  footer .derechos_de_autor {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: black; }
+    footer .derechos_de_autor p {
+      color: white;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      margin-bottom: 0; }
+
+@media screen and (max-width: 1100px) {
+  header .navbar .header_navbar_contenedor .header_contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    header .navbar .header_navbar_contenedor .header_contenedor .barra_de_busqueda {
+      margin: 0px 0px 10px 0px;
+      width: 100%; }
+      header .navbar .header_navbar_contenedor .header_contenedor .barra_de_busqueda .input_buscar {
+        margin: 0; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_inicio .a_inicio {
+    padding: 0px 30px 0px 30px; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_nosotros .a_nosotros {
+    padding: 0px 30px 0px 30px; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_productos .a_productos {
+    padding: 0px 30px 0px 30px; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_servicios .a_servicios {
+    padding: 0px 30px 0px 30px; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_contacto .a_contacto {
+    padding: 0px 30px 0px 30px; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_experiencia .a_experiencia {
+    padding: 0px 30px 0px 30px; }
+  footer .footer_contenedor .medios_de_pago h3 {
+    text-align: center; }
+  footer .footer_contenedor .medios_de_pago .imagenes_medios_de_pago {
+    justify-content: center; } }
+
+@media screen and (max-width: 1025px) {
+  header .navbar .header_navbar_contenedor .header_contenedor .barra_de_busqueda {
+    margin: 0px 0px 10px 0px;
+    width: 95%; } }
+
+@media screen and (max-width: 991px) {
+  header .navbar .header_navbar_contenedor .header_contenedor .boton_navbar_y_logo_navbar_contenedor {
+    width: 100%; }
+    header .navbar .header_navbar_contenedor .header_contenedor .boton_navbar_y_logo_navbar_contenedor .boton_navbar {
+      margin: 0px 10px 10px 0px; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul {
+    padding: 0; }
+    header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_inicio .a_inicio {
+      display: block;
+      width: 100%;
+      padding: 0; }
+    header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_nosotros .a_nosotros {
+      display: block;
+      width: 100%;
+      padding: 0; }
+    header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_productos .a_productos {
+      display: block;
+      width: 100%;
+      padding: 0; }
+    header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_servicios .a_servicios {
+      display: block;
+      width: 100%;
+      padding: 0; }
+    header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_contacto .a_contacto {
+      display: block;
+      width: 100%;
+      padding: 0; }
+    header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_experiencia .a_experiencia {
+      display: block;
+      width: 100%;
+      padding: 0; } }
+
+@media screen and (max-width: 650px) {
+  footer .footer_contenedor .footer_zeroLag h2 {
+    font-size: 30px; }
+  footer .footer_contenedor .footer_zeroLag p {
+    font-size: 12px; }
+  footer .footer_contenedor .medios_de_pago h3 {
+    font-size: 12px; }
+  footer .footer_contenedor .medios_de_pago .imagenes_medios_de_pago .logo_webpay {
+    width: 72px;
+    height: 24px; }
+  footer .footer_contenedor .medios_de_pago .imagenes_medios_de_pago .logo_mercado_libre {
+    width: 73px;
+    height: 24px; }
+  footer .footer_contenedor .medios_de_pago .imagenes_medios_de_pago .logo_santander {
+    width: 133.5px;
+    height: 24px; }
+  footer .footer_contenedor .medios_de_pago .imagenes_medios_de_pago .logo_bancoestado {
+    width: 126px;
+    height: 24px; }
+  footer .footer_contenedor .medios_de_pago .imagenes_medios_de_pago .logo_fpay {
+    width: 58.8px;
+    height: 24px; }
+  footer .footer_contenedor .medios_de_pago .imagenes_medios_de_pago .logo_transferencia_bancaria {
+    width: 103.11px;
+    height: 24px; }
+  footer .footer_contenedor .redes_sociales h3 {
+    font-size: 12px; }
+  footer .derechos_de_autor p {
+    font-size: 10px; } }
+
+@media screen and (max-width: 576px) {
+  header .navbar .header_navbar_contenedor .header_contenedor .boton_navbar_y_logo_navbar_contenedor .logo_navbar {
+    font-size: 30px; }
+  header .navbar .header_navbar_contenedor .header_contenedor .barra_de_busqueda .input_buscar {
+    font-size: 12px; }
+  header .navbar .header_navbar_contenedor .header_contenedor .barra_de_busqueda .boton_buscar {
+    font-size: 12px; }
+    header .navbar .header_navbar_contenedor .header_contenedor .barra_de_busqueda .boton_buscar:hover {
+      font-size: 12px; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_inicio .a_inicio {
+    font-size: 12px; }
+    header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_inicio .a_inicio:hover {
+      font-size: 12px; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_nosotros .a_nosotros {
+    font-size: 12px; }
+    header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_nosotros .a_nosotros:hover {
+      font-size: 12px; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_productos .a_productos {
+    font-size: 12px; }
+    header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_productos .a_productos:hover {
+      font-size: 12px; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_servicios .a_servicios {
+    font-size: 12px; }
+    header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_servicios .a_servicios:hover {
+      font-size: 12px; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_contacto .a_contacto {
+    font-size: 12px; }
+    header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_contacto .a_contacto:hover {
+      font-size: 12px; }
+  header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_experiencia .a_experiencia {
+    font-size: 12px; }
+    header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_experiencia .a_experiencia:hover {
+      font-size: 12px; }
+  .ofertas_imperdibles h2 {
+    font-size: 20px; }
+  .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles h3 {
+    font-size: 12px; }
+  .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles .ofertas_imperdibles_descripcion_producto {
+    font-size: 11px; }
+  .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles .ofertas_imperdibles_precio_normal_y_porcentaje_de_descuento_contenedor .ofertas_imperdibles_porcentaje_de_descuento {
+    font-size: 11px; }
+  .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles .ofertas_imperdibles_precio_normal_y_porcentaje_de_descuento_contenedor .ofertas_imperdibles_precio_normal {
+    font-size: 11px; }
+  .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles .ofertas_imperdibles_precio_producto_con_transferencia {
+    font-size: 14px; }
+  .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles .ofertas_imperdibles_precio_producto_otros_medios_de_pago {
+    font-size: 11px; }
+  .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles a {
+    font-size: 10px; }
+    .ofertas_imperdibles .productos_ofertas_imperdibles .tarjetas_de_producto_ofertas_imperdibles a:hover {
+      font-size: 10px; }
+  .te_puede_interesar h2 {
+    font-size: 20px; }
+  .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar h3 {
+    font-size: 12px; }
+  .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar .te_puede_interesar_descripcion_producto {
+    font-size: 11px; }
+  .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar .te_puede_interesar_precio_normal_y_porcentaje_de_descuento_contenedor .te_puede_interesar_porcentaje_de_descuento {
+    font-size: 11px; }
+  .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar .te_puede_interesar_precio_normal_y_porcentaje_de_descuento_contenedor .te_puede_interesar_precio_normal {
+    font-size: 11px; }
+  .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar .te_puede_interesar_precio_producto_con_transferencia {
+    font-size: 14px; }
+  .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar .te_puede_interesar_precio_producto_otros_medios_de_pago {
+    font-size: 11px; }
+  .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar a {
+    font-size: 10px; }
+    .te_puede_interesar .productos_te_puede_interesar .tarjetas_de_producto_te_puede_interesar a:hover {
+      font-size: 10px; }
+  .conoce_nuestros_servicios h2 {
+    font-size: 20px; }
+  .conoce_nuestros_servicios .conoce_nuestros_servicios_contenedor div {
+    width: 254px;
+    height: 220px; }
+    .conoce_nuestros_servicios .conoce_nuestros_servicios_contenedor div img {
+      width: 250px;
+      height: 141px; }
+    .conoce_nuestros_servicios .conoce_nuestros_servicios_contenedor div h3 {
+      font-size: 12px; }
+    .conoce_nuestros_servicios .conoce_nuestros_servicios_contenedor div a {
+      font-size: 10px; }
+      .conoce_nuestros_servicios .conoce_nuestros_servicios_contenedor div a:hover {
+        font-size: 10px; } }
+
+@media screen and (max-width: 530px) {
+  footer .footer_contenedor {
+    flex-wrap: wrap;
+    justify-content: center; }
+    footer .footer_contenedor .footer_zerolag h2 {
+      text-align: center; }
+    footer .footer_contenedor .footer_zerolag p {
+      text-align: center; }
+    footer .footer_contenedor .medios_de_pago h3 {
+      text-align: center;
+      margin: 10px 0px 0px 0px; }
+    footer .footer_contenedor .medios_de_pago .imagenes_medios_de_pago {
+      justify-content: center; } }
+
+@media screen and (max-width: 1100px) {
+  .quienes_somos {
+    padding: 10px 20px 10px 20px; }
+    .quienes_somos h2 {
+      margin: 0; }
+    .quienes_somos .quienes_somos_contenedor {
+      justify-content: center;
+      flex-wrap: wrap; }
+      .quienes_somos .quienes_somos_contenedor div p {
+        width: 100%;
+        margin: 0; }
+      .quienes_somos .quienes_somos_contenedor img {
+        margin: 10px 0px 0px 0px; }
+  .nuestra_mision {
+    padding: 10px 20px 10px 20px; }
+    .nuestra_mision h2 {
+      margin: 0px; }
+    .nuestra_mision .nuestra_mision_contenedor {
+      flex-wrap: wrap;
+      justify-content: center; }
+      .nuestra_mision .nuestra_mision_contenedor div p {
+        margin: 0px;
+        width: 100%; }
+      .nuestra_mision .nuestra_mision_contenedor img {
+        margin: 10px 0px 0px 0px; }
+  .lo_que_nos_diferencia {
+    padding: 10px 20px 10px 20px; }
+    .lo_que_nos_diferencia h2 {
+      margin: 0px; }
+    .lo_que_nos_diferencia .lo_que_nos_diferencia_contenedor {
+      flex-wrap: wrap;
+      justify-content: center; }
+      .lo_que_nos_diferencia .lo_que_nos_diferencia_contenedor div p {
+        margin: 0px;
+        width: 100%; }
+      .lo_que_nos_diferencia .lo_que_nos_diferencia_contenedor img {
+        margin: 10px 0px 0px 0px; }
+  .nuestros_valores {
+    padding: 10px 20px 10px 20px; }
+    .nuestros_valores h2 {
+      margin: 0px; }
+    .nuestros_valores .nuestros_valores_contenedor {
+      flex-wrap: wrap; }
+  .revolución_digital {
+    padding: 10px 20px 10px 20px; }
+    .revolución_digital h2 {
+      margin: 0; } }
+
+@media screen and (max-width: 576px) {
+  .quienes_somos h2 {
+    font-size: 30px; }
+  .quienes_somos .quienes_somos_contenedor div p {
+    font-size: 14px; }
+  .quienes_somos .quienes_somos_contenedor img {
+    width: 300px;
+    height: 141px; }
+  .nuestra_mision h2 {
+    font-size: 30px; }
+  .nuestra_mision .nuestra_mision_contenedor div p {
+    font-size: 14px; }
+  .nuestra_mision .nuestra_mision_contenedor img {
+    width: 300px;
+    height: 200px; }
+  .lo_que_nos_diferencia h2 {
+    font-size: 30px; }
+  .lo_que_nos_diferencia .lo_que_nos_diferencia_contenedor div p {
+    font-size: 14px; }
+  .lo_que_nos_diferencia .lo_que_nos_diferencia_contenedor img {
+    width: 300px;
+    height: 200px; }
+  .nuestros_valores h2 {
+    font-size: 30px; }
+  .nuestros_valores .nuestros_valores_contenedor div {
+    width: 304px;
+    height: auto; }
+    .nuestros_valores .nuestros_valores_contenedor div img {
+      width: 300px;
+      height: 200px; }
+    .nuestros_valores .nuestros_valores_contenedor div h3 {
+      font-size: 14px; }
+    .nuestros_valores .nuestros_valores_contenedor div p {
+      font-size: 14px; }
+  .revolución_digital h2 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 1100px) {
+  .productos {
+    padding: 10px 20px 10px 20px; }
+    .productos h2 {
+      margin: 0; } }
+
+@media screen and (max-width: 576px) {
+  .productos h2 {
+    font-size: 30px; }
+  .productos .productos_contenedor .tarjetas_de_productos_productos h3 {
+    font-size: 12px; }
+  .productos .productos_contenedor .tarjetas_de_productos_productos .productos_descripcion_producto {
+    font-size: 11px; }
+  .productos .productos_contenedor .tarjetas_de_productos_productos .productos_precio_normal_y_porcentaje_de_descuento_contenedor .productos_porcentaje_de_descuento {
+    font-size: 11px; }
+  .productos .productos_contenedor .tarjetas_de_productos_productos .productos_precio_normal_y_porcentaje_de_descuento_contenedor .productos_precio_normal {
+    font-size: 11px; }
+  .productos .productos_contenedor .tarjetas_de_productos_productos .producto_precio_producto_con_transferencia {
+    font-size: 14px; }
+  .productos .productos_contenedor .tarjetas_de_productos_productos .producto_precio_producto_otros_medios_de_pago {
+    font-size: 11px; }
+  .productos .productos_contenedor .tarjetas_de_productos_productos a {
+    font-size: 10px; }
+    .productos .productos_contenedor .tarjetas_de_productos_productos a:hover {
+      font-size: 10px; } }
+
+@media screen and (max-width: 1100px) {
+  .servicios {
+    padding: 10px 20px 10px 20px; }
+    .servicios h2 {
+      margin: 0; } }
+
+@media screen and (max-width: 576px) {
+  .servicios h2 {
+    font-size: 30px; }
+  .servicios .servicios_contenedor div {
+    width: 254px;
+    height: 560px; }
+    .servicios .servicios_contenedor div img {
+      width: 250px;
+      height: 141px; }
+    .servicios .servicios_contenedor div h3 {
+      font-size: 14px; }
+    .servicios .servicios_contenedor div p {
+      font-size: 14px; }
+    .servicios .servicios_contenedor div a {
+      font-size: 14px; }
+      .servicios .servicios_contenedor div a:hover {
+        font-size: 14px; } }
+
+@media screen and (max-width: 1100px) {
+  .formulario {
+    padding: 10px 0px 0px 0px; }
+    .formulario h2 {
+      margin: 0px 0px 0px 20px; }
+    .formulario .formulario_contenedor form .nombre input {
+      width: 50%; }
+    .formulario .formulario_contenedor form .apellido input {
+      width: 50%; }
+    .formulario .formulario_contenedor form .correo input {
+      width: 50%; }
+    .formulario .formulario_contenedor form .contraseña input {
+      width: 50%; }
+  .informacion_contacto {
+    padding: 10px 20px 10px 20px; }
+    .informacion_contacto .contacto_contenedor {
+      margin-right: 10px; } }
+
+@media screen and (max-width: 810px) {
+  .informacion_contacto .contacto_contenedor {
+    margin-top: 10px;
+    text-align: center; } }
+
+@media screen and (max-width: 800px) {
+  .formulario .formulario_contenedor form .nombre input {
+    width: 65%; }
+  .formulario .formulario_contenedor form .apellido input {
+    width: 65%; }
+  .formulario .formulario_contenedor form .correo input {
+    width: 65%; }
+  .formulario .formulario_contenedor form .contraseña input {
+    width: 65%; } }
+
+@media screen and (max-width: 576px) {
+  .formulario h2 {
+    font-size: 30px; }
+  .formulario .formulario_contenedor form .nombre label {
+    font-size: 14px; }
+  .formulario .formulario_contenedor form .nombre input {
+    font-size: 14px;
+    width: 90%; }
+  .formulario .formulario_contenedor form .apellido label {
+    font-size: 14px; }
+  .formulario .formulario_contenedor form .apellido input {
+    font-size: 14px;
+    width: 90%; }
+  .formulario .formulario_contenedor form .correo label {
+    font-size: 14px; }
+  .formulario .formulario_contenedor form .correo input {
+    font-size: 14px;
+    width: 90%; }
+  .formulario .formulario_contenedor form .contraseña label {
+    font-size: 14px; }
+  .formulario .formulario_contenedor form .contraseña input {
+    font-size: 14px;
+    width: 90%; }
+  .formulario .formulario_contenedor form .genero label {
+    font-size: 14px; }
+  .formulario .formulario_contenedor form .pais label {
+    font-size: 14px; }
+  .formulario .formulario_contenedor form .pais select {
+    font-size: 14px; }
+  .formulario .formulario_contenedor form .motivo label {
+    font-size: 14px; }
+  .formulario .formulario_contenedor form .motivo select {
+    font-size: 14px; }
+  .formulario .formulario_contenedor form .mensaje label {
+    font-size: 14px; }
+  .formulario .formulario_contenedor form .mensaje textarea {
+    font-size: 14px; }
+  .formulario .formulario_contenedor form .enviar_restablecer input {
+    font-size: 14px; }
+    .formulario .formulario_contenedor form .enviar_restablecer input:hover {
+      font-size: 14px; }
+  .informacion_contacto .contacto_contenedor h2 {
+    font-size: 16px; }
+  .informacion_contacto .contacto_contenedor p {
+    font-size: 14px; }
+  .informacion_contacto .contacto_contenedor h2 {
+    font-size: 16px; }
+  .informacion_contacto .contacto_contenedor p {
+    font-size: 14px; } }
+
+@media screen and (max-width: 500px) {
+  .formulario .formulario_contenedor form {
+    width: 80%; } }
+
+@media screen and (max-width: 400px) {
+  .formulario .formulario_contenedor form {
+    width: 90%; } }
+
+@media screen and (max-width: 370px) {
+  .formulario .formulario_contenedor form {
+    width: 95%; } }
+
+@media screen and (max-width: 1100px) {
+  .grid-galeria-experiencia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+    gap: 30px; } }
+
+@media screen and (max-width: 690px) {
+  .grid-item-experiencia p {
+    font-size: 11px; } }
+
+@media screen and (max-width: 650px) {
+  .grid-galeria-experiencia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 250px;
+    gap: 30px; } }
+
+@media screen and (max-width: 576px) {
+  .experiencia_zerolag h2 {
+    font-size: 30px; }
+  .experiencia_zerolag p {
+    font-size: 14px; }
+  .experiencia_zerolag h2 {
+    font-size: 30px; } }
