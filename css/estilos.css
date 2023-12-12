@@ -71,6 +71,61 @@ header {
               color: black;
               font-size: 16px;
               font-weight: 600; }
+        header .navbar .header_navbar_contenedor .header_contenedor div .carrito {
+          width: 35px;
+          margin-top: 18px; }
+        header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos {
+          position: absolute;
+          top: 82px;
+          right: -18px;
+          background-color: #fff;
+          padding: 0 18px;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
+          display: none;
+          min-width: 290px; }
+          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .btn_cerrar {
+            top: -4px;
+            right: 6px;
+            cursor: pointer;
+            color: #000; }
+          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos h3 {
+            margin-bottom: 0; }
+          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .card_items {
+            display: flex;
+            align-items: center;
+            border-bottom: solid 2px red; }
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .card_items .item {
+              display: flex;
+              align-items: center;
+              border-bottom: solid 2px red; }
+              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .card_items .item img {
+                width: 115px; }
+              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .card_items .item .contenido_del_producto {
+                margin: 0 19px;
+                width: 201px; }
+                header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .card_items .item .contenido_del_producto .nombre_del_producto {
+                  margin: 0;
+                  font-size: 15px;
+                  font-weight: 400;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+                header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .card_items .item .contenido_del_producto .precio {
+                  margin: 0;
+                  font-size: 15px;
+                  font-weight: 400;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  font-weight: 700; }
+                header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .card_items .item .contenido_del_producto .cantidad {
+                  margin: 0;
+                  font-size: 13px;
+                  font-weight: 400;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .card_items .item .eliminar_producto {
+                background-color: red;
+                padding: 0px 5px;
+                border-radius: 50%;
+                color: #fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                cursor: pointer; }
       header .navbar .header_navbar_contenedor .navbar_contenedor ul {
         padding: 0; }
         header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_inicio .a_inicio {

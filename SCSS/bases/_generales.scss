@@ -35,7 +35,7 @@ header {
                     .boton_navbar {
                         background-color: red;
                         margin: 0px 10px 0px 0px;
-                        
+
                         span {}
                     }
 
@@ -95,6 +95,91 @@ header {
                             font-size: 16px;
                             font-weight: 600;
                         }
+                    }
+                }
+
+                div {
+                    .carrito {
+                        width: 35px;
+                        margin-top: 18px;
+                    }
+                }
+
+                .carrito_de_productos {
+                    position: absolute;
+                    top: 82px;
+                    right: -18px;
+                    background-color: #fff;
+                    padding: 0 18px;
+                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
+                    display: none;
+                    min-width: 290px;
+
+                    .btn_cerrar {
+                        top: -4px;
+                        right: 6px;
+                        cursor: pointer;
+                        color: #000;
+                    }
+
+                    h3 {
+                        margin-bottom: 0;
+                    }
+
+                    .card_items {
+                        display: flex;
+                        align-items: center;
+                        border-bottom: solid 2px red;
+
+                        .item {
+                            display: flex;
+                            align-items: center;
+                            border-bottom: solid 2px red;
+
+                            img {
+                                width: 115px;
+                            }
+
+                            .contenido_del_producto {
+                                margin: 0 19px;
+                                width: 201px;
+
+                                .nombre_del_producto {
+                                    margin: 0;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                }
+
+                                .precio {
+                                    margin: 0;
+                                    font-size: 15px;
+                                    font-weight: 400;
+                                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                    font-weight: 700;
+                                }
+
+                                .cantidad {
+                                    margin: 0;
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                }
+                            }
+
+                            .eliminar_producto {
+                                background-color: red;
+                                padding: 0px 5px;
+                                border-radius: 50%;
+                                color: #fff;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                    h2 {
+                        .precio_total {}
                     }
                 }
             }
