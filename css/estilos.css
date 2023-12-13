@@ -10,8 +10,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Black Ops One', cursiva;
-  font-family: 'Exo 2', sans-serif; }
+  font-family: "Black Ops One", cursiva;
+  font-family: "Exo 2", sans-serif; }
 
 header {
   background-color: #0f0f0f; }
@@ -32,7 +32,7 @@ header {
         header .navbar .header_navbar_contenedor .header_contenedor .boton_navbar_y_logo_navbar_contenedor .logo_navbar {
           margin: 0;
           padding: 0;
-          font-family: 'Courier New', Courier, monospace;
+          font-family: "Courier New", Courier, monospace;
           font-size: 60px;
           font-weight: 900;
           color: red;
@@ -71,31 +71,60 @@ header {
               color: black;
               font-size: 16px;
               font-weight: 600; }
-        header .navbar .header_navbar_contenedor .header_contenedor div .carrito {
-          width: 35px;
-          margin-top: 18px; }
+        header .navbar .header_navbar_contenedor .header_contenedor div {
+          position: relative; }
+          header .navbar .header_navbar_contenedor .header_contenedor div .carrito {
+            width: 35px;
+            margin-top: 18px; }
+          header .navbar .header_navbar_contenedor .header_contenedor div .contador_de_productos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            padding: 2px;
+            font-size: 14px;
+            font-weight: bold;
+            color: red;
+            border-radius: 100%;
+            top: 10px;
+            right: -12px; }
         header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos {
           position: absolute;
           top: 82px;
-          right: -18px;
+          right: 10px;
           background-color: #fff;
           padding: 0 18px;
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
           display: none;
-          min-width: 290px; }
-          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .btn_cerrar {
+          min-width: 290px;
+          z-index: 100; }
+          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .btn-cerrar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             top: -4px;
             right: 6px;
+            color: white;
             cursor: pointer;
-            color: #000; }
+            background-color: red;
+            border-radius: 100%;
+            padding: 4px;
+            width: 20px;
+            height: 20px;
+            margin: 5px 95%; }
           header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos h3 {
             margin-bottom: 0; }
           header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .card_items {
             display: flex;
+            flex-direction: column;
             align-items: center;
             border-bottom: solid 2px red; }
             header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .card_items .item {
               display: flex;
+              padding: 10px;
               align-items: center;
               border-bottom: solid 2px red; }
               header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .card_items .item img {

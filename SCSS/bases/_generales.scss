@@ -1,346 +1,379 @@
-@import url('https://fonts.googleapis.com/css2? family= Black+Ops+One & family= Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600; 0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & familia = Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0 ,700;0,800;0,900; 1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap');
+@import url("https://fonts.googleapis.com/css2? family= Black+Ops+One & family= Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600; 0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & familia = Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0 ,700;0,800;0,900; 1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap");
 
 //-----RESET-----
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 //-----BODY-----
 body {
-    font-family: 'Black Ops One', cursiva;
-    font-family: 'Exo 2', sans-serif;
+  font-family: "Black Ops One", cursiva;
+  font-family: "Exo 2", sans-serif;
 }
 
 //-----HEADER BOOTSTRAP-----
 header {
-    background-color: #0f0f0f;
+  background-color: #0f0f0f;
 
-    .navbar {
-        padding: 0px 0px 10px 0px;
-        line-height: normal;
+  .navbar {
+    padding: 0px 0px 10px 0px;
+    line-height: normal;
 
-        .header_navbar_contenedor {
+    .header_navbar_contenedor {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-left: 20px;
+      margin-right: 20px;
+
+      .header_contenedor {
+        display: flex;
+
+        .boton_navbar_y_logo_navbar_contenedor {
+          .boton_navbar {
+            background-color: red;
+            margin: 0px 10px 0px 0px;
+
+            span {
+            }
+          }
+
+          .logo_navbar {
+            margin: 0;
+            padding: 0;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 60px;
+            font-weight: 900;
+            color: red;
+            transition-duration: 0.5s;
+
+            &:hover {
+              color: red;
+              text-shadow: -2px -2px 3px red;
+            }
+
+            span {
+              color: white;
+            }
+          }
+        }
+
+        .barra_de_busqueda {
+          margin: 0;
+          padding: 0;
+          margin-left: 15px;
+
+          .input_buscar {
+            border: solid 2px red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            padding: 5px;
+            transition-duration: 0.5s;
+
+            &:hover {
+              border: 3px solid rgb(0, 194, 0);
+            }
+          }
+
+          .boton_buscar {
+            padding: 6px;
+            border-radius: 10px;
+            border: solid 2px red;
+            background-color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            transition-duration: 0.5s;
+
+            &:hover {
+              border: 2px solid rgb(7, 80, 0);
+              background-color: rgb(0, 194, 0);
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: black;
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+
+        div {
+          position: relative;
+
+          .carrito {
+            width: 35px;
+            margin-top: 18px;
+          }
+
+          .contador_de_productos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            padding: 2px;
+            font-size: 14px;
+            font-weight: bold;
+            color: red;
+            border-radius: 100%;
+            top: 10px;
+            right: -12px;
+          }
+        }
+
+        .carrito_de_productos {
+          position: absolute;
+          top: 82px;
+          right: 10px;
+          background-color: #fff;
+          padding: 0 18px;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
+          display: none;
+          min-width: 290px;
+          z-index: 100;
+
+          .btn-cerrar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -4px;
+            right: 6px;
+            color: white;
+            cursor: pointer;
+            background-color: red;
+            border-radius: 100%;
+            padding: 4px;
+            width: 20px;
+            height: 20px;
+            margin: 5px 95%;
+          }
+
+          h3 {
+            margin-bottom: 0;
+          }
+
+          .card_items {
             display: flex;
             flex-direction: column;
-            width: 100%;
-            margin-left: 20px;
-            margin-right: 20px;
+            align-items: center;
+            border-bottom: solid 2px red;
 
-            .header_contenedor {
-                display: flex;
+            .item {
+              display: flex;
+              padding: 10px;
+              align-items: center;
+              border-bottom: solid 2px red;
 
-                .boton_navbar_y_logo_navbar_contenedor {
-                    .boton_navbar {
-                        background-color: red;
-                        margin: 0px 10px 0px 0px;
+              img {
+                width: 115px;
+              }
 
-                        span {}
-                    }
+              .contenido_del_producto {
+                margin: 0 19px;
+                width: 201px;
 
-                    .logo_navbar {
-                        margin: 0;
-                        padding: 0;
-                        font-family: 'Courier New', Courier, monospace;
-                        font-size: 60px;
-                        font-weight: 900;
-                        color: red;
-                        transition-duration: 0.5s;
-
-                        &:hover {
-                            color: red;
-                            text-shadow: -2px -2px 3px red;
-                        }
-
-                        span {
-                            color: white;
-                        }
-                    }
+                .nombre_del_producto {
+                  margin: 0;
+                  font-size: 15px;
+                  font-weight: 400;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
                 }
 
-                .barra_de_busqueda {
-                    margin: 0;
-                    padding: 0;
-                    margin-left: 15px;
-
-                    .input_buscar {
-                        border: solid 2px red;
-                        font-family: Verdana, Geneva, Tahoma, sans-serif;
-                        margin: 0;
-                        padding: 5px;
-                        transition-duration: 0.5s;
-
-                        &:hover {
-                            border: 3px solid rgb(0, 194, 0)
-                        }
-                    }
-
-                    .boton_buscar {
-                        padding: 6px;
-                        border-radius: 10px;
-                        border: solid 2px red;
-                        background-color: black;
-                        font-family: Verdana, Geneva, Tahoma, sans-serif;
-                        color: white;
-                        font-size: 16px;
-                        font-weight: 600;
-                        transition-duration: 0.5s;
-
-                        &:hover {
-                            border: 2px solid rgb(7, 80, 0);
-                            background-color: rgb(0, 194, 0);
-                            font-family: Verdana, Geneva, Tahoma, sans-serif;
-                            color: black;
-                            font-size: 16px;
-                            font-weight: 600;
-                        }
-                    }
+                .precio {
+                  margin: 0;
+                  font-size: 15px;
+                  font-weight: 400;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  font-weight: 700;
                 }
 
-                div {
-                    .carrito {
-                        width: 35px;
-                        margin-top: 18px;
-                    }
+                .cantidad {
+                  margin: 0;
+                  font-size: 13px;
+                  font-weight: 400;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
                 }
+              }
 
-                .carrito_de_productos {
-                    position: absolute;
-                    top: 82px;
-                    right: -18px;
-                    background-color: #fff;
-                    padding: 0 18px;
-                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
-                    display: none;
-                    min-width: 290px;
-
-                    .btn_cerrar {
-                        top: -4px;
-                        right: 6px;
-                        cursor: pointer;
-                        color: #000;
-                    }
-
-                    h3 {
-                        margin-bottom: 0;
-                    }
-
-                    .card_items {
-                        display: flex;
-                        align-items: center;
-                        border-bottom: solid 2px red;
-
-                        .item {
-                            display: flex;
-                            align-items: center;
-                            border-bottom: solid 2px red;
-
-                            img {
-                                width: 115px;
-                            }
-
-                            .contenido_del_producto {
-                                margin: 0 19px;
-                                width: 201px;
-
-                                .nombre_del_producto {
-                                    margin: 0;
-                                    font-size: 15px;
-                                    font-weight: 400;
-                                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                }
-
-                                .precio {
-                                    margin: 0;
-                                    font-size: 15px;
-                                    font-weight: 400;
-                                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                    font-weight: 700;
-                                }
-
-                                .cantidad {
-                                    margin: 0;
-                                    font-size: 13px;
-                                    font-weight: 400;
-                                    font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                }
-                            }
-
-                            .eliminar_producto {
-                                background-color: red;
-                                padding: 0px 5px;
-                                border-radius: 50%;
-                                color: #fff;
-                                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                cursor: pointer;
-                            }
-                        }
-                    }
-
-                    h2 {
-                        .precio_total {}
-                    }
-                }
+              .eliminar_producto {
+                background-color: red;
+                padding: 0px 5px;
+                border-radius: 50%;
+                color: #fff;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                cursor: pointer;
+              }
             }
+          }
 
-            .navbar_contenedor {
-                ul {
-                    padding: 0;
-
-                    .li_inicio {
-                        .a_inicio {
-                            text-decoration: none;
-                            font-family: Verdana, Geneva, Tahoma, sans-serif;
-                            color: white;
-                            font-size: 16px;
-                            font-weight: 600;
-                            padding: 0px 60px 0px 60px;
-                            background-color: black;
-                            border: solid 2px red;
-                            border-radius: 10px;
-                            text-align: center;
-                            transition-duration: 0.5s;
-
-                            &:hover {
-                                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                color: black;
-                                font-size: 16px;
-                                font-weight: 600;
-                                background-color: rgb(0, 194, 0);
-                                border: 2px solid rgb(7, 80, 0);
-                            }
-                        }
-                    }
-
-                    .li_nosotros {
-                        .a_nosotros {
-                            text-decoration: none;
-                            font-family: Verdana, Geneva, Tahoma, sans-serif;
-                            color: white;
-                            font-size: 16px;
-                            font-weight: 600;
-                            padding: 0px 60px 0px 60px;
-                            background-color: black;
-                            border: solid 2px red;
-                            border-radius: 10px;
-                            text-align: center;
-                            transition-duration: 0.5s;
-
-                            &:hover {
-                                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                color: black;
-                                font-size: 16px;
-                                font-weight: 600;
-                                background-color: rgb(0, 194, 0);
-                                border: 2px solid rgb(7, 80, 0);
-                            }
-                        }
-                    }
-
-                    .li_productos {
-                        .a_productos {
-                            text-decoration: none;
-                            font-family: Verdana, Geneva, Tahoma, sans-serif;
-                            color: white;
-                            font-size: 16px;
-                            font-weight: 600;
-                            padding: 0px 60px 0px 60px;
-                            background-color: black;
-                            border: solid 2px red;
-                            border-radius: 10px;
-                            text-align: center;
-                            transition-duration: 0.5s;
-
-                            &:hover {
-                                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                color: black;
-                                font-size: 16px;
-                                font-weight: 600;
-                                background-color: rgb(0, 194, 0);
-                                border: 2px solid rgb(7, 80, 0);
-                            }
-                        }
-                    }
-
-                    .li_servicios {
-                        .a_servicios {
-                            text-decoration: none;
-                            font-family: Verdana, Geneva, Tahoma, sans-serif;
-                            color: white;
-                            font-size: 16px;
-                            font-weight: 600;
-                            padding: 0px 60px 0px 60px;
-                            background-color: black;
-                            border: solid 2px red;
-                            border-radius: 10px;
-                            text-align: center;
-                            transition-duration: 0.5s;
-
-                            &:hover {
-                                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                color: black;
-                                font-size: 16px;
-                                font-weight: 600;
-                                background-color: rgb(0, 194, 0);
-                                border: 2px solid rgb(7, 80, 0);
-                            }
-                        }
-                    }
-
-                    .li_contacto {
-                        .a_contacto {
-                            text-decoration: none;
-                            font-family: Verdana, Geneva, Tahoma, sans-serif;
-                            color: white;
-                            font-size: 16px;
-                            font-weight: 600;
-                            padding: 0px 60px 0px 60px;
-                            background-color: black;
-                            border: solid 2px red;
-                            border-radius: 10px;
-                            text-align: center;
-                            transition-duration: 0.5s;
-
-                            &:hover {
-                                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                color: black;
-                                font-size: 16px;
-                                font-weight: 600;
-                                background-color: rgb(0, 194, 0);
-                                border: 2px solid rgb(7, 80, 0);
-                            }
-                        }
-                    }
-
-                    .li_experiencia {
-                        .a_experiencia {
-                            text-decoration: none;
-                            font-family: Verdana, Geneva, Tahoma, sans-serif;
-                            color: white;
-                            font-size: 16px;
-                            font-weight: 600;
-                            padding: 0px 60px 0px 60px;
-                            background-color: black;
-                            border: solid 2px red;
-                            border-radius: 10px;
-                            text-align: center;
-                            transition-duration: 0.5s;
-
-                            &:hover {
-                                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                                color: black;
-                                font-size: 16px;
-                                font-weight: 600;
-                                background-color: rgb(0, 194, 0);
-                                border: 2px solid rgb(7, 80, 0);
-                            }
-                        }
-                    }
-                }
+          h2 {
+            .precio_total {
             }
+          }
         }
+      }
+
+      .navbar_contenedor {
+        ul {
+          padding: 0;
+
+          .li_inicio {
+            .a_inicio {
+              text-decoration: none;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              font-size: 16px;
+              font-weight: 600;
+              padding: 0px 60px 0px 60px;
+              background-color: black;
+              border: solid 2px red;
+              border-radius: 10px;
+              text-align: center;
+              transition-duration: 0.5s;
+
+              &:hover {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: black;
+                font-size: 16px;
+                font-weight: 600;
+                background-color: rgb(0, 194, 0);
+                border: 2px solid rgb(7, 80, 0);
+              }
+            }
+          }
+
+          .li_nosotros {
+            .a_nosotros {
+              text-decoration: none;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              font-size: 16px;
+              font-weight: 600;
+              padding: 0px 60px 0px 60px;
+              background-color: black;
+              border: solid 2px red;
+              border-radius: 10px;
+              text-align: center;
+              transition-duration: 0.5s;
+
+              &:hover {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: black;
+                font-size: 16px;
+                font-weight: 600;
+                background-color: rgb(0, 194, 0);
+                border: 2px solid rgb(7, 80, 0);
+              }
+            }
+          }
+
+          .li_productos {
+            .a_productos {
+              text-decoration: none;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              font-size: 16px;
+              font-weight: 600;
+              padding: 0px 60px 0px 60px;
+              background-color: black;
+              border: solid 2px red;
+              border-radius: 10px;
+              text-align: center;
+              transition-duration: 0.5s;
+
+              &:hover {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: black;
+                font-size: 16px;
+                font-weight: 600;
+                background-color: rgb(0, 194, 0);
+                border: 2px solid rgb(7, 80, 0);
+              }
+            }
+          }
+
+          .li_servicios {
+            .a_servicios {
+              text-decoration: none;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              font-size: 16px;
+              font-weight: 600;
+              padding: 0px 60px 0px 60px;
+              background-color: black;
+              border: solid 2px red;
+              border-radius: 10px;
+              text-align: center;
+              transition-duration: 0.5s;
+
+              &:hover {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: black;
+                font-size: 16px;
+                font-weight: 600;
+                background-color: rgb(0, 194, 0);
+                border: 2px solid rgb(7, 80, 0);
+              }
+            }
+          }
+
+          .li_contacto {
+            .a_contacto {
+              text-decoration: none;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              font-size: 16px;
+              font-weight: 600;
+              padding: 0px 60px 0px 60px;
+              background-color: black;
+              border: solid 2px red;
+              border-radius: 10px;
+              text-align: center;
+              transition-duration: 0.5s;
+
+              &:hover {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: black;
+                font-size: 16px;
+                font-weight: 600;
+                background-color: rgb(0, 194, 0);
+                border: 2px solid rgb(7, 80, 0);
+              }
+            }
+          }
+
+          .li_experiencia {
+            .a_experiencia {
+              text-decoration: none;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              font-size: 16px;
+              font-weight: 600;
+              padding: 0px 60px 0px 60px;
+              background-color: black;
+              border: solid 2px red;
+              border-radius: 10px;
+              text-align: center;
+              transition-duration: 0.5s;
+
+              &:hover {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: black;
+                font-size: 16px;
+                font-weight: 600;
+                background-color: rgb(0, 194, 0);
+                border: 2px solid rgb(7, 80, 0);
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 
 //NOTA PARA EL EVALUADOR: tube que agregar clases a cada etiqueta <a>, por el hover, ya que al aplicar el hover a la etiqueta <a> unicamente, es decir, sin ninguna clase, al momento de que el usuario se posicionaba en cualquier enlace de la barra de navegación, se pintabán todas las etiquetas <a> al mismo tiempo, entonces tuve que aumentar la especificidad en este caso.

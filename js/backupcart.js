@@ -13,7 +13,7 @@ const btnCerrarCarrito = document.querySelector('.btn-cerrar');
 iconoCarrito.addEventListener('click', mostrarCarrito);
 
 function mostrarCarrito() {
-    const elementoCarrito = document.getElementById("carritoDeProductosId");
+    const elementoCarrito = document.getElementById("carritoDeProductosId"); 
     elementoCarrito.style.display = "block";
 }
 
@@ -44,47 +44,32 @@ function añadirProducto(e) {
     if (e.target.classList.contains('btn_añadir_al_carrito')) {
         const selecionProducto = e.target.parentElement;
         obtenerInformacionDelProducto(selecionProducto);
-        actualizarCarrito()
     }
 }
 
 //FUNCION PARA ELIMINAR PRODUCTOS
-contenedorCarritoDeCompra.addEventListener('click', (e) => {
-    if (e.target.classList.contains('eliminar_producto')) {
-        const eliminarId = e.target.dataset.id;
-        carritoDeCompra = carritoDeCompra.filter((producto) => producto.id !== eliminarId);
-        actualizarCarrito();
-    }
-})
-
-//FUNCION PARA ACTUALIZAR EL CARRITO
-function actualizarCarrito() {
-    limpiarHtml();
+function eliminarProducto(eliminarId) {
 
     carritoDeCompra.forEach((producto) => {
-        const { imagen, descripcion, precioNormal, cantidad } = producto;
-        const row = document.createElement('div');
-        row.classList.add('item');
-
-        row.innerHTML = `
-            <img src="${imagen}" alt="">
-            <div class="contenido_del_producto">
-                <h5 class"nombre_del_producto">${descripcion}</h5>
-                <h5 class="precio">$${precioNormal}</h5>
-                <h6 class="cantidad">${cantidad}</h6>
-            <div>
-            <span class="eliminar_producto" data-id="${producto.id}">X</span>
-        `;
-
-        contenedorCarritoDeCompra.appendChild(row);
+        if (producto.id == eliminarId) {
+            let reducirPrecio = parseInt(producto.precioNormal) * parseInt(producto.cantidad);
+            totalCarrito = totalCarrito - reducirPrecio;
+        }
     });
 
-    totalCarrito = carritoDeCompra.reduce((total, producto) => total + parseInt(producto.precioNormal) * producto.cantidad, 0);
-    contadorDeProducto = carritoDeCompra.reduce((contador, producto) => contador + producto.cantidad, 0);
+    carritoDeCompra = carritoDeCompra.filter((producto) => producto.id !== eliminarId);
 
-    precioTotal.innerHTML = totalCarrito;
-    cantidadDeProducto.innerHTML = contadorDeProducto;
+    contadorDeProducto--;
 
+    if (carritoDeCompra.length === 0) {
+        precioTotal.innerHTML = 0;
+        cantidadDeProducto.innerHTML = 0;
+
+    }
+
+    cargarHtml();
+
+    //ALMACENAR EN EL LOCALSTORAGE
     guardarCarritoEnLocalStorage();
 }
 
@@ -121,10 +106,9 @@ function obtenerInformacionDelProducto(producto) {
 
     //ALMACENAR CARRITO EN EL LOCALSTORAGE
     guardarCarritoEnLocalStorage();
-    actualizarCarrito();
 }
 
-//CARGAR EL CONTENIDO EN EL HTML
+// //CARGAR EL CONTENIDO EN EL HTML
 function cargarHtml() {
     limpiarHtml();
     carritoDeCompra.forEach(producto => {
@@ -166,8 +150,6 @@ function cargarCarritoDesdeLocalStorage() {
     carritoDeCompra = JSON.parse(localStorage.getItem('carritoDeCompra')) || [];
     totalCarrito = JSON.parse(localStorage.getItem('totalCarrito')) || 0;
     contadorDeProducto = JSON.parse(localStorage.getItem('contadorDeProducto')) || 0;
-
-    actualizarCarrito()
 }
 
 //ESCUCHAR EL EVENTO 'DOMContentLoaded' Y CARGAR LA INFORMACION DEL CARRITO DESDE EL LOCALSTORAGE
