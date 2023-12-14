@@ -96,82 +96,83 @@ header {
           top: 82px;
           right: 10px;
           background-color: #fff;
-          padding: 0 18px;
+          padding: 0 10px;
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
           display: none;
           min-width: 290px;
-          z-index: 100; }
-          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .btn_cerrar_carrito {
+          z-index: 100;
+          border: 2px solid red;
+          border-radius: 10px;
+          line-height: normal; }
+          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_btn_cerrar_carrito_y_titulo_mi_carrito_h3 {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            top: -4px;
-            right: 6px;
-            color: white;
-            cursor: pointer;
-            background-color: red;
-            border-radius: 100%;
-            padding: 4px;
-            width: 20px;
-            height: 20px; }
-          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos h3 {
-            margin: 0;
-            text-align: center;
-            margin: 0;
-            line-height: normal;
-            font-size: 25px;
-            font-weight: 600;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #0f0f0f; }
-          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos {
-            display: flex;
-            flex-direction: column;
-            align-items: center; }
-            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item {
+            justify-content: space-between;
+            border-bottom: 2px solid red;
+            padding: 5px 0; }
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_btn_cerrar_carrito_y_titulo_mi_carrito_h3 .titulo_mi_carrito_h3 {
+              margin: 0;
+              text-align: center;
+              margin: 0;
+              line-height: normal;
+              font-size: 20px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: #0f0f0f; }
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_btn_cerrar_carrito_y_titulo_mi_carrito_h3 .btn_cerrar_carrito {
               display: flex;
-              padding: 10px;
+              justify-content: center;
               align-items: center;
-              border-bottom: solid 2px red; }
-              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item img {
-                width: 115px; }
-              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto {
+              color: white;
+              cursor: pointer;
+              background-color: red;
+              border-radius: 100%;
+              padding: 4px;
+              width: 20px;
+              height: 20px; }
+          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            border-bottom: solid 2px red; }
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item img {
+              width: 115px;
+              padding: 5px; }
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto {
+              margin: 0;
+              width: 200px;
+              padding: 5px; }
+              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto .nombre_del_producto {
                 margin: 0;
-                width: 200px; }
-                header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto .nombre_del_producto {
-                  margin: 0;
-                  line-height: normal;
-                  font-size: 15px;
-                  font-weight: 400;
-                  font-family: Verdana, Geneva, Tahoma, sans-serif;
-                  color: #0f0f0f;
-                  text-align: justify; }
-                header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto .precio {
-                  margin: 0;
-                  margin-top: 5px;
-                  line-height: normal;
-                  font-size: 15px;
-                  font-weight: 600;
-                  font-family: Verdana, Geneva, Tahoma, sans-serif;
-                  color: #0f0f0f;
-                  text-align: right; }
-                header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto .cantidad {
-                  margin: 0;
-                  margin-top: 5px;
-                  line-height: normal;
-                  font-size: 15px;
-                  font-weight: 600;
-                  font-family: Verdana, Geneva, Tahoma, sans-serif;
-                  color: #0f0f0f;
-                  text-align: right; }
-              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .eliminar_producto {
-                color: #fff;
+                line-height: normal;
+                font-size: 15px;
+                font-weight: 400;
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
-                cursor: pointer;
-                background-color: red;
-                border-radius: 100%;
-                font-family: "Exo 2", sans-serif;
-                font-size: 10px;
-                padding: 4px 6px; }
+                color: #0f0f0f;
+                text-align: justify; }
+              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto .precio {
+                margin: 0;
+                margin-top: 5px;
+                line-height: normal;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #0f0f0f;
+                text-align: right; }
+              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto .cantidad {
+                margin: 0;
+                margin-top: 5px;
+                line-height: normal;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #0f0f0f;
+                text-align: right; }
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .eliminar_producto {
+              color: white;
+              background-color: red;
+              border-radius: 100%;
+              width: 22px;
+              height: 22px; }
           header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos p {
             margin: 0;
             margin-top: 5px;

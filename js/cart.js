@@ -73,7 +73,7 @@ function actualizarCarrito() {
                 <p class="cantidad">Cantidad: ${cantidad}</p>
                 <p class="precio">Precio: $${precioNormal}</p>
             <div>
-            <span class="eliminar_producto" data-id="${producto.id}">X</span>
+            <button class="eliminar_producto" data-id="${producto.id}">X</button>
         `;
 
         contenedorDeItemsDeCarritoDeProductos.appendChild(nuevoItem);
@@ -139,7 +139,7 @@ function cargarHtml() {
                 <p class="cantidad">Cantidad: ${cantidad}</p>
                 <p class="precio">Precio $${precioNormal}</p>
             </div>
-            <span class="eliminar_producto" data-id="${id}">X</span>
+            <button class="eliminar_producto" data-id="${id}">X</button>
         `;
 
         contenedorDeItemsDeCarritoDeProductos.appendChild(nuevoItem);
