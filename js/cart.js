@@ -2,12 +2,12 @@
 /* const { info } = require("node-sass"); */
 
 //OBTENER ELEMENTOS DEL DOOM
-const contenedorDeProductos = document.querySelector('.contenedor_de_productos');
-const contenedorCarritoDeCompra = document.querySelector('.card_items');
-const precioTotal = document.querySelector('.precio_total');
-const cantidadDeProducto = document.querySelector('.contador_de_productos');
-const iconoCarrito = document.querySelector('.carrito');
-const btnCerrarCarrito = document.querySelector('.btn-cerrar');
+const contenedorDeProductos = document.querySelector('#contenedorDeProductosId');
+const contenedorDeItemsDeCarritoDeProductos = document.querySelector('#contenedorDeItemsDeCarritoDeProductosId');
+const precioTotal = document.querySelector('#precioTotalId');
+const contadorDeProductos = document.querySelector('#contadorDeProductosId');
+const iconoCarrito = document.querySelector('#iconoCarritoId');
+const btnCerrarCarrito = document.querySelector('#btnCerrarCarritoId');
 
 //MOSTRAR EL CARRITO DE COMPRA AL HACER CLIC EN EL ICONO DEL CARRITO
 iconoCarrito.addEventListener('click', mostrarCarrito);
@@ -30,7 +30,7 @@ let carritoDeCompra = [];
 
 //VARIABLES
 let totalCarrito = 0;
-let contadorDeProducto = 0;
+let cantidadDeProducto = 0;
 
 //ESCUCHAR EVENTOS
 loadEventListener();
@@ -49,7 +49,7 @@ function añadirProducto(e) {
 }
 
 //FUNCION PARA ELIMINAR PRODUCTOS
-contenedorCarritoDeCompra.addEventListener('click', (e) => {
+contenedorDeItemsDeCarritoDeProductos.addEventListener('click', (e) => {
     if (e.target.classList.contains('eliminar_producto')) {
         const eliminarId = e.target.dataset.id;
         carritoDeCompra = carritoDeCompra.filter((producto) => producto.id !== eliminarId);
@@ -63,27 +63,27 @@ function actualizarCarrito() {
 
     carritoDeCompra.forEach((producto) => {
         const { imagen, descripcion, precioNormal, cantidad } = producto;
-        const row = document.createElement('div');
-        row.classList.add('item');
+        const nuevoItem = document.createElement('div');
+        nuevoItem.classList.add('item');
 
-        row.innerHTML = `
+        nuevoItem.innerHTML = `
             <img src="${imagen}" alt="">
             <div class="contenido_del_producto">
-                <h5 class"nombre_del_producto">${descripcion}</h5>
-                <h5 class="precio">$${precioNormal}</h5>
-                <h6 class="cantidad">${cantidad}</h6>
+                <p class="nombre_del_producto">${descripcion}</p>
+                <p class="cantidad">Cantidad: ${cantidad}</p>
+                <p class="precio">Precio: $${precioNormal}</p>
             <div>
             <span class="eliminar_producto" data-id="${producto.id}">X</span>
         `;
 
-        contenedorCarritoDeCompra.appendChild(row);
+        contenedorDeItemsDeCarritoDeProductos.appendChild(nuevoItem);
     });
 
     totalCarrito = carritoDeCompra.reduce((total, producto) => total + parseInt(producto.precioNormal) * producto.cantidad, 0);
-    contadorDeProducto = carritoDeCompra.reduce((contador, producto) => contador + producto.cantidad, 0);
+    cantidadDeProducto = carritoDeCompra.reduce((contador, producto) => contador + producto.cantidad, 0);
 
     precioTotal.innerHTML = totalCarrito;
-    cantidadDeProducto.innerHTML = contadorDeProducto;
+    contadorDeProductos.innerHTML = cantidadDeProducto;
 
     guardarCarritoEnLocalStorage();
 }
@@ -91,9 +91,9 @@ function actualizarCarrito() {
 //OBTENER INFORMACION DEL PRODUCTO
 function obtenerInformacionDelProducto(producto) {
     const informacionProducto = {
-        imagen: producto.querySelector(".imagen_de_producto").src,
-        descripcion: producto.querySelector(".descripcion_producto").textContent,
-        precioNormal: producto.querySelector('.precio_normal').textContent,
+        imagen: producto.querySelector("#imagenDeProductoId").src,
+        descripcion: producto.querySelector("#descripcionDeProductoId").textContent,
+        precioNormal: producto.querySelector("#precioNormalDeProductoId").textContent,
         id: producto.querySelector('a').getAttribute('data-id'),
         cantidad: 1
 
@@ -115,7 +115,7 @@ function obtenerInformacionDelProducto(producto) {
         carritoDeCompra = [...product]
     } else {
         carritoDeCompra = [...carritoDeCompra, informacionProducto]
-        contadorDeProducto++;
+        cantidadDeProducto++;
     }
     cargarHtml();
 
@@ -129,28 +129,28 @@ function cargarHtml() {
     limpiarHtml();
     carritoDeCompra.forEach(producto => {
         const { imagen, descripcion, precioNormal, cantidad, id } = producto;
-        const row = document.createElement('div');
-        row.classList.add('item');
+        const nuevoItem = document.createElement('div');
+        nuevoItem.classList.add('item');
 
-        row.innerHTML = `
+        nuevoItem.innerHTML = `
             <img src="${imagen}" alt="">
             <div class="contenido_del_producto">
-                <h5 class="nombre_del_producto">${descripcion}</h5>
-                <h5 class="precio">$${precioNormal}</h5>
-                <h6 class="cantidad">${cantidad}</h6>
+                <p class="nombre_del_producto">${descripcion}</p>
+                <p class="cantidad">Cantidad: ${cantidad}</p>
+                <p class="precio">Precio $${precioNormal}</p>
             </div>
-            <span class="eliminar_producto" onclick="eliminarProducto('${id}')" data-id="${id}">X</span>
+            <span class="eliminar_producto" data-id="${id}">X</span>
         `;
 
-        contenedorCarritoDeCompra.appendChild(row);
+        contenedorDeItemsDeCarritoDeProductos.appendChild(nuevoItem);
         precioTotal.innerHTML = totalCarrito;
-        cantidadDeProducto.innerHTML = contadorDeProducto;
+        contadorDeProductos.innerHTML = cantidadDeProducto;
     });
 }
 
 
 function limpiarHtml() {
-    contenedorCarritoDeCompra.innerHTML = '';
+    contenedorDeItemsDeCarritoDeProductos.innerHTML = '';
 }
 
 //FUNCION PARA GUARDAR EL CARRITO EN LOCALSTORAGE
@@ -158,14 +158,14 @@ function guardarCarritoEnLocalStorage() {
     //APLICACION DE JSON PARA ALAMCENAR EL CARRITO EN EL LOCALSTORAGE
     localStorage.setItem('carritoDeCompra', JSON.stringify(carritoDeCompra));
     localStorage.setItem('totalCarrito', totalCarrito);
-    localStorage.setItem('contadorDeProducto', contadorDeProducto);
+    localStorage.setItem('cantidadDeProducto', cantidadDeProducto);
 }
 
 //FUNCION PARA CARGAR EL CARRITO DESDE EL LOCALSTORAGE
 function cargarCarritoDesdeLocalStorage() {
     carritoDeCompra = JSON.parse(localStorage.getItem('carritoDeCompra')) || [];
     totalCarrito = JSON.parse(localStorage.getItem('totalCarrito')) || 0;
-    contadorDeProducto = JSON.parse(localStorage.getItem('contadorDeProducto')) || 0;
+    cantidadDeProducto = JSON.parse(localStorage.getItem('cantidadDeProducto')) || 0;
 
     actualizarCarrito()
 }
