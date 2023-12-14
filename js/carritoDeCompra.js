@@ -1,4 +1,4 @@
-//ESTA INFORMACION SE COLOCO SOLA Y NO LA QUISE ELIMINAR ASI QUE LA COMENTE, POR LO QUE AVERIGUE ESTA RELACIONADO CON SASS.
+//ESTA INFORMACION SE COLOCO SOLA Y NO LA QUISE ELIMINAR ASI QUE SIMPLEMENT LA COMENTE, POR LO QUE AVERIGUE ESTA RELACIONADO CON SASS.
 /* const { info } = require("node-sass"); */
 
 //OBTENER ELEMENTOS DEL DOOM
@@ -25,20 +25,19 @@ function cerrarCarrito() {
     elementoCarrito.style.display = "none";
 }
 
-//ARRAY CARRITO DE COMPRA
+//ARRAY DEL CARRITO DE COMPRA
 let carritoDeCompra = [];
 
-//VARIABLES
+//VARIABLES GLOBALES
 let totalCarrito = 0;
 let cantidadDeProducto = 0;
 
-//ESCUCHAR EVENTOS
+//AÑADIR PRODUCTOS AL CARRITO DE COMPRA
 loadEventListener();
 function loadEventListener() {
     contenedorDeProductos.addEventListener('click', añadirProducto);
 }
 
-//FUNCION PARA AÑADIR PRODUCTO AL CARRITO
 function añadirProducto(e) {
     e.preventDefault();
     if (e.target.classList.contains('btn_añadir_al_carrito')) {
@@ -48,7 +47,7 @@ function añadirProducto(e) {
     }
 }
 
-//FUNCION PARA ELIMINAR PRODUCTOS
+//ELIMINAR PRODUCTOS DEL CARRITO CARRITO
 contenedorDeItemsDeCarritoDeProductos.addEventListener('click', (e) => {
     if (e.target.classList.contains('eliminar_producto')) {
         const eliminarId = e.target.dataset.id;
@@ -57,7 +56,7 @@ contenedorDeItemsDeCarritoDeProductos.addEventListener('click', (e) => {
     }
 })
 
-//FUNCION PARA ACTUALIZAR EL CARRITO
+//ACTUALIZAR EL CARRITO DE COMPRA
 function actualizarCarrito() {
     limpiarHtml();
 
@@ -72,8 +71,8 @@ function actualizarCarrito() {
                 <p class="nombre_del_producto">${descripcion}</p>
                 <p class="cantidad">Cantidad: ${cantidad}</p>
                 <p class="precio">Precio: $${precioNormal}</p>
+                <button class="eliminar_producto" data-id="${producto.id}">X</button>
             <div>
-            <button class="eliminar_producto" data-id="${producto.id}">X</button>
         `;
 
         contenedorDeItemsDeCarritoDeProductos.appendChild(nuevoItem);
@@ -117,9 +116,8 @@ function obtenerInformacionDelProducto(producto) {
         carritoDeCompra = [...carritoDeCompra, informacionProducto]
         cantidadDeProducto++;
     }
-    cargarHtml();
 
-    //ALMACENAR CARRITO EN EL LOCALSTORAGE
+    cargarHtml();
     guardarCarritoEnLocalStorage();
     actualizarCarrito();
 }
@@ -138,8 +136,8 @@ function cargarHtml() {
                 <p class="nombre_del_producto">${descripcion}</p>
                 <p class="cantidad">Cantidad: ${cantidad}</p>
                 <p class="precio">Precio $${precioNormal}</p>
+                <button class="eliminar_producto" data-id="${id}">X</button>
             </div>
-            <button class="eliminar_producto" data-id="${id}">X</button>
         `;
 
         contenedorDeItemsDeCarritoDeProductos.appendChild(nuevoItem);
@@ -148,12 +146,12 @@ function cargarHtml() {
     });
 }
 
-
+//LIMPIA EL CARRITO DE PRODUCTOS
 function limpiarHtml() {
     contenedorDeItemsDeCarritoDeProductos.innerHTML = '';
 }
 
-//FUNCION PARA GUARDAR EL CARRITO EN LOCALSTORAGE
+//GUARDA EL CARRITO EN EL LOCALSTORAGE
 function guardarCarritoEnLocalStorage() {
     //APLICACION DE JSON PARA ALAMCENAR EL CARRITO EN EL LOCALSTORAGE
     localStorage.setItem('carritoDeCompra', JSON.stringify(carritoDeCompra));
@@ -161,7 +159,9 @@ function guardarCarritoEnLocalStorage() {
     localStorage.setItem('cantidadDeProducto', cantidadDeProducto);
 }
 
-//FUNCION PARA CARGAR EL CARRITO DESDE EL LOCALSTORAGE
+//CARGAR EL CARRITO DESDE EL LOCALSTORAGE
+document.addEventListener('DOMContentLoaded', cargarCarritoDesdeLocalStorage);
+
 function cargarCarritoDesdeLocalStorage() {
     carritoDeCompra = JSON.parse(localStorage.getItem('carritoDeCompra')) || [];
     totalCarrito = JSON.parse(localStorage.getItem('totalCarrito')) || 0;
@@ -170,5 +170,4 @@ function cargarCarritoDesdeLocalStorage() {
     actualizarCarrito()
 }
 
-//ESCUCHAR EL EVENTO 'DOMContentLoaded' Y CARGAR LA INFORMACION DEL CARRITO DESDE EL LOCALSTORAGE
-document.addEventListener('DOMContentLoaded', cargarCarritoDesdeLocalStorage);
+

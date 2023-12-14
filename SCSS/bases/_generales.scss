@@ -126,7 +126,7 @@ header {
 
         .carrito_de_productos {
           position: absolute;
-          top: 82px;
+          top: 60px;
           right: 10px;
           background-color: #fff;
           padding: 0 10px;
@@ -176,7 +176,7 @@ header {
               display: flex;
               padding: 10px;
               align-items: center;
-              border-bottom: solid 2px red;
+              border-bottom: 2px solid red;
 
               img {
                 width: 115px;
@@ -185,8 +185,20 @@ header {
 
               .contenido_del_producto {
                 margin: 0;
+                position: relative;
                 width: 200px;
-                padding: 5px;
+                padding: 25px 5px 5px 5px;
+
+                .eliminar_producto {
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  color: white;
+                  background-color: red;
+                  border-radius: 100%;
+                  width: 22px;
+                  height: 22px;
+                }
 
                 .nombre_del_producto {
                   margin: 0;
@@ -221,13 +233,7 @@ header {
                 }
               }
 
-              .eliminar_producto {
-                color: white;
-                background-color: red;
-                border-radius: 100%;
-                width: 22px;
-                height: 22px;
-              }
+              
             }
           }
 

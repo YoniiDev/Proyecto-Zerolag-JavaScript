@@ -93,7 +93,7 @@ header {
             right: -12px; }
         header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos {
           position: absolute;
-          top: 82px;
+          top: 60px;
           right: 10px;
           background-color: #fff;
           padding: 0 10px;
@@ -133,14 +133,24 @@ header {
             display: flex;
             padding: 10px;
             align-items: center;
-            border-bottom: solid 2px red; }
+            border-bottom: 2px solid red; }
             header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item img {
               width: 115px;
               padding: 5px; }
             header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto {
               margin: 0;
+              position: relative;
               width: 200px;
-              padding: 5px; }
+              padding: 25px 5px 5px 5px; }
+              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto .eliminar_producto {
+                position: absolute;
+                top: 0;
+                right: 0;
+                color: white;
+                background-color: red;
+                border-radius: 100%;
+                width: 22px;
+                height: 22px; }
               header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto .nombre_del_producto {
                 margin: 0;
                 line-height: normal;
@@ -167,12 +177,6 @@ header {
                 font-family: Verdana, Geneva, Tahoma, sans-serif;
                 color: #0f0f0f;
                 text-align: right; }
-            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .eliminar_producto {
-              color: white;
-              background-color: red;
-              border-radius: 100%;
-              width: 22px;
-              height: 22px; }
           header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos p {
             margin: 0;
             margin-top: 5px;
