@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
-    <meta name="description" content="Descubre nuestros servicios tecnológicos de excelencia. Reparación, mantenimiento y soluciones informáticas a tu alcance. ¡Optimiza tu tecnología con nosotros y dale una nueva vida!">
-    <meta name="keywords" content="ZeroLag, Servicios informaticos, Soporte técnico, Reparación de equipos, Mantenimiento tecnológico, Consultoría tecnológica, Actualización de software, Servicio de redes, Reparación de dispositivos, Optimización de sistemas, Asistencia técnica, Diagnóstico de hardware, Configuración de software, Consultas técnicas, Soporte remoto, Resolución de problemas, Atención al cliente, Garantia">
+    <meta name="description"
+        content="Descubre nuestros servicios tecnológicos de excelencia. Reparación, mantenimiento y soluciones informáticas a tu alcance. ¡Optimiza tu tecnología con nosotros y dale una nueva vida!">
+    <meta name="keywords"
+        content="ZeroLag, Servicios informaticos, Soporte técnico, Reparación de equipos, Mantenimiento tecnológico, Consultoría tecnológica, Actualización de software, Servicio de redes, Reparación de dispositivos, Optimización de sistemas, Asistencia técnica, Diagnóstico de hardware, Configuración de software, Consultas técnicas, Soporte remoto, Resolución de problemas, Atención al cliente, Garantia">
     <title>Servicios | ZeroLag</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
@@ -31,7 +37,24 @@
                             placeholder="Busca el producto de tus sueños" aria-label="Search">
                         <button class="boton_buscar" type="submit">Buscar</button>
                     </form>
+                    <!-- CARRITO DE PRODUCTOS -->
+                    <div>
+                        <img class="icono_carrito" id="iconoCarritoId" src="../img/carritoDeCompra.png"
+                            alt="carrito de compra">
+                        <p class="contador_de_productos" id="contadorDeProductosId">0</p>
+                    </div>
+                    <div class="carrito_de_productos" id="carritoDeProductosId">
+                        <div class="contenedor_btn_cerrar_carrito_y_titulo_mi_carrito_h3">
+                            <h3 class="titulo_mi_carrito_h3">Mi Carrito</h3>
+                            <button class="btn_cerrar_carrito" id="btnCerrarCarritoId">X</button>
+                        </div>
+                        <div class="contenedor_de_items_de_carrito_de_productos"
+                            id="contenedorDeItemsDeCarritoDeProductosId">
+                        </div>
+                        <p>Total: $<strong class="precio_total" id="precioTotalId">0</strong></p>
+                    </div>
                 </div>
+                <!-- BARRA DE NAVEGACION -->
                 <div class="navbar_contenedor collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-lg-0 container-fluid d-flex justify-content-around">
                         <li class="li_inicio">
@@ -60,19 +83,8 @@
     <main>
         <section class="servicios">
             <h2>Servicios</h2>
-            <div class="servicios_contenedor">
-                <div>
-                    <img src="../img/reparacion2redimensionada.jpg" alt="imagen de un profesional inspeccionando un Notebook">
-                    <h3>Reparación</h3>
-                    <p>Nuestro servicio de reparación es sinónimo de confiabilidad y excelencia. Nuestro equipo de técnicos altamente capacitados está listo para abordar cualquier problema tecnológico que puedas enfrentar. Desde reparaciones de dispositivos hasta soluciones de software, ofrecemos un servicio rápido y eficiente que te permite volver a disfrutar de tus dispositivos tecnológicos sin interrupciones. Tu tranquilidad y la funcionalidad de tus dispositivos son nuestra prioridad número uno. Confía en ZeroLag para mantener tu tecnología en perfecto estado.</p>
-                    <a href="#">CONTACTANOS</a>
-                </div>
-                <div>
-                    <img src="../img/mantenciónredimensionada.jpg" alt="imagen de un Notebook con un estetoscopio sobre el teclado">
-                    <h3>Mantención</h3>
-                    <p>Nuestro servicio de mantenimiento está diseñado para asegurar que tus dispositivos tecnológicos funcionen de manera óptima y sin problemas. Nuestro equipo de expertos realiza inspecciones regulares, actualizaciones y ajustes precisos para mantener tus dispositivos en el mejor estado posible. Nos encargamos de todos los detalles para que tú puedas disfrutar de la tecnología sin preocupaciones. Con ZeroLag, tu inversión en tecnología estará protegida y lista para brindarte un rendimiento excepcional a largo plazo.</p>
-                    <a href="#">CONTACTANOS</a>
-                </div>
+            <div class="servicios_contenedor" id="contenedorDeTarjetasDeServicioId">
+                <!-- ACA SE MUESTRAN LOS SERVICIOS DINAMICAMENTE CON JAVASCRIPT -->
             </div>
 
         </section>
@@ -111,9 +123,14 @@
             </p>
         </div>
     </footer>
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- APP DE CARRITO DE COMPRA -->
+    <script src="../js/mostrarServiciosEnLaPaginaServicios.js"></script>
 </body>
 
 </html>

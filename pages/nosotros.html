@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
-    <meta name="description" content="En Zerolag, somos una comunidad de apasionados por la tecnología. Conoce nuestra misión y valores de ofrecer soluciones tecnológicas de vanguardia y únete a la Revolución Tecnológica">
-    <meta name="keywords" content="Tecnología, Innovación, Equipo, Experiencia, Servicios, Reparación, Mantenimiento, Soluciones, Compromiso, Profesionalismo, Excelencia, Confiabilidad, Compromiso con el cliente, Pasión por la tecnología, Calidad, Exito, Servicio al cliente, Vision empresarial">
+    <meta name="description"
+        content="En Zerolag, somos una comunidad de apasionados por la tecnología. Conoce nuestra misión y valores de ofrecer soluciones tecnológicas de vanguardia y únete a la Revolución Tecnológica">
+    <meta name="keywords"
+        content="Tecnología, Innovación, Equipo, Experiencia, Servicios, Reparación, Mantenimiento, Soluciones, Compromiso, Profesionalismo, Excelencia, Confiabilidad, Compromiso con el cliente, Pasión por la tecnología, Calidad, Exito, Servicio al cliente, Vision empresarial">
     <title>Nosotros | ZeroLag</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
@@ -31,7 +37,24 @@
                             placeholder="Busca el producto de tus sueños" aria-label="Search">
                         <button class="boton_buscar" type="submit">Buscar</button>
                     </form>
+                    <!-- CARRITO DE PRODUCTOS -->
+                    <div>
+                        <img class="icono_carrito" id="iconoCarritoId" src="../img/carritoDeCompra.png"
+                            alt="carrito de compra">
+                        <p class="contador_de_productos" id="contadorDeProductosId">0</p>
+                    </div>
+                    <div class="carrito_de_productos" id="carritoDeProductosId">
+                        <div class="contenedor_btn_cerrar_carrito_y_titulo_mi_carrito_h3">
+                            <h3 class="titulo_mi_carrito_h3">Mi Carrito</h3>
+                            <button class="btn_cerrar_carrito" id="btnCerrarCarritoId">X</button>
+                        </div>
+                        <div class="contenedor_de_items_de_carrito_de_productos"
+                            id="contenedorDeItemsDeCarritoDeProductosId">
+                        </div>
+                        <p>Total: $<strong class="precio_total" id="precioTotalId">0</strong></p>
+                    </div>
                 </div>
+                <!-- BARRA DE NAVEGACION -->
                 <div class="navbar_contenedor collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-lg-0 container-fluid d-flex justify-content-around">
                         <li class="li_inicio">
@@ -62,7 +85,10 @@
             <h2>¿Quiénes somos?</h2>
             <div class="quienes_somos_contenedor">
                 <div>
-                    <p>Somos una comunidad de apasionados por la tecnología y su capacidad para transformar vidas. Comenzamos en 2022 como una pequeña tienda tecnologica y en la actualidad somos más que una tienda de productos tecnológicos; somos una comunidad de entusiastas que busca romper barreras y eliminar los retrasos en la experiencia digital.</p>
+                    <p>Somos una comunidad de apasionados por la tecnología y su capacidad para transformar vidas.
+                        Comenzamos en 2022 como una pequeña tienda tecnologica y en la actualidad somos más que una
+                        tienda de productos tecnológicos; somos una comunidad de entusiastas que busca romper barreras y
+                        eliminar los retrasos en la experiencia digital.</p>
                 </div>
                 <img src="../img/QuienesSomosRedimensionada.jpg" alt="choque de puños entre 5 personas">
             </div>
@@ -71,42 +97,63 @@
             <h2>Nuestra Misión</h2>
             <div class="nuestra_mision_contenedor">
                 <div>
-                    <p>Nuestra misión es impulsar la innovación tecnológica sin restricciones. Creemos que la tecnología debe ser accesible para todos, sin importar su nivel de experiencia o presupuesto. Estamos comprometidos a brindar soluciones tecnológicas de alta calidad que aceleren tu vida digital y te permitan explorar todo lo que el mundo digital tiene para ofrecer.</p>
+                    <p>Nuestra misión es impulsar la innovación tecnológica sin restricciones. Creemos que la tecnología
+                        debe ser accesible para todos, sin importar su nivel de experiencia o presupuesto. Estamos
+                        comprometidos a brindar soluciones tecnológicas de alta calidad que aceleren tu vida digital y
+                        te permitan explorar todo lo que el mundo digital tiene para ofrecer.</p>
                 </div>
-                <img src="../img/misionredimensionada.jpg" alt="abuelos con sus dos nietos felices y abrazados mirando una tablet">
+                <img src="../img/misionredimensionada.jpg"
+                    alt="abuelos con sus dos nietos felices y abrazados mirando una tablet">
             </div>
         </section>
         <section class="lo_que_nos_diferencia">
             <h2>Lo Que Nos Diferencia</h2>
             <div class="lo_que_nos_diferencia_contenedor">
                 <div>
-                    <p>Lo que nos distingue es nuestra pasión por la excelencia. No nos conformamos con lo común; aspiramos a la perfección en cada detalle. Cada producto que ofrecemos, cada servicio que brindamos, está diseñado para superar tus expectativas y eliminar cualquier obstáculo en tu experiencia tecnológica.</p>
+                    <p>Lo que nos distingue es nuestra pasión por la excelencia. No nos conformamos con lo común;
+                        aspiramos a la perfección en cada detalle. Cada producto que ofrecemos, cada servicio que
+                        brindamos, está diseñado para superar tus expectativas y eliminar cualquier obstáculo en tu
+                        experiencia tecnológica.</p>
                 </div>
-                <img src="../img/loquenosdiferenciaredimensionada.jpg" alt="imagen de perfil de la cabeza de un robot humanoide con rasgos femeninos">
+                <img src="../img/loquenosdiferenciaredimensionada.jpg"
+                    alt="imagen de perfil de la cabeza de un robot humanoide con rasgos femeninos">
             </div>
         </section>
         <section class="nuestros_valores">
             <h2>Nuestros Valores</h2>
             <div class="nuestros_valores_contenedor">
                 <div>
-                    <img src="../img/Tu_Socio_Tecnologico_Redimensionada.jpg" alt="imagen que muestra un apreton de manos, con un estilo tecnologico">
+                    <img src="../img/Tu_Socio_Tecnologico_Redimensionada.jpg"
+                        alt="imagen que muestra un apreton de manos, con un estilo tecnologico">
                     <h3>Tu Socio Tecnológico</h3>
-                    <p>En ZeroLag, no solo vendemos productos, construimos relaciones. Nos convertimos en tu socio tecnológico, ofreciéndote asesoramiento y soluciones adaptadas a tus necesidades específicas. Tu éxito en el mundo digital es nuestra prioridad.</p>
+                    <p>En ZeroLag, no solo vendemos productos, construimos relaciones. Nos convertimos en tu socio
+                        tecnológico, ofreciéndote asesoramiento y soluciones adaptadas a tus necesidades específicas. Tu
+                        éxito en el mundo digital es nuestra prioridad.</p>
                 </div>
                 <div>
-                    <img src="../img/compromiso_con_la_satisfaccion_al_cliente_redimensionada.jpg" alt="joven feliz sentado frente al escritorio jugando en su pc gamer">
+                    <img src="../img/compromiso_con_la_satisfaccion_al_cliente_redimensionada.jpg"
+                        alt="joven feliz sentado frente al escritorio jugando en su pc gamer">
                     <h3>Satisfacción del Cliente</h3>
-                    <p>El cliente es nuestra principal prioridad en ZeroLag. Nos esforzamos por comprender tus necesidades y expectativas individuales. Estamos comprometidos a brindar un servicio excepcional y a garantizar que cada cliente esté satisfecho con su experiencia en ZeroLag. Tu satisfacción es nuestra mayor recompensa.</p>
+                    <p>El cliente es nuestra principal prioridad en ZeroLag. Nos esforzamos por comprender tus
+                        necesidades y expectativas individuales. Estamos comprometidos a brindar un servicio excepcional
+                        y a garantizar que cada cliente esté satisfecho con su experiencia en ZeroLag. Tu satisfacción
+                        es nuestra mayor recompensa.</p>
                 </div>
                 <div>
-                    <img src="../img/Accesibilidad_Tecnologica_Redimensionada.jpg" alt="padres felices con sus hijos frente a un notebook">
+                    <img src="../img/Accesibilidad_Tecnologica_Redimensionada.jpg"
+                        alt="padres felices con sus hijos frente a un notebook">
                     <h3>Accesibilidad Tecnológica</h3>
-                    <p>Nos enorgullece hacer que la tecnología sea accesible para todos. Creemos que la tecnología debe estar al alcance de cualquier persona, sin importar su nivel de experiencia o presupuesto. Trabajamos incansablemente para ofrecer una amplia gama de productos y servicios tecnológicos de calidad que permitan a todos aprovechar al máximo el mundo digital y superar cualquier barrera tecnológica.</p>
+                    <p>Nos enorgullece hacer que la tecnología sea accesible para todos. Creemos que la tecnología debe
+                        estar al alcance de cualquier persona, sin importar su nivel de experiencia o presupuesto.
+                        Trabajamos incansablemente para ofrecer una amplia gama de productos y servicios tecnológicos de
+                        calidad que permitan a todos aprovechar al máximo el mundo digital y superar cualquier barrera
+                        tecnológica.</p>
                 </div>
             </div>
         </section>
         <section class="revolución_digital">
-            <h2>Únete a la Revolución Tecnológica. En ZeroLag, estamos impulsando la revolución digital y queremos que seas parte de ello.</h2>
+            <h2>Únete a la Revolución Tecnológica. En ZeroLag, estamos impulsando la revolución digital y queremos que
+                seas parte de ello.</h2>
         </section>
     </main>
     <footer id="footer">
@@ -143,9 +190,14 @@
             </p>
         </div>
     </footer>
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- APP DE CARRITO DE COMPRA -->
+    <script src="../js/carritoDeCompra2.js"></script>
 </body>
 
 </html>

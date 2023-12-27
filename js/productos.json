@@ -1,0 +1,123 @@
+[
+    {
+        "idDeProducto": 1,
+        "imagenDelProducto": "../img/img1redimensionada.jpg",
+        "marcaDeProducto": "ID-COOLING",
+        "descripcionDeProducto": "Enfriamiento Liquido ID-Cooling FrostFlow X, 280mm, Intel/AMD, Color Negro", 
+        "descuentoDeProducto": 0.5,
+        "precioNormalDeProducto": 109990,
+        "precioTransferenciaDeProducto": 54990,
+        "precioOtrosMediosDePagoDeProducto": 57470
+    },
+    {
+        "idDeProducto": 2,
+        "imagenDelProducto": "../img/img2redimensionada.jpg",
+        "marcaDeProducto": "KINGSTON",
+        "descripcionDeProducto": "Unidad de Estado Sólido Kingston NV2, 1TB NVMe, PCIe 4.0, Lectura 3500 MB/s Escritura...", 
+        "descuentoDeProducto": 0.62,
+        "precioNormalDeProducto": 109990,
+        "precioTransferenciaDeProducto": 41990,
+        "precioOtrosMediosDePagoDeProducto": 43885
+    },
+    {
+        "idDeProducto": 3,
+        "imagenDelProducto": "../img/img3redimensionada.jpg",
+        "marcaDeProducto": "LOGITECH G",
+        "descripcionDeProducto": "Mouse Gamer Logitech G Pro, Sensor HERO 16K para eSports, 6 botones programables", 
+        "descuentoDeProducto": 0.49,
+        "precioNormalDeProducto": 34990,
+        "precioTransferenciaDeProducto": 17990,
+        "precioOtrosMediosDePagoDeProducto": 18805
+    },
+    {
+        "idDeProducto": 4,
+        "imagenDelProducto": "../img/img11redimensionada.jpg",
+        "marcaDeProducto": "GIGABYTE",
+        "descripcionDeProducto": "Tarjeta de Video Gigabyte GeForce RTX 3060 WINDFORCE OC, 12GB GDDR6, 192-bit...", 
+        "descuentoDeProducto": 0.27,
+        "precioNormalDeProducto": 449990,
+        "precioTransferenciaDeProducto": 329990,
+        "precioOtrosMediosDePagoDeProducto": 344845
+    },
+    {
+        "idDeProducto": 5,
+        "imagenDelProducto": "../img/img4redimensionada.jpg",
+        "marcaDeProducto": "AOC",
+        "descripcionDeProducto": "Monitor Curvo de 24\" AOC C24G2, Panel VA, 165Hz, 1ms, FreeSync Premium", 
+        "descuentoDeProducto": 0.3,
+        "precioNormalDeProducto": 249990,
+        "precioTransferenciaDeProducto": 174990,
+        "precioOtrosMediosDePagoDeProducto": 182870
+    },
+    {
+        "idDeProducto": 6,
+        "imagenDelProducto": "../img/img5.jpg",
+        "marcaDeProducto": "XPG",
+        "descripcionDeProducto": "Notebook Gamer XPG Xenia G15, 16\" FHD 144hz, i7 13700H, RTX 4070, RAM 32GB, SSD 1TB", 
+        "descuentoDeProducto": 0.17,
+        "precioNormalDeProducto": 2299990,
+        "precioTransferenciaDeProducto": 1899990,
+        "precioOtrosMediosDePagoDeProducto": 1985495 
+    },
+    {
+        "idDeProducto": 7,
+        "imagenDelProducto": "../img/img6redimensionada.jpg",
+        "marcaDeProducto": "REDRAGON",
+        "descripcionDeProducto": "Teclado Mecánico Gamer Redragon Kumara K552, Switch Outemu Red, Retroiluminación...", 
+        "descuentoDeProducto": 0.45,
+        "precioNormalDeProducto": 50990,
+        "precioTransferenciaDeProducto": 27990,
+        "precioOtrosMediosDePagoDeProducto": 29250 
+    },
+    {
+        "idDeProducto": 8,
+        "imagenDelProducto": "../img/img12redimensionada.jpg",
+        "marcaDeProducto": "ASUS",
+        "descripcionDeProducto": "Tarjeta de Video Asus ROG Strix GeForce RTX 4080 16GB GDDR6X OC Edition, PCIe 4.0", 
+        "descuentoDeProducto": 0.10,
+        "precioNormalDeProducto": 2058710,
+        "precioTransferenciaDeProducto": 1861070,
+        "precioOtrosMediosDePagoDeProducto": 1944820
+    },
+    {
+        "idDeProducto": 9,
+        "imagenDelProducto": "../img/img7redimensionada.jpg",
+        "marcaDeProducto": "STREAMPLIFY",
+        "descripcionDeProducto": "Micrófono RGB Streamplify, Condensador, Antipop, Brazo Escritorio, Cardioide, USB...", 
+        "descuentoDeProducto": 0.2,
+        "precioNormalDeProducto": 79990,
+        "precioTransferenciaDeProducto": 63990,
+        "precioOtrosMediosDePagoDeProducto": 65.990
+    },
+    {
+        "idDeProducto": 10,
+        "imagenDelProducto": "../img/img8.jpg",
+        "marcaDeProducto": "NITRO CONCEPTS",
+        "descripcionDeProducto": "Escritorio Gamer Nitro Concepts D12 Black Red, Construcción de Acero, Tablero Ergonómico...", 
+        "descuentoDeProducto": 0.2,
+        "precioNormalDeProducto": 159990,
+        "precioTransferenciaDeProducto": 127990,
+        "precioOtrosMediosDePagoDeProducto": 130000
+    },
+    {
+        "idDeProducto": 11,
+        "imagenDelProducto": "../img/img9redimensionada.jpg",
+        "marcaDeProducto": "ZEROLAG",
+        "descripcionDeProducto": "PC Gamer ZEROLAG INFINITY, RTX 3070 OC, Ryzen 5600X, RAM 16GB(2x8)3200Mhz, SSD 1TB...", 
+        "descuentoDeProducto": 0.2,
+        "precioNormalDeProducto": 1799990,
+        "precioTransferenciaDeProducto": 1439990,
+        "precioOtrosMediosDePagoDeProducto": 1443000
+    },
+    {
+        "idDeProducto": 12,
+        "imagenDelProducto": "../img/img10redimensionada.jpg",
+        "marcaDeProducto": "ZEROLAG",
+        "descripcionDeProducto": "PC Gamer ZEROLAG ORION, RTX 4070, Ryzen 5 5600X, RAM 16GB (2x8GB), SSD 1TB, W11 Home", 
+        "descuentoDeProducto": 0.2,
+        "precioNormalDeProducto": 1499990,
+        "precioTransferenciaDeProducto": 1199990,
+        "precioOtrosMediosDePagoDeProducto": 1203000
+    }
+
+]

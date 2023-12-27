@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
-    <meta name="description" content="Lee las opiniones de nuestros clientes satisfechos en la página de Experiencia de ZeroLag. Descubre por qué somos líderes en tecnología y servicio en el mundo digital.">
-    <meta name="keywords" content="Comentarios de clientes, Testimonios de clientes, Experiencias de usaurios, Opiniones de usuarios, Satisfacción del cliente, Reseñas de productos, Historias de éxito, Comentarios positivos, Feedback de clientes, Experiencia del ciente, Opiniones autenticas, Valoración de servicios, Evaluación de productos, Experiencia de compra, Comentarios verificables, Testomonios reales, Comentarios de usuarios, Clientes conformes">
+    <meta name="description"
+        content="Lee las opiniones de nuestros clientes satisfechos en la página de Experiencia de ZeroLag. Descubre por qué somos líderes en tecnología y servicio en el mundo digital.">
+    <meta name="keywords"
+        content="Comentarios de clientes, Testimonios de clientes, Experiencias de usaurios, Opiniones de usuarios, Satisfacción del cliente, Reseñas de productos, Historias de éxito, Comentarios positivos, Feedback de clientes, Experiencia del ciente, Opiniones autenticas, Valoración de servicios, Evaluación de productos, Experiencia de compra, Comentarios verificables, Testomonios reales, Comentarios de usuarios, Clientes conformes">
     <title>Experiencia | ZeroLag</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
@@ -31,7 +37,24 @@
                             placeholder="Busca el producto de tus sueños" aria-label="Search">
                         <button class="boton_buscar" type="submit">Buscar</button>
                     </form>
+                    <!-- CARRITO DE PRODUCTOS -->
+                    <div>
+                        <img class="icono_carrito" id="iconoCarritoId" src="../img/carritoDeCompra.png"
+                            alt="carrito de compra">
+                        <p class="contador_de_productos" id="contadorDeProductosId">0</p>
+                    </div>
+                    <div class="carrito_de_productos" id="carritoDeProductosId">
+                        <div class="contenedor_btn_cerrar_carrito_y_titulo_mi_carrito_h3">
+                            <h3 class="titulo_mi_carrito_h3">Mi Carrito</h3>
+                            <button class="btn_cerrar_carrito" id="btnCerrarCarritoId">X</button>
+                        </div>
+                        <div class="contenedor_de_items_de_carrito_de_productos"
+                            id="contenedorDeItemsDeCarritoDeProductosId">
+                        </div>
+                        <p>Total: $<strong class="precio_total" id="precioTotalId">0</strong></p>
+                    </div>
                 </div>
+                <!-- BARRA DE NAVEGACION -->
                 <div class="navbar_contenedor collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-lg-0 container-fluid d-flex justify-content-around">
                         <li class="li_inicio">
@@ -60,57 +83,86 @@
     <main>
         <section class="experiencia_zerolag">
             <h2>Experiencia ZeroLag</h2>
-            <p>En ZeroLag, creemos que la experiencia de nuestros clientes es el motor que impulsa nuestra pasión por la tecnología. La página "Experiencia" es un espacio dedicado a las historias y testimonios de aquellos que han confiado en nosotros para acelerar su vida digital. Cada relato refleja nuestra misión de ofrecer soluciones tecnológicas excepcionales y un servicio de calidad. Te invitamos a explorar estas experiencias y descubrir cómo ZeroLag ha marcado la diferencia en el mundo tecnológico de nuestros clientes.</p>
+            <p>En ZeroLag, creemos que la experiencia de nuestros clientes es el motor que impulsa nuestra pasión por la
+                tecnología. La página "Experiencia" es un espacio dedicado a las historias y testimonios de aquellos que
+                han confiado en nosotros para acelerar su vida digital. Cada relato refleja nuestra misión de ofrecer
+                soluciones tecnológicas excepcionales y un servicio de calidad. Te invitamos a explorar estas
+                experiencias y descubrir cómo ZeroLag ha marcado la diferencia en el mundo tecnológico de nuestros
+                clientes.</p>
             <h2>¡Tu Experiencia, Nuestra Inspiración!</h2>
         </section>
         <section class="grid-galeria-experiencia">
             <div class="grid-item-experiencia">
-                <img src="../img/experienciaclientes1redimensionada.jpg" alt="mujer joven sonriendo, con los brazos cruzados y sosteniendo sus lentes en una de sus manos">
-                <p>"La compra en ZeroLag fue increíblemente sencilla. Encontré el producto que necesitaba rápidamente y el proceso de pago fue fluido. ¡Definitivamente volveré a comprar aquí!"</p>
+                <img src="../img/experienciaclientes1redimensionada.jpg"
+                    alt="mujer joven sonriendo, con los brazos cruzados y sosteniendo sus lentes en una de sus manos">
+                <p>"La compra en ZeroLag fue increíblemente sencilla. Encontré el producto que necesitaba rápidamente y
+                    el proceso de pago fue fluido. ¡Definitivamente volveré a comprar aquí!"</p>
             </div>
             <div class="grid-item-experiencia">
-                <img src="../img/experienciaclientes2redimensionada.jpg" alt="Mujer joven soriendo, hablando por telefono y sosteniendo una tablet en una de sus manos">
-                <p>ZeroLag me ayudó a encontrar la laptop perfecta para mi trabajo. El asesoramiento experto y la variedad de opciones hicieron que la compra fuera una experiencia sin preocupaciones."</p>
+                <img src="../img/experienciaclientes2redimensionada.jpg"
+                    alt="Mujer joven soriendo, hablando por telefono y sosteniendo una tablet en una de sus manos">
+                <p>ZeroLag me ayudó a encontrar la laptop perfecta para mi trabajo. El asesoramiento experto y la
+                    variedad de opciones hicieron que la compra fuera una experiencia sin preocupaciones."</p>
             </div>
             <div class="grid-item-experiencia">
-                <img src="../img/experienciaclientes3redimensionada.jpg" alt="mujer sonriendo, sentada con su notebook abierto sobre la mesa y con lentes puestos">
-                <p>"El equipo de reparación de ZeroLag merece aplausos. Repararon mi computadora portátil en poco tiempo, y ahora funciona mejor que nunca. ¡Estoy muy impresionada!"</p>
+                <img src="../img/experienciaclientes3redimensionada.jpg"
+                    alt="mujer sonriendo, sentada con su notebook abierto sobre la mesa y con lentes puestos">
+                <p>"El equipo de reparación de ZeroLag merece aplausos. Repararon mi computadora portátil en poco
+                    tiempo, y ahora funciona mejor que nunca. ¡Estoy muy impresionada!"</p>
             </div>
             <div class="grid-item-experiencia">
-                <img src="../img/experienciaclientes4redimensionada.jpg" alt="mujer sentada en su escritorio, con el notebook abierto, con su mano izquierda apoyada en el escritorio tocando su barbilla y con la mano derecha tocando el codo del brazo izquierdo, mirando hacia el horizonte, en una posicion pensante">
-                <p>"Mi laptop estaba casi inutilizable, pero ZeroLag la reparó en un tiempo récord. ¡Estoy de vuelta en el negocio gracias a su servicio de reparación rápido y profesional!"</p>
+                <img src="../img/experienciaclientes4redimensionada.jpg"
+                    alt="mujer sentada en su escritorio, con el notebook abierto, con su mano izquierda apoyada en el escritorio tocando su barbilla y con la mano derecha tocando el codo del brazo izquierdo, mirando hacia el horizonte, en una posicion pensante">
+                <p>"Mi laptop estaba casi inutilizable, pero ZeroLag la reparó en un tiempo récord. ¡Estoy de vuelta en
+                    el negocio gracias a su servicio de reparación rápido y profesional!"</p>
             </div>
             <div class="grid-item-experiencia">
-                <img src="../img/experienciaclientes5redimensionada.jpg" alt="mujer joven sentada en el borde de un jardin, con su mano izquierda sostiene el notebook y con su mano derecha el celular">
-                <p>"ZeroLag solucionó mi problema de teléfono en un abrir y cerrar de ojos. El equipo de reparación hizo un trabajo increíble y el teléfono funciona como nuevo."</p>
+                <img src="../img/experienciaclientes5redimensionada.jpg"
+                    alt="mujer joven sentada en el borde de un jardin, con su mano izquierda sostiene el notebook y con su mano derecha el celular">
+                <p>"ZeroLag solucionó mi problema de teléfono en un abrir y cerrar de ojos. El equipo de reparación hizo
+                    un trabajo increíble y el teléfono funciona como nuevo."</p>
             </div>
             <div class="grid-item-experiencia">
-                <img src="../img/experienciaclientes6.jpg" alt="hombre extremadamente feliz, sonrie con los ojos cerrados y con ambas manos empuñadas">
-                <p>"El servicio de mantenimiento de ZeroLag es un salvavidas para mis dispositivos. Mantienen mi computadora en perfectas condiciones y siempre funcionando a la perfección."</p>
+                <img src="../img/experienciaclientes6.jpg"
+                    alt="hombre extremadamente feliz, sonrie con los ojos cerrados y con ambas manos empuñadas">
+                <p>"El servicio de mantenimiento de ZeroLag es un salvavidas para mis dispositivos. Mantienen mi
+                    computadora en perfectas condiciones y siempre funcionando a la perfección."</p>
             </div>
             <div class="grid-item-experiencia">
-                <img src="../img/experienciaclientes7redimensionada.jpg" alt="hombre joven sonriendo y haciendo una señal de me gusta con su mano derecha.">
-                <p>"No puedo expresar lo agradecido que estoy por el servicio de mantenimiento de ZeroLag. Mi impresora solía fallar constantemente, pero ahora funciona sin problemas gracias a ellos."</p>
+                <img src="../img/experienciaclientes7redimensionada.jpg"
+                    alt="hombre joven sonriendo y haciendo una señal de me gusta con su mano derecha.">
+                <p>"No puedo expresar lo agradecido que estoy por el servicio de mantenimiento de ZeroLag. Mi impresora
+                    solía fallar constantemente, pero ahora funciona sin problemas gracias a ellos."</p>
             </div>
             <div class="grid-item-experiencia">
-                <img src="../img/experienciaclientes8redimensionada.jpg" alt="mujer joven sonriendo y haciendo el gesto de me gusta con ambas manos">
-                <p>"Encontré la mejor oferta en ZeroLag para mi nuevo teléfono. La calidad del producto y el precio inmejorable hicieron que esta compra valiera la pena."</p>
+                <img src="../img/experienciaclientes8redimensionada.jpg"
+                    alt="mujer joven sonriendo y haciendo el gesto de me gusta con ambas manos">
+                <p>"Encontré la mejor oferta en ZeroLag para mi nuevo teléfono. La calidad del producto y el precio
+                    inmejorable hicieron que esta compra valiera la pena."</p>
             </div>
             <div class="grid-item-experiencia">
-                <img src="../img/experienciaclientes9redimensionada.jpg" alt="hombre joven sonriendo y mirando fijamenente a la camara">
-                <p>"ZeroLag tiene una amplia gama de accesorios tecnológicos. Compré un teclado mecánico y ha mejorado significativamente mi experiencia de juego. ¡Gracias!"</p>
+                <img src="../img/experienciaclientes9redimensionada.jpg"
+                    alt="hombre joven sonriendo y mirando fijamenente a la camara">
+                <p>"ZeroLag tiene una amplia gama de accesorios tecnológicos. Compré un teclado mecánico y ha mejorado
+                    significativamente mi experiencia de juego. ¡Gracias!"</p>
             </div>
             <div class="grid-item-experiencia">
-                <img src="../img/experienciaclientes10redimensionada.jpg" alt="hombre joven sonriendo a la camara en la calle, con lentes de sol">
-                <p>"Pensé que mi tableta estaba perdida, pero ZeroLag la reparó como nueva. El servicio de reparación fue rápido y eficiente, y el costo fue razonable."</p>
+                <img src="../img/experienciaclientes10redimensionada.jpg"
+                    alt="hombre joven sonriendo a la camara en la calle, con lentes de sol">
+                <p>"Pensé que mi tableta estaba perdida, pero ZeroLag la reparó como nueva. El servicio de reparación
+                    fue rápido y eficiente, y el costo fue razonable."</p>
             </div>
             <div class="grid-item-experiencia">
-                <img src="../img/experienciaclientes11redimensionada.jpg" alt="mujer joven sonriendo, mirando hacia la camara en la calle">
-                <p>"Su equipo ha mantenido mis dispositivos en excelente estado y me ha ahorrado innumerables dolores de cabeza. ¡Gracias por su servicio confiable y profesional!"</p>
+                <img src="../img/experienciaclientes11redimensionada.jpg"
+                    alt="mujer joven sonriendo, mirando hacia la camara en la calle">
+                <p>"Su equipo ha mantenido mis dispositivos en excelente estado y me ha ahorrado innumerables dolores de
+                    cabeza. ¡Gracias por su servicio confiable y profesional!"</p>
             </div>
             <div class="grid-item-experiencia">
-                <img src="../img/experienciaclientes12redimensionada.jpg" alt="mujer joven sonriendo, mirando hacia la camara y rescotada en la silla con las manos en su cabeza">
-                <p>"Comprar en ZeroLag es una experiencia que siempre espero. Su amplia selección de productos y el personal amable hacen que cada visita sea placentera. ¡Recomiendo ZeroLag a todos mis amigos!"</p>
+                <img src="../img/experienciaclientes12redimensionada.jpg"
+                    alt="mujer joven sonriendo, mirando hacia la camara y rescotada en la silla con las manos en su cabeza">
+                <p>"Comprar en ZeroLag es una experiencia que siempre espero. Su amplia selección de productos y el
+                    personal amable hacen que cada visita sea placentera. ¡Recomiendo ZeroLag a todos mis amigos!"</p>
             </div>
         </section>
     </main>
@@ -148,9 +200,14 @@
             </p>
         </div>
     </footer>
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- APP DE CARRITO DE COMPRA -->
+    <script src="../js/carritoDeCompra2.js"></script>
 </body>
 
 </html>

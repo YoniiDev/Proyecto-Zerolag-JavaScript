@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- ESTILOS CSS -->
     <link rel="stylesheet" href="../css/estilos.css">
-    <meta name="description" content="Nuestro horario de atención es de Lunes a Viernes de 8:30 a 18:00 hrs. Sábado y Domingo de 9:00 a 14:00 hrs. Llámenos al +56 9 12345678 o escribanos al correo: contacto@ZeroLag.com">
-    <meta name="keywords" content="Contacto ZeroLag, Consulta, Soporte al cliente, Información de Reparación, Información de mantenimiento, Formulario de contacto, Ayuda, Información de contacto, Solicitud de información, Comunicación, Consulta de ventas, Reclamos, Servicio al cliente, ¨Preguntas, Horario de atención, Contacto directo">
+    <meta name="description"
+        content="Nuestro horario de atención es de Lunes a Viernes de 8:30 a 18:00 hrs. Sábado y Domingo de 9:00 a 14:00 hrs. Llámenos al +56 9 12345678 o escribanos al correo: contacto@ZeroLag.com">
+    <meta name="keywords"
+        content="Contacto ZeroLag, Consulta, Soporte al cliente, Información de Reparación, Información de mantenimiento, Formulario de contacto, Ayuda, Información de contacto, Solicitud de información, Comunicación, Consulta de ventas, Reclamos, Servicio al cliente, ¨Preguntas, Horario de atención, Contacto directo">
     <title>Contacto | ZeroLag</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
@@ -31,7 +37,24 @@
                             placeholder="Busca el producto de tus sueños" aria-label="Search">
                         <button class="boton_buscar" type="submit">Buscar</button>
                     </form>
+                    <!-- CARRITO DE PRODUCTOS -->
+                    <div>
+                        <img class="icono_carrito" id="iconoCarritoId" src="../img/carritoDeCompra.png"
+                            alt="carrito de compra">
+                        <p class="contador_de_productos" id="contadorDeProductosId">0</p>
+                    </div>
+                    <div class="carrito_de_productos" id="carritoDeProductosId">
+                        <div class="contenedor_btn_cerrar_carrito_y_titulo_mi_carrito_h3">
+                            <h3 class="titulo_mi_carrito_h3">Mi Carrito</h3>
+                            <button class="btn_cerrar_carrito" id="btnCerrarCarritoId">X</button>
+                        </div>
+                        <div class="contenedor_de_items_de_carrito_de_productos"
+                            id="contenedorDeItemsDeCarritoDeProductosId">
+                        </div>
+                        <p>Total: $<strong class="precio_total" id="precioTotalId">0</strong></p>
+                    </div>
                 </div>
+                <!-- BARRA DE NAVEGACION -->
                 <div class="navbar_contenedor collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav me-auto mb-lg-0 container-fluid d-flex justify-content-around">
                         <li class="li_inicio">
@@ -190,9 +213,14 @@
             </p>
         </div>
     </footer>
+    <!-- BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- APP DE CARRITO DE COMPRA -->
+    <script src="../js/carritoDeCompra2.js"></script>
 </body>
 
 </html>
