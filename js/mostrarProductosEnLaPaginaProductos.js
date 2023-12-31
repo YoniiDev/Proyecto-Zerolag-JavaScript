@@ -35,9 +35,7 @@ obtenerProductos()
 
 //FUNCION PARA MOSTRAR TODOS LOS PRODUCTOS EN LA PÁGINA DE PRODUCTOS
 function mostrarProductosEnLaPaginaProductos(arrayDeProductos, idDelContenedorDeTarjetasDeProducto) {
-    console.log(idDelContenedorDeTarjetasDeProducto);
     let productosContenededorId = document.getElementById(idDelContenedorDeTarjetasDeProducto);
-    console.log(productosContenededorId);
     if (productosContenededorId) {
         productosContenededorId.innerHTML = "";
     } else {

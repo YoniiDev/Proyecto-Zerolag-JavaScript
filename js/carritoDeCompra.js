@@ -4,170 +4,180 @@
 //OBTENER ELEMENTOS DEL DOOM
 const contenedorDeProductos = document.querySelector('#contenedorDeProductosId');
 const contenedorDeItemsDeCarritoDeProductos = document.querySelector('#contenedorDeItemsDeCarritoDeProductosId');
-const precioTotal = document.querySelector('#precioTotalId');
+const valorTotalPagoConTransferencia = document.querySelector('#valorTotalPagoConTransferenciaId');
+const valorTotalOtrosMediosDePago = document.querySelector('#valorTotalOtrosMediosDePagoId');
 const contadorDeProductos = document.querySelector('#contadorDeProductosId');
 const iconoCarrito = document.querySelector('#iconoCarritoId');
 const btnCerrarCarrito = document.querySelector('#btnCerrarCarritoId');
 
-//MOSTRAR EL CARRITO DE COMPRA AL HACER CLIC EN EL ICONO DEL CARRITO
+//FUNCION PARA MOSTRAR EL CARRITO DE COMPRA AL HACER CLIC EN EL ICONO DEL CARRITO
 iconoCarrito.addEventListener('click', mostrarCarrito);
-
 function mostrarCarrito() {
-    const elementoCarrito = document.getElementById("carritoDeProductosId");
-    elementoCarrito.style.display = "block";
+    const carritoDeProductos = document.getElementById("carritoDeProductosId");
+    carritoDeProductos.style.display = "block";
 }
 
-//OCULTAR EL CARRITO DE COMPRA AL HACER CLIC EN EL BOTON CERRAR
+//FUNCION PARA OCULTAR EL CARRITO DE COMPRA AL HACER CLIC EN EL BOTON CERRAR
 btnCerrarCarrito.addEventListener('click', cerrarCarrito);
-
 function cerrarCarrito() {
-    elementoCarrito = document.getElementById("carritoDeProductosId");
-    elementoCarrito.style.display = "none";
+    carritoDeProductos = document.getElementById("carritoDeProductosId");
+    carritoDeProductos.style.display = "none";
 }
 
-//ARRAY DEL CARRITO DE COMPRA
+//ARRAY DE PRODUCTOS DEL CARRITO DE COMPRA
 let carritoDeCompra = [];
 
-//VARIABLES GLOBALES
-let totalCarrito = 0;
-let cantidadDeProducto = 0;
+//OTRAS VARIABLES GLOBALES
+let totalTransferencia = 0;
+let totalOtrosMediosDePago = 0;
+let cantidadDeProductos = 0;
 
-//AÑADIR PRODUCTOS AL CARRITO DE COMPRA
-loadEventListener();
-function loadEventListener() {
-    contenedorDeProductos.addEventListener('click', añadirProducto);
-}
+//FUNCION PARA AÑADIR PRODUCTOS AL CARRITO DE COMPRA
+function añadirProductoAlCarrito() {
+    contenedorDeProductos.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (e.target.classList.contains('btn_añadir_al_carrito')) {
+            const tarjetaDeProducto = e.target.parentElement;
+            const productoAAñadir = {
+                imagen: tarjetaDeProducto.querySelector(".imagen_del_producto").src,
+                descripcion: tarjetaDeProducto.querySelector(".descripcion_producto").textContent,
+                precioNormal: tarjetaDeProducto.querySelector(".precio_normal_del_producto").textContent,
+                precioConTransferencia: tarjetaDeProducto.querySelector(".precio_producto_con_transferencia").textContent,
+                precioConOtrosMediosDePago: tarjetaDeProducto.querySelector(".precio_de_producto_con_otros_medios_de_pago").textContent,
+                id: tarjetaDeProducto.querySelector('a').getAttribute('data-id'),
+                cantidad: 1
+            }
 
-function añadirProducto(e) {
-    e.preventDefault();
-    if (e.target.classList.contains('btn_añadir_al_carrito')) {
-        const selecionProducto = e.target.parentElement;
-        obtenerInformacionDelProducto(selecionProducto);
-        actualizarCarrito()
-    }
-}
+            const existeElProductoEnElCarritoDeCompra = carritoDeCompra.some((producto) => producto.id === productoAAñadir.id)
+            if (existeElProductoEnElCarritoDeCompra) {
+                const carritoDeCompraConNuevoProducto = carritoDeCompra.map((producto) => {
+                    if (producto.id === productoAAñadir.id) {
+                        producto.cantidad++;
+                        return producto;
+                    } else {
+                        return producto;
+                    }
+                });
+                carritoDeCompra = [...carritoDeCompraConNuevoProducto]
+            } else {
+                carritoDeCompra = [...carritoDeCompra, productoAAñadir]
+            }
 
-//ELIMINAR PRODUCTOS DEL CARRITO CARRITO
-contenedorDeItemsDeCarritoDeProductos.addEventListener('click', (e) => {
-    if (e.target.classList.contains('eliminar_producto')) {
-        const eliminarId = e.target.dataset.id;
-        carritoDeCompra = carritoDeCompra.filter((producto) => producto.id !== eliminarId);
-        actualizarCarrito();
-    }
-})
+            actualizarCarrito();
+            guardarCarritoEnLocalStorage();
+        }
+    });
+};
 
-//ACTUALIZAR EL CARRITO DE COMPRA
+añadirProductoAlCarrito();
+
+//FUNCION PARA ELIMINAR PRODUCTOS DEL CARRITO DE COMPRA
+function eliminarProductoDelCarrito() {
+    contenedorDeItemsDeCarritoDeProductos.addEventListener('click', (e) => {
+        if (e.target.classList.contains('eliminar_producto')) {
+            const idDelProductoAEliminar = e.target.dataset.id;
+            carritoDeCompra = carritoDeCompra.filter((producto) => producto.id !== idDelProductoAEliminar);
+            actualizarCarrito();
+            guardarCarritoEnLocalStorage();
+        }
+    });
+};
+
+eliminarProductoDelCarrito();
+
+//FUNCION PARA ACTUALIZAR EL CARRITO DE COMPRA
 function actualizarCarrito() {
     limpiarHtml();
-
     carritoDeCompra.forEach((producto) => {
-        const { imagen, descripcion, precioNormal, cantidad } = producto;
-        const nuevoItem = document.createElement('div');
-        nuevoItem.classList.add('item');
+        const { imagen, descripcion, precioNormal, precioConTransferencia, precioConOtrosMediosDePago, id, cantidad } = producto;
+        const item = document.createElement('div');
+        item.classList.add('item');
 
-        nuevoItem.innerHTML = `
-            <img src="${imagen}" alt="">
-            <div class="contenido_del_producto">
-                <p class="nombre_del_producto">${descripcion}</p>
-                <p class="cantidad">Cantidad: ${cantidad}</p>
-                <p class="precio">Precio: $${precioNormal}</p>
-                <button class="eliminar_producto" data-id="${producto.id}">X</button>
-            <div>
+        item.innerHTML = `
+            <p class="nombre_del_producto">${descripcion}</p>
+            <div class="contenedor_de_la_imagen_y_de_la_informacion_del_producto">
+                <div class="contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto">
+                    <div class="imagen_del_producto">
+                        <img src="${imagen}" alt="${descripcion}">
+                    </div>    
+                    <button class="eliminar_producto" data-id="${id}">Eliminar</button>
+                </div>
+                <div class="informacion_del_producto">
+                    <p class="cantidad">Cantidad: ${cantidad}</p>
+                    <p class="precio_normal">Precio Normal: $<s>${precioNormal}</s></p>
+                    <p class="precio_con_transferencia">Precio transferencias: $${precioConTransferencia}</p>
+                    <p class="precio_con_otros_medios_de_pago">Otros medios de pago: $${precioConOtrosMediosDePago}</p>
+                <div>
+            </div>    
         `;
-
-        contenedorDeItemsDeCarritoDeProductos.appendChild(nuevoItem);
+        contenedorDeItemsDeCarritoDeProductos.appendChild(item);
     });
 
-    totalCarrito = carritoDeCompra.reduce((total, producto) => total + parseInt(producto.precioNormal) * producto.cantidad, 0);
-    cantidadDeProducto = carritoDeCompra.reduce((contador, producto) => contador + producto.cantidad, 0);
+    totalTransferencia = carritoDeCompra.reduce((totalTransferencia, producto) => {
+        return totalTransferencia + (parseInt(producto.precioConTransferencia) * producto.cantidad);
+    }, 0);
 
-    precioTotal.innerHTML = totalCarrito;
-    contadorDeProductos.innerHTML = cantidadDeProducto;
+    totalOtrosMediosDePago = carritoDeCompra.reduce((totalOtrosMediosDePago, producto) => {
+        return totalOtrosMediosDePago + (parseInt(producto.precioConOtrosMediosDePago) * producto.cantidad);
+    }, 0);    
 
-    guardarCarritoEnLocalStorage();
+    cantidadDeProductos = carritoDeCompra.reduce((contadorDeProducto, producto) => { return contadorDeProducto + producto.cantidad }, 0);
+
+    valorTotalPagoConTransferencia.innerHTML = totalTransferencia;
+    valorTotalOtrosMediosDePago.innerHTML = totalOtrosMediosDePago;
+    contadorDeProductos.innerHTML = cantidadDeProductos;
 }
 
-//OBTENER INFORMACION DEL PRODUCTO
-function obtenerInformacionDelProducto(producto) {
-    const informacionProducto = {
-        imagen: producto.querySelector("#imagenDeProductoId").src,
-        descripcion: producto.querySelector("#descripcionDeProductoId").textContent,
-        precioNormal: producto.querySelector("#precioNormalDeProductoId").textContent,
-        id: producto.querySelector('a').getAttribute('data-id'),
-        cantidad: 1
-
-    }
-
-    totalCarrito = parseInt(totalCarrito) + parseInt(informacionProducto.precioNormal);
-
-    const existe = carritoDeCompra.some((producto) => producto.id === informacionProducto.id);
-
-    if (existe) {
-        const product = carritoDeCompra.map((producto) => {
-            if (producto.id === informacionProducto.id) {
-                producto.cantidad++;
-                return producto;
-            } else {
-                return producto;
-            }
-        });
-        carritoDeCompra = [...product]
-    } else {
-        carritoDeCompra = [...carritoDeCompra, informacionProducto]
-        cantidadDeProducto++;
-    }
-
-    cargarHtml();
-    guardarCarritoEnLocalStorage();
-    actualizarCarrito();
-}
-
-//CARGAR EL CONTENIDO EN EL HTML
-function cargarHtml() {
-    limpiarHtml();
-    carritoDeCompra.forEach(producto => {
-        const { imagen, descripcion, precioNormal, cantidad, id } = producto;
-        const nuevoItem = document.createElement('div');
-        nuevoItem.classList.add('item');
-
-        nuevoItem.innerHTML = `
-            <img src="${imagen}" alt="">
-            <div class="contenido_del_producto">
-                <p class="nombre_del_producto">${descripcion}</p>
-                <p class="cantidad">Cantidad: ${cantidad}</p>
-                <p class="precio">Precio $${precioNormal}</p>
-                <button class="eliminar_producto" data-id="${id}">X</button>
-            </div>
-        `;
-
-        contenedorDeItemsDeCarritoDeProductos.appendChild(nuevoItem);
-        precioTotal.innerHTML = totalCarrito;
-        contadorDeProductos.innerHTML = cantidadDeProducto;
-    });
-}
-
-//LIMPIA EL CARRITO DE PRODUCTOS
+//FUNCION PARA LIMPIAR EL CARRITO DE PRODUCTOS
 function limpiarHtml() {
     contenedorDeItemsDeCarritoDeProductos.innerHTML = '';
 }
 
-//GUARDA EL CARRITO EN EL LOCALSTORAGE
+//FUNCION PARA GUARDA EL CARRITO EN EL LOCALSTORAGE
 function guardarCarritoEnLocalStorage() {
-    //APLICACION DE JSON PARA ALAMCENAR EL CARRITO EN EL LOCALSTORAGE
     localStorage.setItem('carritoDeCompra', JSON.stringify(carritoDeCompra));
-    localStorage.setItem('totalCarrito', totalCarrito);
-    localStorage.setItem('cantidadDeProducto', cantidadDeProducto);
+    localStorage.setItem('totalTransferencia', totalTransferencia);
+    localStorage.setItem('totalOtrosMediosDePago', totalOtrosMediosDePago);
+    localStorage.setItem('cantidadDeProductos', cantidadDeProductos);
 }
 
-//CARGAR EL CARRITO DESDE EL LOCALSTORAGE
+//FUNCION PARA CARGAR EL CARRITO DESDE EL LOCALSTORAGE
 document.addEventListener('DOMContentLoaded', cargarCarritoDesdeLocalStorage);
-
 function cargarCarritoDesdeLocalStorage() {
     carritoDeCompra = JSON.parse(localStorage.getItem('carritoDeCompra')) || [];
-    totalCarrito = JSON.parse(localStorage.getItem('totalCarrito')) || 0;
-    cantidadDeProducto = JSON.parse(localStorage.getItem('cantidadDeProducto')) || 0;
+    totalTransferencia = JSON.parse(localStorage.getItem('totalTransferencia')) || 0;
+    totalOtrosMediosDePago = JSON.parse(localStorage.getItem('totalOtrosMediosDePago')) || 0;
+    cantidadDeProductos = JSON.parse(localStorage.getItem('cantidadDeProductos')) || 0;
 
-    actualizarCarrito()
+    limpiarHtml();
+
+    carritoDeCompra.forEach((producto) => {
+        const { imagen, descripcion, precioNormal, precioConTransferencia, precioConOtrosMediosDePago, id, cantidad } = producto;
+        const item = document.createElement('div');
+        item.classList.add('item');
+
+        item.innerHTML = `
+        <p class="nombre_del_producto">${descripcion}</p>
+        <div class="contendedor_de_la_imagen_y_de_la_infomacion_del_producto">
+            <div class="contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto">
+                <div class="imagen_del_producto">
+                    <img src="${imagen}" alt="${descripcion}">
+                </div>    
+                <button class="eliminar_producto" data-id="${id}">Eliminar</button>
+            </div>
+            <div class="informacion_del_producto">
+                <p class="cantidad">Cantidad: ${cantidad}</p>
+                <p class="precio_normal">Precio Normal: $<s>${precioNormal}</s></p>
+                <p class="precio_con_transferencia">Precio transferencias: $${precioConTransferencia}</p>
+                <p class="precio_con_otros_medios_de_pago">Otros medios de pago: $${precioConOtrosMediosDePago}</p>
+            <div>
+        </div>    
+        `;
+
+        contenedorDeItemsDeCarritoDeProductos.appendChild(item);
+    })
+
+    valorTotalPagoConTransferencia.innerHTML = totalTransferencia;
+    valorTotalOtrosMediosDePago.innerHTML = totalOtrosMediosDePago;
+    contadorDeProductos.innerHTML = cantidadDeProductos;
 }
-
-

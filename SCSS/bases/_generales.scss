@@ -90,7 +90,7 @@ header {
           }
         }
 
-        div {
+        .contenedor_del_icono_carrito_y_del_contador_de_productos {
           position: relative;
 
           .icono_carrito {
@@ -124,19 +124,19 @@ header {
           padding: 0 10px;
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
           display: none;
-          min-width: 290px;
+          width: 500px;
           z-index: 100;
           border: 2px solid red;
           border-radius: 10px;
           line-height: normal;
 
-          .contenedor_btn_cerrar_carrito_y_titulo_mi_carrito_h3 {
+          .contenedor_btn_cerrar_carrito_y_titulo_carrito_de_productos {
             display: flex;
             justify-content: space-between;
             border-bottom: 2px solid red;
             padding: 5px 0;
 
-            .titulo_mi_carrito_h3 {
+            .titulo_carrito_de_productos {
               margin: 0;
               text-align: center;
               margin: 0;
@@ -159,89 +159,140 @@ header {
               width: 20px;
               height: 20px;
             }
-
           }
 
           .contenedor_de_items_de_carrito_de_productos {
 
             .item {
-              display: flex;
-              padding: 10px;
-              align-items: center;
+              padding: 5px 0px 5px 0px;
               border-bottom: 2px solid red;
 
-              img {
-                width: 115px;
-                padding: 5px;
-              }
-
-              .contenido_del_producto {
+              .nombre_del_producto {
                 margin: 0;
-                position: relative;
-                width: 200px;
-                padding: 25px 5px 5px 5px;
-
-                .eliminar_producto {
-                  position: absolute;
-                  top: 0;
-                  right: 0;
-                  color: white;
-                  background-color: red;
-                  border-radius: 100%;
-                  width: 22px;
-                  height: 22px;
-                }
-
-                .nombre_del_producto {
-                  margin: 0;
-                  line-height: normal;
-                  font-size: 15px;
-                  font-weight: 400;
-                  font-family: Verdana, Geneva, Tahoma, sans-serif;
-                  color: #0f0f0f;
-                  text-align: justify;
-                }
-
-                .precio {
-                  margin: 0;
-                  margin-top: 5px;
-                  line-height: normal;
-                  font-size: 15px;
-                  font-weight: 600;
-                  font-family: Verdana, Geneva, Tahoma, sans-serif;
-                  color: #0f0f0f;
-                  text-align: right;
-                }
-
-                .cantidad {
-                  margin: 0;
-                  margin-top: 5px;
-                  line-height: normal;
-                  font-size: 15px;
-                  font-weight: 600;
-                  font-family: Verdana, Geneva, Tahoma, sans-serif;
-                  color: #0f0f0f;
-                  text-align: right;
-                }
+                line-height: normal;
+                font-size: 14px;
+                font-weight: 400;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #0f0f0f;
+                text-align: justify;
               }
 
-              
+              .contenedor_de_la_imagen_y_de_la_informacion_del_producto {
+                display: flex;
+                justify-content: space-between;
+
+                .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto {
+                  .imagen_del_producto {
+                    width: 115px;
+
+                    img {
+                      width: 115px;
+                    }
+                  }
+
+                  .eliminar_producto {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 12px;
+                    color: white;
+                    background-color: red;
+                    padding: 2px;
+                    border-radius: 10px;
+                  }
+                }
+
+                .informacion_del_producto {
+                  margin: 0;
+                  padding: 0px 0px 0px 5px;
+
+                  .cantidad {
+                    margin: 0;
+                    margin-top: 5px;
+                    line-height: normal;
+                    font-size: 15px;
+                    font-weight: 600;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: #0f0f0f;
+                    text-align: right;
+                  }
+
+                  .precio_normal {
+                    margin: 0;
+                    margin-top: 5px;
+                    line-height: normal;
+                    font-size: 15px;
+                    font-weight: 600;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: gray;
+                    text-align: right;
+                  }
+
+                  .precio_con_transferencia {
+                    margin: 0;
+                    margin-top: 5px;
+                    line-height: normal;
+                    font-size: 15px;
+                    font-weight: 600;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: #0f0f0f;
+                    text-align: left;
+                  }
+
+                  .precio_con_otros_medios_de_pago {
+                    margin: 0;
+                    margin-top: 5px;
+                    line-height: normal;
+                    font-size: 15px;
+                    font-weight: 600;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: #0f0f0f;
+                    text-align: left;
+                  }
+                }
+              }
             }
           }
+          .contenedor_de_totales_a_pagar_y_del_boton_iniciar_pago{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .contenedor_de_total_de_pago_con_transferencia_y_de_total_con_otros_medios_de_pago{
+              .pago_con_transferencia {
+                margin: 0;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                line-height: normal;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #0f0f0f;
+                text-align: left;
+              }
 
-          p {
-            margin: 0;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            margin-right: 10px;
-            line-height: normal;
-            font-size: 15px;
-            font-weight: 600;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #0f0f0f;
-            text-align: right;
+              .Otros_medios_de_pago {
+                margin: 0;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                line-height: normal;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: #0f0f0f;
+                text-align: left;
+              }
+            }
 
-            .precio_total {}
+            .btn_iniciar_pago {
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-size: 15px;
+              font-weight: 600;
+              color: white;
+              background-color: red;
+              padding: 4px;
+              border-radius: 10px;
+              margin-right: 50px;
+              line-height: normal;
+              height: 2em;
+            }
           }
         }
       }

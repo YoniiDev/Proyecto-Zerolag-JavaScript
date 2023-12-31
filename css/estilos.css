@@ -66,12 +66,12 @@ header {
               color: black;
               font-size: 16px;
               font-weight: 600; }
-        header .navbar .header_navbar_contenedor .header_contenedor div {
+        header .navbar .header_navbar_contenedor .header_contenedor .contenedor_del_icono_carrito_y_del_contador_de_productos {
           position: relative; }
-          header .navbar .header_navbar_contenedor .header_contenedor div .icono_carrito {
+          header .navbar .header_navbar_contenedor .header_contenedor .contenedor_del_icono_carrito_y_del_contador_de_productos .icono_carrito {
             width: 35px;
             margin-top: 18px; }
-          header .navbar .header_navbar_contenedor .header_contenedor div .contador_de_productos {
+          header .navbar .header_navbar_contenedor .header_contenedor .contenedor_del_icono_carrito_y_del_contador_de_productos .contador_de_productos {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -94,17 +94,17 @@ header {
           padding: 0 10px;
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.493);
           display: none;
-          min-width: 290px;
+          width: 500px;
           z-index: 100;
           border: 2px solid red;
           border-radius: 10px;
           line-height: normal; }
-          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_btn_cerrar_carrito_y_titulo_mi_carrito_h3 {
+          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_btn_cerrar_carrito_y_titulo_carrito_de_productos {
             display: flex;
             justify-content: space-between;
             border-bottom: 2px solid red;
             padding: 5px 0; }
-            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_btn_cerrar_carrito_y_titulo_mi_carrito_h3 .titulo_mi_carrito_h3 {
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_btn_cerrar_carrito_y_titulo_carrito_de_productos .titulo_carrito_de_productos {
               margin: 0;
               text-align: center;
               margin: 0;
@@ -113,7 +113,7 @@ header {
               font-weight: 600;
               font-family: Verdana, Geneva, Tahoma, sans-serif;
               color: #0f0f0f; }
-            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_btn_cerrar_carrito_y_titulo_mi_carrito_h3 .btn_cerrar_carrito {
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_btn_cerrar_carrito_y_titulo_carrito_de_productos .btn_cerrar_carrito {
               display: flex;
               justify-content: center;
               align-items: center;
@@ -125,64 +125,104 @@ header {
               width: 20px;
               height: 20px; }
           header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item {
-            display: flex;
-            padding: 10px;
-            align-items: center;
+            padding: 5px 0px 5px 0px;
             border-bottom: 2px solid red; }
-            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item img {
-              width: 115px;
-              padding: 5px; }
-            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto {
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .nombre_del_producto {
               margin: 0;
-              position: relative;
-              width: 200px;
-              padding: 25px 5px 5px 5px; }
-              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto .eliminar_producto {
-                position: absolute;
-                top: 0;
-                right: 0;
+              line-height: normal;
+              font-size: 14px;
+              font-weight: 400;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: #0f0f0f;
+              text-align: justify; }
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto {
+              display: flex;
+              justify-content: space-between; }
+              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto .imagen_del_producto {
+                width: 115px; }
+                header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto .imagen_del_producto img {
+                  width: 115px; }
+              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto .eliminar_producto {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 12px;
                 color: white;
                 background-color: red;
-                border-radius: 100%;
-                width: 22px;
-                height: 22px; }
-              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto .nombre_del_producto {
+                padding: 2px;
+                border-radius: 10px; }
+              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto {
                 margin: 0;
-                line-height: normal;
-                font-size: 15px;
-                font-weight: 400;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color: #0f0f0f;
-                text-align: justify; }
-              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto .precio {
-                margin: 0;
-                margin-top: 5px;
-                line-height: normal;
-                font-size: 15px;
-                font-weight: 600;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color: #0f0f0f;
-                text-align: right; }
-              header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenido_del_producto .cantidad {
-                margin: 0;
-                margin-top: 5px;
-                line-height: normal;
-                font-size: 15px;
-                font-weight: 600;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                color: #0f0f0f;
-                text-align: right; }
-          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos p {
-            margin: 0;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            margin-right: 10px;
-            line-height: normal;
-            font-size: 15px;
-            font-weight: 600;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #0f0f0f;
-            text-align: right; }
+                padding: 0px 0px 0px 5px; }
+                header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .cantidad {
+                  margin: 0;
+                  margin-top: 5px;
+                  line-height: normal;
+                  font-size: 15px;
+                  font-weight: 600;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  color: #0f0f0f;
+                  text-align: right; }
+                header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .precio_normal {
+                  margin: 0;
+                  margin-top: 5px;
+                  line-height: normal;
+                  font-size: 15px;
+                  font-weight: 600;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  color: gray;
+                  text-align: right; }
+                header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .precio_con_transferencia {
+                  margin: 0;
+                  margin-top: 5px;
+                  line-height: normal;
+                  font-size: 15px;
+                  font-weight: 600;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  color: #0f0f0f;
+                  text-align: left; }
+                header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_items_de_carrito_de_productos .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .precio_con_otros_medios_de_pago {
+                  margin: 0;
+                  margin-top: 5px;
+                  line-height: normal;
+                  font-size: 15px;
+                  font-weight: 600;
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  color: #0f0f0f;
+                  text-align: left; }
+          header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_totales_a_pagar_y_del_boton_iniciar_pago {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_totales_a_pagar_y_del_boton_iniciar_pago .contenedor_de_total_de_pago_con_transferencia_y_de_total_con_otros_medios_de_pago .pago_con_transferencia {
+              margin: 0;
+              margin-top: 5px;
+              margin-bottom: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: #0f0f0f;
+              text-align: left; }
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_totales_a_pagar_y_del_boton_iniciar_pago .contenedor_de_total_de_pago_con_transferencia_y_de_total_con_otros_medios_de_pago .Otros_medios_de_pago {
+              margin: 0;
+              margin-top: 5px;
+              margin-bottom: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: #0f0f0f;
+              text-align: left; }
+            header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_totales_a_pagar_y_del_boton_iniciar_pago .btn_iniciar_pago {
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-size: 15px;
+              font-weight: 600;
+              color: white;
+              background-color: red;
+              padding: 4px;
+              border-radius: 10px;
+              margin-right: 50px;
+              line-height: normal;
+              height: 2em; }
       header .navbar .header_navbar_contenedor .navbar_contenedor ul {
         padding: 0; }
         header .navbar .header_navbar_contenedor .navbar_contenedor ul .li_inicio .a_inicio {

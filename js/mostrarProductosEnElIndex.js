@@ -1,7 +1,6 @@
-
 let arrayDeProductos = [];
 
-//FUNCION PARA LEER LISTADO DE PRODCUTOS DESDE UN ARCHIVO JSON LOCAL
+//FUNCION PARA LEER LISTADO DE PRODUCTOS DESDE UN ARCHIVO JSON LOCAL
 function obtenerProductos() {
     fetch('../js/productos.json')
         .then((response) => {
@@ -36,11 +35,9 @@ obtenerProductos()
 
 //FUNCION PARA MOSTRAR PRODUCTOS EN LA SECCION DE OFERTAS IMPEDIBLES
 function mostrarProductosEnOfertasImperdibles(arrayDeProductos, idDelContenedorDeTarjetasDeProducto ) {
-    let arrayOfertasImperdibles = arrayDeProductos.slice(0, 4);
+    let arrayOfertasImperdibles = arrayDeProductos.filter((producto) => producto.categoriaOfertasImperdibles);
 
-    console.log(idDelContenedorDeTarjetasDeProducto);
-    let productosOfertasImperdiblesId = document.getElementById(idDelContenedorDeTarjetasDeProducto);
-    console.log(productosOfertasImperdiblesId);
+    const productosOfertasImperdiblesId = document.getElementById(idDelContenedorDeTarjetasDeProducto);
     if (productosOfertasImperdiblesId) {
         productosOfertasImperdiblesId.innerHTML = "";
     } else {
@@ -58,15 +55,15 @@ function mostrarProductosEnOfertasImperdibles(arrayDeProductos, idDelContenedorD
         tarjetaDeProducto.classList.add("tarjetas_de_producto_ofertas_imperdibles");
 
         tarjetaDeProducto.innerHTML = `
-        <img id="imagenDeProductoId" src="${producto.imagenDelProducto}" alt="${producto.descripcionDeProducto}">
+        <img class="imagen_del_producto" src="${producto.imagenDelProducto}" alt="${producto.descripcionDeProducto}">
         <h3>${producto.marcaDeProducto}</h3>
-        <p class="ofertas_imperdibles_descripcion_producto">${producto.descripcionDeProducto}</p>
+        <p class="ofertas_imperdibles_descripcion_producto descripcion_producto">${producto.descripcionDeProducto}</p>
         <div class="ofertas_imperdibles_precio_normal_y_porcentaje_de_descuento_contenedor">
             <p class="ofertas_imperdibles_porcentaje_de_descuento">${producto.descuentoDeProducto * 100}% descuento</p>
-            <p class="ofertas_imperdibles_precio_normal">${producto.precioNormalDeProducto.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' })}</p>
+            <p class="ofertas_imperdibles_precio_normal">$<s class="precio_normal_del_producto">${producto.precioNormalDeProducto}</s></p>
         </div>
-        <p class="ofertas_imperdibles_precio_producto_con_transferencia">Transferencia ${producto.precioTransferenciaDeProducto.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' })}</p>
-        <p class="ofertas_imperdibles_precio_producto_otros_medios_de_pago">Otros medios de pago ${producto.precioOtrosMediosDePagoDeProducto.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' })}</p>
+        <p class="ofertas_imperdibles_precio_producto_con_transferencia">Transferencia $<span class="precio_producto_con_transferencia">${producto.precioTransferenciaDeProducto}</span></p>
+        <p class="ofertas_imperdibles_precio_producto_otros_medios_de_pago">Otros medios de pago $<span class="precio_de_producto_con_otros_medios_de_pago">${producto.precioOtrosMediosDePagoDeProducto}</span></p>
         <a href="#" class="btn_añadir_al_carrito" data-id="${producto.idDeProducto}">COMPRAR</a>
         `
         productosOfertasImperdiblesId.appendChild(tarjetaDeProducto)
@@ -77,9 +74,7 @@ function mostrarProductosEnOfertasImperdibles(arrayDeProductos, idDelContenedorD
 function mostrarProductosEnTePuedeInteresar(arrayDeProductos, idDelContenedorDeTarjetasDeProducto) {
     let arrayTePuedeInteresar = arrayDeProductos.slice(4, 8);
 
-    console.log(idDelContenedorDeTarjetasDeProducto);
-    let productosTePuedeInteresarId = document.getElementById(idDelContenedorDeTarjetasDeProducto);
-    console.log(productosTePuedeInteresarId);
+    const productosTePuedeInteresarId = document.getElementById(idDelContenedorDeTarjetasDeProducto);
     if (productosTePuedeInteresarId) {
         productosTePuedeInteresarId.innerHTML = "";
     } else {
@@ -97,15 +92,15 @@ function mostrarProductosEnTePuedeInteresar(arrayDeProductos, idDelContenedorDeT
         tarjetaDeProducto.classList.add("tarjetas_de_producto_te_puede_interesar");
 
         tarjetaDeProducto.innerHTML = `
-        <img id="imagenDeProductoId" src="${producto.imagenDelProducto}" alt="${producto.descripcionDeProducto}">
+        <img class="imagen_del_producto" src="${producto.imagenDelProducto}" alt="${producto.descripcionDeProducto}">
         <h3>${producto.marcaDeProducto}</h3>
-        <p class="te_puede_interesar_descripcion_producto">${producto.descripcionDeProducto}</p>
+        <p class="te_puede_interesar_descripcion_producto descripcion_producto">${producto.descripcionDeProducto}</p>
         <div class="te_puede_interesar_precio_normal_y_porcentaje_de_descuento_contenedor">
             <p class="te_puede_interesar_porcentaje_de_descuento">${producto.descuentoDeProducto * 100}% descuento</p>
-            <p class="te_puede_interesar_precio_normal">${producto.precioNormalDeProducto.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' })}</p>
+            <p class="te_puede_interesar_precio_normal">$<s class="precio_normal_del_producto">${producto.precioNormalDeProducto}</s></p>
         </div>
-        <p class="te_puede_interesar_precio_producto_con_transferencia">Transferencia ${producto.precioTransferenciaDeProducto.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' })}</p>
-        <p class="te_puede_interesar_precio_producto_otros_medios_de_pago">Otros medios de pago ${producto.precioOtrosMediosDePagoDeProducto.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' })}</p>
+        <p class="te_puede_interesar_precio_producto_con_transferencia">Transferencia $<span class="precio_producto_con_transferencia">${producto.precioTransferenciaDeProducto}</span></p>
+        <p class="te_puede_interesar_precio_producto_otros_medios_de_pago">Otros medios de pago $<span class="precio_de_producto_con_otros_medios_de_pago">${producto.precioOtrosMediosDePagoDeProducto}</span></p>
         <a href="#" class="btn_añadir_al_carrito" data-id="${producto.idDeProducto}">COMPRAR</a>
         `
         productosTePuedeInteresarId.appendChild(tarjetaDeProducto)
