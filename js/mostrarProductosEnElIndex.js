@@ -92,7 +92,7 @@ function mostrarProductosEnTePuedeInteresar(arrayDeProductos, idDelContenedorDeT
         tarjetaDeProducto.classList.add("tarjetas_de_producto_te_puede_interesar");
 
         tarjetaDeProducto.innerHTML = `
-        <img class="imagen_del_producto" src="${producto.imagenDelProducto}" alt="${producto.descripcionDeProducto}">
+        <img class="imagen_del_producto" src="${producto.imagenDelProductoIndex}" alt="${producto.descripcionDeProducto}">
         <h3>${producto.marcaDeProducto}</h3>
         <p class="te_puede_interesar_descripcion_producto descripcion_producto">${producto.descripcionDeProducto}</p>
         <div class="te_puede_interesar_precio_normal_y_porcentaje_de_descuento_contenedor">

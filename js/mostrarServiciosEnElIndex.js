@@ -55,7 +55,7 @@ function mostrarServiciosEnElIndex(arrayDeServicios, idDelContenedorDeTarjetasDe
         tarjetaDeServicio.classList.add("tarjeta_de_servicio");
 
         tarjetaDeServicio.innerHTML =`
-        <img src="${servicio.imagenDelServicio}" alt="${servicio.altDeLaImagen}">
+        <img src="${servicio.imagenDelServicioIndex}" alt="${servicio.altDeLaImagen}">
         <h3>${servicio.nombreDelServicio}</h3>
         <a href=../pages/servicios.html>VER MAS</a>
         `

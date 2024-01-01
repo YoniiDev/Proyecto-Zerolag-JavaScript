@@ -53,7 +53,7 @@ function mostrarServiciosEnLaPaginaServicios(arrayDeServicios, idDelContenedorDe
         tarjetaDeServicio.classList.add("tarjeta_de_servicio");
 
         tarjetaDeServicio.innerHTML =`
-        <img src="${servicio.imagenDelServicio}" alt="${servicio.altDeLaImagen}">
+        <img src="${servicio.imagenDelServicioPages}" alt="${servicio.altDeLaImagen}">
         <h3>${servicio.nombreDelServicio}</h3>
         <p>${servicio.descripcionDelServicio}</p>
         <a href="#">CONTACTANOS</a>

@@ -53,7 +53,7 @@ function mostrarProductosEnLaPaginaProductos(arrayDeProductos, idDelContenedorDe
         tarjetaDeProducto.classList.add("tarjetas_de_productos_productos");
 
         tarjetaDeProducto.innerHTML = `
-        <img id="imagenDeProductoId" src="${producto.imagenDelProducto}" alt="${producto.descripcionDeProducto}">
+        <img id="imagenDeProductoId" src="${producto.imagenDelProductoPages}" alt="${producto.descripcionDeProducto}">
         <h3>${producto.marcaDeProducto}</h3>
         <p class="productos_descripcion_producto">${producto.descripcionDeProducto}</p>
         <div class="productos_precio_normal_y_porcentaje_de_descuento_contenedor">
