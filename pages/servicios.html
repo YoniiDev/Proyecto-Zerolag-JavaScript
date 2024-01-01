@@ -38,20 +38,27 @@
                         <button class="boton_buscar" type="submit">Buscar</button>
                     </form>
                     <!-- CARRITO DE PRODUCTOS -->
-                    <div>
+                    <div class="contenedor_del_icono_carrito_y_del_contador_de_productos">
                         <img class="icono_carrito" id="iconoCarritoId" src="../img/carritoDeCompra.png"
-                            alt="carrito de compra">
+                            alt="icono_del_carrito de compra">
                         <p class="contador_de_productos" id="contadorDeProductosId">0</p>
                     </div>
                     <div class="carrito_de_productos" id="carritoDeProductosId">
-                        <div class="contenedor_btn_cerrar_carrito_y_titulo_mi_carrito_h3">
-                            <h3 class="titulo_mi_carrito_h3">Mi Carrito</h3>
+                        <div class="contenedor_btn_cerrar_carrito_y_titulo_carrito_de_productos">
+                            <h3 class="titulo_carrito_de_productos">Carrito de productos</h3>
                             <button class="btn_cerrar_carrito" id="btnCerrarCarritoId">X</button>
                         </div>
                         <div class="contenedor_de_items_de_carrito_de_productos"
                             id="contenedorDeItemsDeCarritoDeProductosId">
+                            <!-- ACA SE MUESTRAN LOS ITEMS AGREGADOS AL CARRITO -->
                         </div>
-                        <p>Total: $<strong class="precio_total" id="precioTotalId">0</strong></p>
+                        <div class="contenedor_de_totales_a_pagar_y_del_boton_iniciar_pago">
+                            <div class="contenedor_de_total_de_pago_con_transferencia_y_de_total_con_otros_medios_de_pago">
+                                <p class="pago_con_transferencia">Pago con transferencia $<span class="valor_total_pago_con_transferencia" id="valorTotalPagoConTransferenciaId">0</span></p>
+                                <p class="Otros_medios_de_pago">Otros medios de pago $<span class="valor_total_otros_medios_de_pago" id="valorTotalOtrosMediosDePagoId">0</span></p>
+                            </div>
+                            <button class="btn_iniciar_pago">Iniciar pago</button>
+                        </div>
                     </div>
                 </div>
                 <!-- BARRA DE NAVEGACION -->
