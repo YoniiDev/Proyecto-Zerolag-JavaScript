@@ -3,7 +3,7 @@ let arrayDeServicios = [];
 //FUNCION PARA LEER LISTADO DE SERVICIOS DESDE UN ARCHIVO JSON LOCAL
 
 function obtenerServicios() {
-    fetch('../js/servicios.json')
+    fetch('./js/servicios.json')
         .then((response) => {
             if (response.ok) {
                 return response.json();

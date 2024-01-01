@@ -2,7 +2,7 @@ let arrayDeProductos = [];
 
 //FUNCION PARA LEER LISTADO DE PRODUCTOS DESDE UN ARCHIVO JSON LOCAL
 function obtenerProductos() {
-    fetch('../js/productos.json')
+    fetch('./js/productos.json')
         .then((response) => {
             if (response.ok) {
                 return response.json();
