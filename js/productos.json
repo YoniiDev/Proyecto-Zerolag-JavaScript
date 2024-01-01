@@ -1,7 +1,7 @@
 [
     {
         "idDeProducto": 1,
-        "imagenDelProducto": "./img/img1redimensionada.jpg",
+        "imagenDelProducto": "../img/img1redimensionada.jpg",
         "marcaDeProducto": "ID-COOLING",
         "descripcionDeProducto": "Enfriamiento Liquido ID-Cooling FrostFlow X, 280mm, Intel/AMD, Color Negro", 
         "descuentoDeProducto": 0.5,
@@ -13,7 +13,7 @@
     },
     {
         "idDeProducto": 2,
-        "imagenDelProducto": "./img/img2redimensionada.jpg",
+        "imagenDelProducto": "../img/img2redimensionada.jpg",
         "marcaDeProducto": "KINGSTON",
         "descripcionDeProducto": "Unidad de Estado Sólido Kingston NV2, 1TB NVMe, PCIe 4.0, Lectura 3500 MB/s Escritura...", 
         "descuentoDeProducto": 0.62,
@@ -25,7 +25,7 @@
     },
     {
         "idDeProducto": 3,
-        "imagenDelProducto": "./img/img3redimensionada.jpg",
+        "imagenDelProducto": "../img/img3redimensionada.jpg",
         "marcaDeProducto": "LOGITECH G",
         "descripcionDeProducto": "Mouse Gamer Logitech G Pro, Sensor HERO 16K para eSports, 6 botones programables", 
         "descuentoDeProducto": 0.49,
@@ -37,7 +37,7 @@
     },
     {
         "idDeProducto": 4,
-        "imagenDelProducto": "./img/img11redimensionada.jpg",
+        "imagenDelProducto": "../img/img11redimensionada.jpg",
         "marcaDeProducto": "GIGABYTE",
         "descripcionDeProducto": "Tarjeta de Video Gigabyte GeForce RTX 3060 WINDFORCE OC, 12GB GDDR6, 192-bit...", 
         "descuentoDeProducto": 0.27,
@@ -49,7 +49,7 @@
     },
     {
         "idDeProducto": 5,
-        "imagenDelProducto": "./img/img4redimensionada.jpg",
+        "imagenDelProducto": "../img/img4redimensionada.jpg",
         "marcaDeProducto": "AOC",
         "descripcionDeProducto": "Monitor Curvo de 24\" AOC C24G2, Panel VA, 165Hz, 1ms, FreeSync Premium", 
         "descuentoDeProducto": 0.3,
@@ -61,7 +61,7 @@
     },
     {
         "idDeProducto": 6,
-        "imagenDelProducto": "./img/img5.jpg",
+        "imagenDelProducto": "../img/img5.jpg",
         "marcaDeProducto": "XPG",
         "descripcionDeProducto": "Notebook Gamer XPG Xenia G15, 16\" FHD 144hz, i7 13700H, RTX 4070, RAM 32GB, SSD 1TB", 
         "descuentoDeProducto": 0.17,
@@ -73,7 +73,7 @@
     },
     {
         "idDeProducto": 7,
-        "imagenDelProducto": "./img/img6redimensionada.jpg",
+        "imagenDelProducto": "../img/img6redimensionada.jpg",
         "marcaDeProducto": "REDRAGON",
         "descripcionDeProducto": "Teclado Mecánico Gamer Redragon Kumara K552, Switch Outemu Red, Retroiluminación...", 
         "descuentoDeProducto": 0.45,
@@ -85,7 +85,7 @@
     },
     {
         "idDeProducto": 8,
-        "imagenDelProducto": "./img/img12redimensionada.jpg",
+        "imagenDelProducto": "../img/img12redimensionada.jpg",
         "marcaDeProducto": "ASUS",
         "descripcionDeProducto": "Tarjeta de Video Asus ROG Strix GeForce RTX 4080 16GB GDDR6X OC Edition, PCIe 4.0", 
         "descuentoDeProducto": 0.10,
@@ -97,7 +97,7 @@
     },
     {
         "idDeProducto": 9,
-        "imagenDelProducto": "./img/img7redimensionada.jpg",
+        "imagenDelProducto": "../img/img7redimensionada.jpg",
         "marcaDeProducto": "STREAMPLIFY",
         "descripcionDeProducto": "Micrófono RGB Streamplify, Condensador, Antipop, Brazo Escritorio, Cardioide, USB...", 
         "descuentoDeProducto": 0.2,
@@ -109,7 +109,7 @@
     },
     {
         "idDeProducto": 10,
-        "imagenDelProducto": "./img/img8.jpg",
+        "imagenDelProducto": "../img/img8.jpg",
         "marcaDeProducto": "NITRO CONCEPTS",
         "descripcionDeProducto": "Escritorio Gamer Nitro Concepts D12 Black Red, Construcción de Acero, Tablero Ergonómico...", 
         "descuentoDeProducto": 0.2,
@@ -121,7 +121,7 @@
     },
     {
         "idDeProducto": 11,
-        "imagenDelProducto": "./img/img9redimensionada.jpg",
+        "imagenDelProducto": "../img/img9redimensionada.jpg",
         "marcaDeProducto": "ZEROLAG",
         "descripcionDeProducto": "PC Gamer ZEROLAG INFINITY, RTX 3070 OC, Ryzen 5600X, RAM 16GB(2x8)3200Mhz, SSD 1TB...", 
         "descuentoDeProducto": 0.2,
@@ -133,7 +133,7 @@
     },
     {
         "idDeProducto": 12,
-        "imagenDelProducto": "./img/img10redimensionada.jpg",
+        "imagenDelProducto": "../img/img10redimensionada.jpg",
         "marcaDeProducto": "ZEROLAG",
         "descripcionDeProducto": "PC Gamer ZEROLAG ORION, RTX 4070, Ryzen 5 5600X, RAM 16GB (2x8GB), SSD 1TB, W11 Home", 
         "descuentoDeProducto": 0.2,
