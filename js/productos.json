@@ -2,6 +2,7 @@
     {
         "idDeProducto": 1,
         "imagenDelProducto": "../img/img1redimensionada.jpg",
+        "imagenDelProductoIndex": "./img/img1redimensionada.jpg",
         "marcaDeProducto": "ID-COOLING",
         "descripcionDeProducto": "Enfriamiento Liquido ID-Cooling FrostFlow X, 280mm, Intel/AMD, Color Negro", 
         "descuentoDeProducto": 0.5,

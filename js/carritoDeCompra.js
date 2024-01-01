@@ -65,6 +65,13 @@ function añadirProductoAlCarrito() {
 
             actualizarCarrito();
             guardarCarritoEnLocalStorage();
+            Toastify({
+                text: `Se ha añadido el producto al carrito de compra`,
+                duration: 4000,
+                close: true,
+                gravity: 'bottom',
+                position: 'right'
+            }).showToast();
         }
     });
 };
@@ -158,7 +165,7 @@ function cargarCarritoDesdeLocalStorage() {
 
         item.innerHTML = `
         <p class="nombre_del_producto">${descripcion}</p>
-        <div class="contendedor_de_la_imagen_y_de_la_infomacion_del_producto">
+        <div class="contenedor_de_la_imagen_y_de_la_informacion_del_producto">
             <div class="contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto">
                 <div class="imagen_del_producto">
                     <img src="${imagen}" alt="${descripcion}">

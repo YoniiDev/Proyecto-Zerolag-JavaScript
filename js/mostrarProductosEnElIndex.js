@@ -55,7 +55,7 @@ function mostrarProductosEnOfertasImperdibles(arrayDeProductos, idDelContenedorD
         tarjetaDeProducto.classList.add("tarjetas_de_producto_ofertas_imperdibles");
 
         tarjetaDeProducto.innerHTML = `
-        <img class="imagen_del_producto" src="${producto.imagenDelProducto}" alt="${producto.descripcionDeProducto}">
+        <img class="imagen_del_producto" src="${producto.imagenDelProductoIndex}" alt="${producto.descripcionDeProducto}">
         <h3>${producto.marcaDeProducto}</h3>
         <p class="ofertas_imperdibles_descripcion_producto descripcion_producto">${producto.descripcionDeProducto}</p>
         <div class="ofertas_imperdibles_precio_normal_y_porcentaje_de_descuento_contenedor">
