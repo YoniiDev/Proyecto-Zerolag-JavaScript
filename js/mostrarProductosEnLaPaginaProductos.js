@@ -58,12 +58,11 @@ function mostrarProductosEnLaPaginaProductos(arrayDeProductos, idDelContenedorDe
         <p class="productos_descripcion_producto">${producto.descripcionDeProducto}</p>
         <div class="productos_precio_normal_y_porcentaje_de_descuento_contenedor">
             <p class="productos_porcentaje_de_descuento">${producto.descuentoDeProducto * 100}% descuento</p>
-            <p class="productos_precio_normal">${producto.precioNormalDeProducto.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' })}</p>
+            <p class="productos_precio_normal">$${producto.precioNormalDeProducto}</p>
         </div>
-        <p class="producto_precio_producto_con_transferencia">Transferencia ${producto.precioTransferenciaDeProducto.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' })}</p>
-        <p class="producto_precio_producto_otros_medios_de_pago">Otros medios de pago ${producto.precioOtrosMediosDePagoDeProducto.toLocaleString('es-CL', { style: 'currency', currency: 'CLP' })}</p>
+        <p class="producto_precio_producto_con_transferencia">Transferencia $${producto.precioTransferenciaDeProducto}</p>
+        <p class="producto_precio_producto_otros_medios_de_pago">Otros medios de pago $${producto.precioOtrosMediosDePagoDeProducto}</p>
         <a href="#" class="btn_añadir_al_carrito" data-id="${producto.idDeProducto}">COMPRAR</a>
-        
         `
         // agregar la clase del boton en SASS
         productosContenededorId.appendChild(tarjetaDeProducto)

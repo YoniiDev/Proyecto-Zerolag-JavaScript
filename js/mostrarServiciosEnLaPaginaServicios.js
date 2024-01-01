@@ -54,7 +54,7 @@ function mostrarServiciosEnLaPaginaServicios(arrayDeServicios, idDelContenedorDe
 
         tarjetaDeServicio.innerHTML =`
         <img src="${servicio.imagenDelServicioPages}" alt="${servicio.altDeLaImagen}">
-        <h3>${servicio.nombreDelServicio}</h3>
+        <h3>${servicio.nombreDelServicio}</h3> 
         <p>${servicio.descripcionDelServicio}</p>
         <a href="#">CONTACTANOS</a>
         `  
