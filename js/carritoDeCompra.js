@@ -41,6 +41,7 @@ function añadirProductoAlCarrito() {
             const productoAAñadir = {
                 imagen: tarjetaDeProducto.querySelector(".imagen_del_producto").src,
                 descripcion: tarjetaDeProducto.querySelector(".descripcion_producto").textContent,
+                tipoDeProducto: tarjetaDeProducto.querySelector(".descripcion_producto").getAttribute('data-tipoDeProducto'),
                 precioNormal: tarjetaDeProducto.querySelector(".precio_normal_del_producto").textContent,
                 precioConTransferencia: tarjetaDeProducto.querySelector(".precio_producto_con_transferencia").textContent,
                 precioConOtrosMediosDePago: tarjetaDeProducto.querySelector(".precio_de_producto_con_otros_medios_de_pago").textContent,
@@ -96,12 +97,12 @@ eliminarProductoDelCarrito();
 function actualizarCarrito() {
     limpiarHtml();
     carritoDeCompra.forEach((producto) => {
-        const { imagen, descripcion, precioNormal, precioConTransferencia, precioConOtrosMediosDePago, id, cantidad } = producto;
+        const { imagen, descripcion, tipoDeProducto, precioNormal, precioConTransferencia, precioConOtrosMediosDePago, id, cantidad } = producto;
         const item = document.createElement('div');
         item.classList.add('item');
 
         item.innerHTML = `
-            <p class="nombre_del_producto">${descripcion}</p>
+            <p class="nombre_del_producto" data-tipoDeProducto="${tipoDeProducto}">${descripcion}</p>
             <div class="contenedor_de_la_imagen_y_de_la_informacion_del_producto">
                 <div class="contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto">
                     <div class="imagen_del_producto">
@@ -159,12 +160,12 @@ function cargarCarritoDesdeLocalStorage() {
     limpiarHtml();
 
     carritoDeCompra.forEach((producto) => {
-        const { imagen, descripcion, precioNormal, precioConTransferencia, precioConOtrosMediosDePago, id, cantidad } = producto;
+        const { imagen, descripcion, tipoDeProducto, precioNormal, precioConTransferencia, precioConOtrosMediosDePago, id, cantidad } = producto;
         const item = document.createElement('div');
         item.classList.add('item');
 
-        item.innerHTML = `
-        <p class="nombre_del_producto">${descripcion}</p>
+        item.innerHTML = ` 
+        <p class="nombre_del_producto" data-tipoDeProducto="${tipoDeProducto}">${descripcion}</p>
         <div class="contenedor_de_la_imagen_y_de_la_informacion_del_producto">
             <div class="contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto">
                 <div class="imagen_del_producto">
@@ -188,3 +189,25 @@ function cargarCarritoDesdeLocalStorage() {
     valorTotalOtrosMediosDePago.innerHTML = totalOtrosMediosDePago;
     contadorDeProductos.innerHTML = cantidadDeProductos;
 }
+
+//ELEMENTO DEL DOM DEL BOTON INICIAR PAGO
+const btnIniciarPago = document.querySelector('#btnIniciarPagoId');
+
+//FUNCION QUE COMPRUEBA SI EXISTEN PRODUCTOS EN EL CARRITO ANTES DE INICIAR EL PAGO
+function verificarCarritoAntesDePagar() {
+    btnIniciarPago.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        if (carritoDeCompra.length === 0) {
+            Swal.fire({
+                title: 'El carrito esta vacio',
+                text: 'Debe agregar productos al carrito antes de continuar con el pago.',
+                icon: "error"
+            });
+        }else {
+            window.location.href = "./pages/checkout.html"
+        }
+    });
+}
+
+verificarCarritoAntesDePagar();

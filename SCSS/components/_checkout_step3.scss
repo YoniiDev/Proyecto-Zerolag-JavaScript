@@ -1,0 +1,409 @@
+.checkout_step3 {
+    padding: 20px;
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 55px;
+        font-weight: 900;
+        margin: 0;
+        margin-bottom: 10px;
+        text-shadow: -2px -2px 3px red;
+        color: black;
+    }
+
+    .contenedor_de_metodo_de_pago_e_informacion_de_los_productos {
+        display: flex;
+        justify-content: space-around;
+
+        .metodo_de_pago {
+            width: 700px;
+            height: 480px;
+            border: 2px solid red;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 3px black;
+            background-color: #0f0f0f;
+
+            h2 {
+                font-family: 'Courier New', Courier, monospace;
+                color: white;
+                font-size: 30px;
+                font-weight: 900;
+            }
+
+            form {
+                h3 {
+                    font-family: 'Courier New', Courier, monospace;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 900;
+                }
+
+                .contenedor_pago_banco_estado_y_precio_total_transferencia {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 16px;
+
+                    .pago_banco_estado {
+                        display: flex;
+
+                        input {}
+
+                        .contenedor_label_bancoestado {
+                            margin-left: 20px;
+
+                            label {
+                                color: white;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                font-weight: 100;
+                                font-size: 16px;
+                            }
+
+                            p {
+                                color: white;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                font-weight: 100;
+                                font-size: 16px;
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    p {
+                        color: white;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-weight: 100;
+                        font-size: 16px;
+                        margin: 0;
+
+                        span {}
+                    }
+                }
+
+                .contenedor_pago_banco_santander_y_precio_total_transferencia {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 16px;
+
+                    .pago_banco_santander {
+                        display: flex;
+
+                        input {}
+
+                        .contenedor_label_santander {
+                            margin-left: 20px;
+
+                            label {
+                                color: white;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                font-weight: 100;
+                                font-size: 16px;
+                            }
+
+                            p {
+                                color: white;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                font-weight: 100;
+                                font-size: 16px;
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    p {
+                        color: white;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-weight: 100;
+                        font-size: 16px;
+                        margin: 0;
+
+                        span {}
+                    }
+                }
+
+                .contenedor_pago_con_transferencia_o_deposito_bancario_y_precio_total_transferencia {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 16px;
+
+                    .pago_con_transferencia_o_deposito_bancario {
+                        display: flex;
+
+                        input {}
+
+                        .contenedor_label_pago_con_transferencia_o_deposito_bancario {
+                            margin-left: 20px;
+
+                            label {
+                                color: white;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                font-weight: 100;
+                                font-size: 16px;
+                                margin: 0;
+                            }
+
+                            p {
+                                color: white;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                font-weight: 100;
+                                font-size: 16px;
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    p {
+                        color: white;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-weight: 100;
+                        font-size: 16px;
+                        margin: 0;
+
+                        span {}
+                    }
+                }
+
+                .contenedor_otros_medios_de_pago_y_precio_total_otros_medios_de_pago {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 16px;
+
+                    .otros_medios_de_pago {
+                        display: flex;
+
+                        input {}
+
+                        .contenedor_label_otros_medios_de_pago {
+                            margin-left: 20px;
+
+                            label {
+                                color: white;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                font-weight: 100;
+                                font-size: 16px;
+                            }
+
+                            p {
+                                color: white;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                font-weight: 100;
+                                font-size: 16px;
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    p {
+                        color: white;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-weight: 100;
+                        font-size: 16px;
+                        margin: 0;
+
+                        span {}
+                    }
+                }
+
+                .contenedor_btn_volver_y_btn_continuar {
+                    display: flex;
+                    justify-content: space-around;
+                    padding-top: 16px;
+                    .btn_volver {
+                        display: block;
+                        background-color: red;
+                        color: white;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-weight: 600;
+                        font-size: 16px;
+                        text-decoration: none;
+                        padding-left: 4px;
+                        padding-right: 4px;
+                        border-radius: 10px;
+                        width: 100px;
+                        text-align: center;
+                    }
+
+                    .btn_pagar {
+                        display: block;
+                        background-color: red;
+                        color: white;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-weight: 600;
+                        font-size: 16px;
+                        padding-left: 4px;
+                        padding-right: 4px;
+                        border-radius: 10px;
+                        width: 100px;
+                        text-align: center;
+                    }
+                }
+
+            }
+
+        }
+
+        .informacion_de_los_productos {
+            width: 500px;
+            border: 2px solid red;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 3px black;
+            background-color: #0f0f0f;
+
+            h2 {
+                font-family: 'Courier New', Courier, monospace;
+                color: white;
+                font-size: 30px;
+                font-weight: 900;
+            }
+
+            .items_del_carrito_de_compra {
+                .item {
+                    border-bottom: 2px solid red;
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+
+                    .nombre_del_producto {
+                        margin: 0;
+                        line-height: normal;
+                        font-size: 14px;
+                        font-weight: 400;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        color: white;
+                        text-align: justify;
+                    }
+
+                    .contenedor_de_la_imagen_y_de_la_informacion_del_producto {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto {
+                            .imagen_del_producto {
+                                width: 115px;
+                                padding: 6px 0 6px 0;
+
+                                img {
+                                    width: 115px;
+                                }
+                            }
+
+                            .eliminar_producto_checkout {
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                font-size: 12px;
+                                color: white;
+                                background-color: red;
+                                padding: 2px;
+                                border-radius: 10px;
+                            }
+                        }
+
+                        .informacion_del_producto {
+                            margin: 0;
+                            padding: 0px 0px 0px 5px;
+
+                            .cantidad {
+                                margin: 0;
+                                margin-top: 5px;
+                                line-height: normal;
+                                font-size: 15px;
+                                font-weight: 600;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                color: white;
+                                text-align: right;
+                            }
+
+                            .precio_normal {
+                                margin: 0;
+                                margin-top: 5px;
+                                line-height: normal;
+                                font-size: 15px;
+                                font-weight: 600;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                color: gray;
+                                text-align: right;
+                            }
+
+                            .precio_con_transferencia {
+                                margin: 0;
+                                margin-top: 5px;
+                                line-height: normal;
+                                font-size: 15px;
+                                font-weight: 600;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                color: white;
+                                text-align: left;
+                            }
+
+                            .precio_con_otros_medios_de_pago {
+                                margin: 0;
+                                margin-top: 5px;
+                                line-height: normal;
+                                font-size: 15px;
+                                font-weight: 600;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                color: white;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pago_con_transferencia {
+                margin: 0;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                line-height: normal;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+                text-align: left;
+
+                span {}
+            }
+
+            .otros_medios_de_pago {
+                margin: 0;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                line-height: normal;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+                text-align: left;
+
+                span {}
+            }
+
+            .costo_de_envio {
+                margin: 0;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                line-height: normal;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+                text-align: left;
+
+                span {}
+            }
+
+            .mensaje_costo_de_envio {
+                margin: 0;
+                line-height: normal;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: white;
+                text-align: left;
+            }
+        }
+    }
+}

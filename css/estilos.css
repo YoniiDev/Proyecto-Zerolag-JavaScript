@@ -213,6 +213,7 @@ header {
               color: #0f0f0f;
               text-align: left; }
             header .navbar .header_navbar_contenedor .header_contenedor .carrito_de_productos .contenedor_de_totales_a_pagar_y_del_boton_iniciar_pago .btn_iniciar_pago {
+              text-decoration: none;
               font-family: Verdana, Geneva, Tahoma, sans-serif;
               font-size: 15px;
               font-weight: 600;
@@ -1125,110 +1126,778 @@ header {
       margin: 0;
       line-height: normal; }
 
-.seccion_carrito_de_compra .titulo_carrito_de_compra {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 55px;
-  font-weight: 900;
-  margin: 5px 20px 5px 20px;
-  text-shadow: -2px -2px 3px red;
-  color: black;
-  text-align: center; }
-
-.seccion_carrito_de_compra .contenedor_de_formulario_y_tabla {
-  border: 2px solid red;
-  border-radius: 10px;
-  width: 80%;
-  margin: auto; }
-  .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla form {
-    background-color: #0f0f0f;
-    padding: 10px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px; }
-    .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla form div label {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: white;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: normal; }
-    .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla form select {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: black;
-      font-weight: 100;
-      font-size: 20px;
-      line-height: normal;
-      width: 85%; }
-    .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla form .btn_agregar_productos {
-      color: white;
-      background-color: black;
-      padding: 5px;
-      border: solid 2px red;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 16px;
-      font-weight: 600;
+.checkout {
+  padding: 20px; }
+  .checkout h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 55px;
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 10px;
+    text-shadow: -2px -2px 3px red;
+    color: black; }
+  .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos {
+    display: flex;
+    justify-content: space-around; }
+    .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente {
+      width: 700px;
+      height: 470px;
+      border: 2px solid red;
+      padding: 15px;
       border-radius: 10px;
-      margin-left: 10px;
-      transition-duration: 0.5s; }
-      .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla form .btn_agregar_productos:hover {
-        background-color: #00c200;
-        border: 2px solid #075000;
+      box-shadow: 0px 0px 5px 3px black;
+      background-color: #0f0f0f; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente h2 {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 30px;
+        font-weight: 900; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .nombre_del_cliente {
+        display: flex;
+        flex-direction: column; }
+        .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .nombre_del_cliente label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .apellido_del_cliente {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px; }
+        .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .apellido_del_cliente label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .email_del_cliente {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px; }
+        .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .email_del_cliente label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_telefono_y_rut_del_cliente {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px; }
+        .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_telefono_y_rut_del_cliente .telefono_del_cliente label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+        .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_telefono_y_rut_del_cliente .rut_del_cliente label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_region_y_comuna {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 15px; }
+        .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_region_y_comuna .region label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+        .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_region_y_comuna .comuna label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_direccion_y_numero {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px; }
+        .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_direccion_y_numero .direccion {
+          display: flex;
+          flex-direction: column;
+          width: 80%; }
+          .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_direccion_y_numero .direccion label {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 100;
+            font-size: 16px; }
+        .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_direccion_y_numero .numero_de_casa {
+          display: flex;
+          flex-direction: column;
+          width: 15%; }
+          .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_direccion_y_numero .numero_de_casa label {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 100;
+            font-size: 16px; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_aceptar_terminos_y_condiciones {
+        margin-top: 15px;
+        margin-bottom: 15px; }
+        .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .contenedor_de_aceptar_terminos_y_condiciones label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 14px; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .datos_del_cliente form .btn_continuar {
+        display: block;
+        background-color: red;
+        color: white;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: black;
+        font-weight: 600;
         font-size: 16px;
-        font-weight: 600; }
-  .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla table {
-    background-color: #0f0f0f;
-    width: 100%;
-    color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; }
-    .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla table thead {
-      text-align: center; }
-    .seccion_carrito_de_compra .contenedor_de_formulario_y_tabla table tfoot {
-      text-align: center; }
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 10px;
+        border: 2px solid red;
+        margin: auto;
+        width: 100px;
+        text-align: center; }
+    .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos {
+      width: 500px;
+      border: 2px solid red;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 3px black;
+      background-color: #0f0f0f; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos h2 {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 30px;
+        font-weight: 900; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item {
+        border-bottom: 2px solid red;
+        padding-bottom: 5px;
+        padding-top: 5px; }
+        .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .nombre_del_producto {
+          margin: 0;
+          line-height: normal;
+          font-size: 14px;
+          font-weight: 400;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: white;
+          text-align: justify; }
+        .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto {
+          display: flex;
+          justify-content: space-between; }
+          .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto .imagen_del_producto {
+            width: 115px;
+            padding: 6px 0 6px 0; }
+            .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto .imagen_del_producto img {
+              width: 115px; }
+          .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto .eliminar_producto_checkout {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            color: white;
+            background-color: red;
+            padding: 2px;
+            border-radius: 10px; }
+          .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto {
+            margin: 0;
+            padding: 0px 0px 0px 5px; }
+            .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .cantidad {
+              margin: 0;
+              margin-top: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              text-align: right; }
+            .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .precio_normal {
+              margin: 0;
+              margin-top: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: gray;
+              text-align: right; }
+            .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .precio_con_transferencia {
+              margin: 0;
+              margin-top: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              text-align: left; }
+            .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .precio_con_otros_medios_de_pago {
+              margin: 0;
+              margin-top: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              text-align: left; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .pago_con_transferencia {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: normal;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: left; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .Otros_medios_de_pago {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: normal;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: left; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .costo_de_envio {
+        margin: 0;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 600;
+        font-size: 15px; }
+      .checkout .contenedor_de_datos_del_cliente_y_de_informacion_de_los_productos .informacion_de_los_productos .mensaje_costo_de_envio {
+        margin: 0;
+        line-height: normal;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: left; }
 
-.seccion_carrito_de_compra .contenedor_de_boton_comprar_y_vaciar {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 15px;
-  padding-bottom: 15px; }
-  .seccion_carrito_de_compra .contenedor_de_boton_comprar_y_vaciar .btn_vaciar_carrito {
-    color: white;
-    background-color: black;
-    padding: 5px;
-    border: solid 2px red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 10px;
-    transition-duration: 0.5s;
-    width: 92px; }
-    .seccion_carrito_de_compra .contenedor_de_boton_comprar_y_vaciar .btn_vaciar_carrito:hover {
-      background-color: #00c200;
-      border: 2px solid #075000;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: black;
-      font-size: 16px;
-      font-weight: 600; }
-  .seccion_carrito_de_compra .contenedor_de_boton_comprar_y_vaciar .btn_comprar_productos {
-    color: white;
-    background-color: black;
-    padding: 5px;
-    border: solid 2px red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 10px;
-    transition-duration: 0.5s;
-    width: 92px; }
-    .seccion_carrito_de_compra .contenedor_de_boton_comprar_y_vaciar .btn_comprar_productos:hover {
-      background-color: #00c200;
-      border: 2px solid #075000;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: black;
-      font-size: 16px;
-      font-weight: 600; }
+.checkout_step2 {
+  padding: 20px; }
+  .checkout_step2 h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 55px;
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 10px;
+    text-shadow: -2px -2px 3px red;
+    color: black; }
+  .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos {
+    display: flex;
+    justify-content: space-around; }
+    .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio {
+      width: 700px;
+      height: 480px;
+      border: 2px solid red;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 3px black;
+      background-color: #0f0f0f; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio h2 {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 30px;
+        font-weight: 900; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form h3 {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 20px;
+        font-weight: 900; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .contenedor_de_region_y_comuna {
+        display: flex;
+        justify-content: space-around;
+        margin: 15px; }
+        .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .contenedor_de_region_y_comuna .region label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px;
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+        .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .contenedor_de_region_y_comuna .comuna label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .contenedor_de_direccion_y_numero {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px; }
+        .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .contenedor_de_direccion_y_numero .direccion {
+          display: flex;
+          flex-direction: column;
+          width: 80%; }
+          .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .contenedor_de_direccion_y_numero .direccion label {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 100;
+            font-size: 16px; }
+        .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .contenedor_de_direccion_y_numero .numero_de_casa {
+          display: flex;
+          flex-direction: column;
+          width: 15%; }
+          .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .contenedor_de_direccion_y_numero .numero_de_casa label {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 100;
+            font-size: 16px; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .otros_datos {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px; }
+        .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .otros_datos label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .nombre_de_quien_recibe {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px; }
+        .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .nombre_de_quien_recibe label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .apellido_de_quien_recibe {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px; }
+        .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .apellido_de_quien_recibe label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .telefono {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        width: 200px; }
+        .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .telefono label {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .contenedor_btn_continuar_y_volver {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px; }
+        .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .contenedor_btn_continuar_y_volver .btn_volver {
+          display: block;
+          background-color: red;
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          text-decoration: none;
+          padding-left: 4px;
+          padding-right: 4px;
+          border-radius: 10px;
+          width: 100px;
+          text-align: center; }
+        .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_envio form .contenedor_btn_continuar_y_volver .btn_continuar {
+          display: block;
+          background-color: red;
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          padding-left: 4px;
+          padding-right: 4px;
+          border-radius: 10px;
+          width: 100px;
+          text-align: center; }
+    .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos {
+      width: 500px;
+      border: 2px solid red;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 3px black;
+      background-color: #0f0f0f; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos h2 {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 30px;
+        font-weight: 900; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item {
+        border-bottom: 2px solid red;
+        padding-bottom: 5px;
+        padding-top: 5px; }
+        .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .nombre_del_producto {
+          margin: 0;
+          line-height: normal;
+          font-size: 14px;
+          font-weight: 400;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: white;
+          text-align: justify; }
+        .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto {
+          display: flex;
+          justify-content: space-between; }
+          .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto .imagen_del_producto {
+            width: 115px;
+            padding: 6px 0 6px 0; }
+            .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto .imagen_del_producto img {
+              width: 115px; }
+          .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto .eliminar_producto_checkout {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            color: white;
+            background-color: red;
+            padding: 2px;
+            border-radius: 10px; }
+          .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto {
+            margin: 0;
+            padding: 0px 0px 0px 5px; }
+            .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .cantidad {
+              margin: 0;
+              margin-top: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              text-align: right; }
+            .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .precio_normal {
+              margin: 0;
+              margin-top: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: gray;
+              text-align: right; }
+            .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .precio_con_transferencia {
+              margin: 0;
+              margin-top: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              text-align: left; }
+            .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .precio_con_otros_medios_de_pago {
+              margin: 0;
+              margin-top: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              text-align: left; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .pago_con_transferencia {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: normal;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: left; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .Otros_medios_de_pago {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: normal;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: left; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .costo_de_envio {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: normal;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: left; }
+      .checkout_step2 .contenedor_de_informacion_de_envio_y_de_los_productos .informacion_de_los_productos .mensaje_costo_de_envio {
+        margin: 0;
+        line-height: normal;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: left; }
+
+.checkout_step3 {
+  padding: 20px; }
+  .checkout_step3 h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 55px;
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 10px;
+    text-shadow: -2px -2px 3px red;
+    color: black; }
+  .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos {
+    display: flex;
+    justify-content: space-around; }
+    .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago {
+      width: 700px;
+      height: 480px;
+      border: 2px solid red;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 3px black;
+      background-color: #0f0f0f; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago h2 {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 30px;
+        font-weight: 900; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form h3 {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 20px;
+        font-weight: 900; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_banco_estado_y_precio_total_transferencia {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px; }
+        .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_banco_estado_y_precio_total_transferencia .pago_banco_estado {
+          display: flex; }
+          .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_banco_estado_y_precio_total_transferencia .pago_banco_estado .contenedor_label_bancoestado {
+            margin-left: 20px; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_banco_estado_y_precio_total_transferencia .pago_banco_estado .contenedor_label_bancoestado label {
+              color: white;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-weight: 100;
+              font-size: 16px; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_banco_estado_y_precio_total_transferencia .pago_banco_estado .contenedor_label_bancoestado p {
+              color: white;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-weight: 100;
+              font-size: 16px;
+              margin: 0; }
+        .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_banco_estado_y_precio_total_transferencia p {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px;
+          margin: 0; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_banco_santander_y_precio_total_transferencia {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px; }
+        .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_banco_santander_y_precio_total_transferencia .pago_banco_santander {
+          display: flex; }
+          .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_banco_santander_y_precio_total_transferencia .pago_banco_santander .contenedor_label_santander {
+            margin-left: 20px; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_banco_santander_y_precio_total_transferencia .pago_banco_santander .contenedor_label_santander label {
+              color: white;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-weight: 100;
+              font-size: 16px; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_banco_santander_y_precio_total_transferencia .pago_banco_santander .contenedor_label_santander p {
+              color: white;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-weight: 100;
+              font-size: 16px;
+              margin: 0; }
+        .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_banco_santander_y_precio_total_transferencia p {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px;
+          margin: 0; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_con_transferencia_o_deposito_bancario_y_precio_total_transferencia {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px; }
+        .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_con_transferencia_o_deposito_bancario_y_precio_total_transferencia .pago_con_transferencia_o_deposito_bancario {
+          display: flex; }
+          .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_con_transferencia_o_deposito_bancario_y_precio_total_transferencia .pago_con_transferencia_o_deposito_bancario .contenedor_label_pago_con_transferencia_o_deposito_bancario {
+            margin-left: 20px; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_con_transferencia_o_deposito_bancario_y_precio_total_transferencia .pago_con_transferencia_o_deposito_bancario .contenedor_label_pago_con_transferencia_o_deposito_bancario label {
+              color: white;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-weight: 100;
+              font-size: 16px;
+              margin: 0; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_con_transferencia_o_deposito_bancario_y_precio_total_transferencia .pago_con_transferencia_o_deposito_bancario .contenedor_label_pago_con_transferencia_o_deposito_bancario p {
+              color: white;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-weight: 100;
+              font-size: 16px;
+              margin: 0; }
+        .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_pago_con_transferencia_o_deposito_bancario_y_precio_total_transferencia p {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px;
+          margin: 0; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_otros_medios_de_pago_y_precio_total_otros_medios_de_pago {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px; }
+        .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_otros_medios_de_pago_y_precio_total_otros_medios_de_pago .otros_medios_de_pago {
+          display: flex; }
+          .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_otros_medios_de_pago_y_precio_total_otros_medios_de_pago .otros_medios_de_pago .contenedor_label_otros_medios_de_pago {
+            margin-left: 20px; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_otros_medios_de_pago_y_precio_total_otros_medios_de_pago .otros_medios_de_pago .contenedor_label_otros_medios_de_pago label {
+              color: white;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-weight: 100;
+              font-size: 16px; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_otros_medios_de_pago_y_precio_total_otros_medios_de_pago .otros_medios_de_pago .contenedor_label_otros_medios_de_pago p {
+              color: white;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              font-weight: 100;
+              font-size: 16px;
+              margin: 0; }
+        .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_otros_medios_de_pago_y_precio_total_otros_medios_de_pago p {
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 100;
+          font-size: 16px;
+          margin: 0; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_btn_volver_y_btn_continuar {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 16px; }
+        .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_btn_volver_y_btn_continuar .btn_volver {
+          display: block;
+          background-color: red;
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          text-decoration: none;
+          padding-left: 4px;
+          padding-right: 4px;
+          border-radius: 10px;
+          width: 100px;
+          text-align: center; }
+        .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .metodo_de_pago form .contenedor_btn_volver_y_btn_continuar .btn_pagar {
+          display: block;
+          background-color: red;
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          padding-left: 4px;
+          padding-right: 4px;
+          border-radius: 10px;
+          width: 100px;
+          text-align: center; }
+    .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos {
+      width: 500px;
+      border: 2px solid red;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 3px black;
+      background-color: #0f0f0f; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos h2 {
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 30px;
+        font-weight: 900; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item {
+        border-bottom: 2px solid red;
+        padding-bottom: 5px;
+        padding-top: 5px; }
+        .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .nombre_del_producto {
+          margin: 0;
+          line-height: normal;
+          font-size: 14px;
+          font-weight: 400;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: white;
+          text-align: justify; }
+        .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto {
+          display: flex;
+          justify-content: space-between; }
+          .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto .imagen_del_producto {
+            width: 115px;
+            padding: 6px 0 6px 0; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto .imagen_del_producto img {
+              width: 115px; }
+          .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .contenedor_de_la_imagen_del_producto_y_del_boton_eliminar_producto .eliminar_producto_checkout {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            color: white;
+            background-color: red;
+            padding: 2px;
+            border-radius: 10px; }
+          .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto {
+            margin: 0;
+            padding: 0px 0px 0px 5px; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .cantidad {
+              margin: 0;
+              margin-top: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              text-align: right; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .precio_normal {
+              margin: 0;
+              margin-top: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: gray;
+              text-align: right; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .precio_con_transferencia {
+              margin: 0;
+              margin-top: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              text-align: left; }
+            .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .items_del_carrito_de_compra .item .contenedor_de_la_imagen_y_de_la_informacion_del_producto .informacion_del_producto .precio_con_otros_medios_de_pago {
+              margin: 0;
+              margin-top: 5px;
+              line-height: normal;
+              font-size: 15px;
+              font-weight: 600;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              color: white;
+              text-align: left; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .pago_con_transferencia {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: normal;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: left; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .otros_medios_de_pago {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: normal;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: left; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .costo_de_envio {
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: normal;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: left; }
+      .checkout_step3 .contenedor_de_metodo_de_pago_e_informacion_de_los_productos .informacion_de_los_productos .mensaje_costo_de_envio {
+        margin: 0;
+        line-height: normal;
+        font-size: 15px;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        text-align: left; }
 
 footer {
   background-color: #0f0f0f;

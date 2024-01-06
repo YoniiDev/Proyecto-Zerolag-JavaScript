@@ -31,7 +31,7 @@ function obtenerProductos() {
             }).showToast();
         });
 }
-obtenerProductos()
+obtenerProductos();
 
 //FUNCION PARA MOSTRAR TODOS LOS PRODUCTOS EN LA PÁGINA DE PRODUCTOS
 function mostrarProductosEnLaPaginaProductos(arrayDeProductos, idDelContenedorDeTarjetasDeProducto) {

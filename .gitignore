@@ -1,7 +1,2 @@
 node_modules/
-js/backupcart.js
-js/item.js
-js/producto.js
-js/carritoDeCompras.js
-pages/carritoDeCompras.html
-SCSS/components/_carritoDeCompra.scss
+
